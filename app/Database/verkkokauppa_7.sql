@@ -31,6 +31,7 @@ create table tuote (
     publisher varchar(50)
 );
 
+
 create table tilaus (
     id int primary key auto_increment,
     orderTime timestamp default current_timestamp,
@@ -40,12 +41,12 @@ create table tilaus (
     on delete restrict
 );
 
---create table developer (
+-- create table developer (
 --    id int primary key auto_increment,
 --    nimi varchar(50)
 --)
 
---create table publisher (
+-- create table publisher (
 --    id int primary key auto_increment,
 --    nimi varchar(50)
 --)
