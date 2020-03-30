@@ -1,6 +1,5 @@
-drop database if exists verkkokauppa_7
-create database verkkokauppa_7
-use database verkkokauppa_7
+drop database if exists verkkokauppa_7;
+create database verkkokauppa_7;
 
 create table user (
     id int primary key auto_increment,
