@@ -8,36 +8,36 @@ create table user (
     password varchar(255) not null,
     firstname varchar(100),
     lastname varchar(100),
-    lahiosoite varchar(100),
-    postinumero char(5),
-    postitoimipaikka varchar(100),
+    address varchar(100),
+    postcode char(5),
+    postOffice varchar(100),
     email varchar(255),
-    puhelin varchar(20)
+    phone varchar(20)
 );
 
 create table genre (
     id int primary key auto_increment,
-    nimi varchar(50)
+    name varchar(50)
 );
 
 create table tuote (
     id int primary key auto_increment,
     title varchar(255),
-    julkaisupvm date,    
-    hinta decimal(5,2),
-    kuva varchar(50),
-    kuvaus text,
+    releaseDate date,    
+    price decimal(5,2),
+    picture varchar(50),
+    description text,
     genre varchar(255),
-    kehittaja varchar(50),
-    julkaisija varchar(50)
+    developer varchar(50),
+    publisher varchar(50)
 );
 
 create table tilaus (
     id int primary key auto_increment,
-    tilattu timestamp default current_timestamp,
-    asiakas_id int not null,
-    index (asiakas_id),
-    foreign key (asiakas_id) references asiakas(id)
+    orderTime timestamp default current_timestamp,
+    user_id int not null,
+    index (user_id),
+    foreign key (user_id) references user(id)
     on delete restrict
 );
 
