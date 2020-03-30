@@ -26,13 +26,6 @@ create table tuote (
     publisher varchar(50)
 );
 
-<<<<<<< HEAD
-=======
-create table tuoteryhma (
-    id int primary key auto_increment,
-    name varchar(255)
-);
->>>>>>> 9cda557c5c3fd66b201dd9a6281198ac24ed7596
 
 create table tilaus (
     id int primary key auto_increment,
