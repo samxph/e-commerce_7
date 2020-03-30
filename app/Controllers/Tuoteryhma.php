@@ -42,9 +42,7 @@ class Tuoteryhma extends BaseController
         $data['id'] = $id;
         $data['nimi'] = $nimi;
 
-        echo view('templates/header');
         echo view('edit_tuoteryhma_view.php', $data);
-        echo view('templates/footer');
     }
 
     public function delete($id)
