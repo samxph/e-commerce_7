@@ -17,7 +17,9 @@ class Tuoteryhma extends BaseController
             'tuotteet' => $tuoteryhma_model->haeKaikki()
         ];
 
+        echo view('templates/header');
         echo view('tuoteryhma_view', $data);
+        echo view('templates/footer');
     }
 
     public function lisaa()
@@ -40,7 +42,9 @@ class Tuoteryhma extends BaseController
         $data['id'] = $id;
         $data['nimi'] = $nimi;
 
+        echo view('templates/header');
         echo view('edit_tuoteryhma_view.php', $data);
+        echo view('templates/footer');
     }
 
     public function delete($id)
