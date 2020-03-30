@@ -27,8 +27,8 @@ create table tuote (
 );
 
 create table tuoteryhma (
-  id int primary key auto_increment,
-  nimi varchar(255) not null unique
+    id int primary key auto_increment,
+    name varchar(255)
 );
 
 create table tilaus (
