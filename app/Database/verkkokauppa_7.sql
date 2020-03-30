@@ -26,6 +26,10 @@ create table tuote (
     publisher varchar(50)
 );
 
+create table tuoteryhma (
+  id int primary key auto_increment,
+  nimi varchar(255) not null unique
+);
 
 create table tilaus (
     id int primary key auto_increment,
