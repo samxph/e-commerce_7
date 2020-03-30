@@ -26,6 +26,11 @@ create table tuote (
     publisher varchar(50)
 );
 
+create table tuoteryhma (
+    id int primary key auto_increment,
+    name varchar(255)
+);
+
 create table tilaus (
     id int primary key auto_increment,
     orderTime timestamp default current_timestamp,
