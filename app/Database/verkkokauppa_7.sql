@@ -23,7 +23,9 @@ create table developer (
 
 insert into developer (name) values ("CD PROJEKT RED");
 insert into developer (name) values ("CAPCOM");
+insert into developer (name) values ("Irrational Games");
 insert into developer (name) values ("Gearbox Software");
+insert into developer (name) values ("Firaxis Games");
 insert into developer (name) values ("Valve");
 insert into developer (name) values ("");
 
@@ -38,7 +40,7 @@ insert into publisher (name) values ("CD PROJEKT RED");
 insert into publisher (name) values ("CAPCOM");
 insert into publisher (name) values ("2K");
 insert into publisher (name) values ("Valve");
-insert into publisher (name) values ("");
+insert into publisher (name) values ("Square Enix");
 
 /******************************************************/
 
@@ -77,16 +79,55 @@ create table tuote (
     on delete restrict
 );
 
+/* Published by CDPR */
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres, tuoteryhma_id)
-values ("Cyberpunk 2077", "2020-09-17", 60, "", "add description here", 1, 1, "", 1);
+values ("Cyberpunk 2077", "2020-09-17", 60, "", "add description here", 1, 1, "", 4);
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres, tuoteryhma_id)
-values ("Thronebreaker: The Witcher Tales", "2018-11-09", 20, "", "add description here", 1, 1, "", 1);
+values ("Thronebreaker: The Witcher Tales", "2018-11-09", 20, "", "add description here", 1, 1, "", 4);
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres, tuoteryhma_id)
-values ("The Witcher 3: Wild Hunt", "2015-05-18", 30, "", "add description here", 1, 1, "", 1);
+values ("The Witcher 3: Wild Hunt", "2015-05-18", 30, "", "add description here", 1, 1, "", 4);
+
+/* Published by CAPCOM */
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres, tuoteryhma_id)
-values ("Devil May Cry 5", "2019-03-08", 50, "", "add description here", 2, 2, "", 1);
+values ("Devil May Cry 5", "2019-03-08", 50, "", "add description here", 2, 2, "", 4);
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres, tuoteryhma_id)
-values ("MONSTER HUNTER: WORLD", "2018-08-09", 60, "mhw.jpg" , "add description here", 2, 2, "", 1);
+values ("MONSTER HUNTER: WORLD", "2018-08-09", 60, "mhw.jpg" , "add description here", 2, 2, "", 4);
+insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres, tuoteryhma_id)
+values ("RESIDENT EVIL 2 / BIOHAZARD RE:2", "2019-01-25", 40, "" , "add description here", 2, 2, "", 4);
+
+/* Published by 2K */
+insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres, tuoteryhma_id)
+values ("BioShock Infinite", "2013-03-26", 30, "" , "add description here", 3, 3, "", 4);
+insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres, tuoteryhma_id)
+values ("Borderlands 3", "2019-09-13", 60, "" , "add description here", 4, 3, "", 4);
+insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres, tuoteryhma_id)
+values ("Sid Meier’s Civilization VI", "2016-10-21", 60, "" , "add description here", 5, 3, "", 4);
+
+/* Published by Valve */
+insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres, tuoteryhma_id)
+values ("Half-Life: Alyx", "2020-03-23", 50, "" , "add description here", 6, 4, "", 4);
+insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres, tuoteryhma_id)
+values ("Portal 2", "2011-04-19", 9, "" , "add description here", 6, 4, "", 4);
+insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres, tuoteryhma_id)
+values ("Left 4 Dead 2", "2009-11-17", 9, "" , "add description here", 6, 4, "", 4);
+
+/* Published by Square Enix */
+insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres, tuoteryhma_id)
+values ("", "", , "" , "add description here", , , "", );
+insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres, tuoteryhma_id)
+values ("", "", , "" , "add description here", , , "", );
+insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres, tuoteryhma_id)
+values ("", "", , "" , "add description here", , , "", );
+
+
+insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres, tuoteryhma_id)
+values ("", "", , "" , "add description here", , , "", );
+insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres, tuoteryhma_id)
+values ("", "", , "" , "add description here", , , "", );
+insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres, tuoteryhma_id)
+values ("", "", , "" , "add description here", , , "", );
+
+
 
 /******************************************************/
 
@@ -96,26 +137,16 @@ create table tilaus (
     user_id int not null,
     index (user_id),
     foreign key (user_id) references user(id)
-    on delete restrict
+    on delete restrict,
+    maara smallint
 );
 
-<<<<<<< HEAD
 /******************************************************/
+
 
 
 /* 
 List of genres in alphabetical order:
-=======
--- create table developer (
---    id int primary key auto_increment,
---    nimi varchar(50)
---)
-
--- create table publisher (
---    id int primary key auto_increment,
---    nimi varchar(50)
---)
->>>>>>> 5e21eb5fa51439305f23b2626ccedad15862de97
 
 - Action
 - Action RPG (ARPG)
