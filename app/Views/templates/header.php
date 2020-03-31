@@ -13,10 +13,12 @@
 </head>
 
 <body>
-<div class="row topheader">
+    <div class="row topheader">
         <ul>
             <li><a href="#">Ostoskori <i class="fas fa-shopping-cart"></i> |</a></li>
             <li><a href="#">Kirjaudu sisään <i class="fas fa-user"></i> |</a></li>
+            <li><a href="#">Ota yhteyttä <i class="fas fa-copy"></i> |</a></li>
+            <li><a href="#">Usein kysyttyä <i class="fas fa-info-circle"></i> |</a></li>
         </ul>
     </div>
 
@@ -24,25 +26,24 @@
         <img src=<?php echo base_url("images\dangerpattern.jpg") ?> class="cover" alt="danger">
     </div>
 
-    <div class="row">
-        <div class="col-12 col-md-6 logo border">
-            <a href="frontpage"> <img src=<?php echo base_url("images\headerlogo.jpg") ?> alt="logo"> </a>
-        </div>
 
-        <div class="col-12 col-md-6 border logo">
-        
+<div class="container-fluid">
+    <div class="row">
+
+        <div class="col logo">
+            <a href="frontpage"> <img src=<?php echo base_url("images\headerlogo.jpg") ?> alt="logo"> </a>
         </div>
     </div>
 
     <div class="row">
-    <div class="col-12 col-md-6 mt-2 ml-3 searchbox">
+        <div class="col mt-2 ml-3 searchbox">
             <input type="text" name="searchbar" class="search" placeholder="Hae sivustolta..." size="40">
             <button class="btn btn-warning mb-1 ml-1">Hae</button>
         </div>
     </div>
 
     <div class="row col">
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-md navbar-light">
             <a class="navbar-brand" href="frontpage">Etusivu</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -52,7 +53,7 @@
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            PS4
+                            PS4 <i class="fab fa-playstation"></i>
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="#">Action</a>
@@ -63,7 +64,7 @@
 
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            XBOX ONE
+                            XBOX ONE <i class="fab fa-xbox"></i>
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="#">Action</a>
@@ -74,7 +75,7 @@
 
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Switch
+                            Switch <i class="fas fa-dice-two"></i>
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="#">Action</a>
@@ -85,7 +86,7 @@
 
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            PC
+                            PC <i class="fas fa-mouse"></i>
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="#">Action</a>
@@ -107,6 +108,7 @@
                 </ul>
             </div>
         </nav>
+    </div>
     </div>
 
     <div class="container-fluid">

@@ -20,3 +20,8 @@ color: white;
     height: 35px;
     border: 2px solid black;
 }
+
+.search {
+    border-radius: 5px;
+    height: 36px;
+}
