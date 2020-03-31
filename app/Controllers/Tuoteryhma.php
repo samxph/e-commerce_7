@@ -17,7 +17,9 @@ class Tuoteryhma extends BaseController
             'tuotteet' => $tuoteryhma_model->haeKaikki()
         ];
 
+        echo view('templates/header');
         echo view('tuoteryhma_view', $data);
+        echo view('templates/footer');
     }
 
     public function lisaa()
