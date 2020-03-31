@@ -1,1 +1,0 @@
-<h1>Quarantine Games</h1>
