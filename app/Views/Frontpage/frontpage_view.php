@@ -1,5 +1,8 @@
 <div class="container">
-      <div class="col-lg-9">
+
+  <!-- /.col-lg-3 -->
+
+  <div class="col-lg-10">   
 
 <div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel">
   <ol class="carousel-indicators">
