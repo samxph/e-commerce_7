@@ -17,6 +17,8 @@
         <ul>
             <li><a href="#">Ostoskori <i class="fas fa-shopping-cart"></i> |</a></li>
             <li><a href="#">Kirjaudu sisään <i class="fas fa-user"></i> |</a></li>
+            <li><a href="#">Ota yhteyttä <i class="fas fa-copy"></i> |</a></li>
+            <li><a href="#">Usein kysyttyä <i class="fas fa-info-circle"></i> |</a></li>
         </ul>
     </div>
 
