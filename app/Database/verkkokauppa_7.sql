@@ -99,11 +99,23 @@ create table tilaus (
     on delete restrict
 );
 
+<<<<<<< HEAD
 /******************************************************/
 
 
 /* 
 List of genres in alphabetical order:
+=======
+-- create table developer (
+--    id int primary key auto_increment,
+--    nimi varchar(50)
+--)
+
+-- create table publisher (
+--    id int primary key auto_increment,
+--    nimi varchar(50)
+--)
+>>>>>>> 5e21eb5fa51439305f23b2626ccedad15862de97
 
 - Action
 - Action RPG (ARPG)
