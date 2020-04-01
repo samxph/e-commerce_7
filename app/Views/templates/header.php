@@ -26,8 +26,6 @@
         <img src=<?php echo base_url("images\dangerpattern.jpg") ?> class="cover" alt="danger">
     </div>
 
-
-<div class="container-fluid">
     <div class="row">
 
         <div class="col logo">
@@ -109,6 +107,5 @@
             </div>
         </nav>
     </div>
-    </div>
 
-    <div class="container-fluid">
+    <div class="container-fluid"> <!-- div container fluid alkaa -->

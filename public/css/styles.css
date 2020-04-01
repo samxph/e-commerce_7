@@ -1,3 +1,13 @@
+body {
+    background-color: whitesmoke;
+}
+
+footer {
+    display: table;
+    width: 100%;
+    background-color: black;
+}
+
 .topheader {
     background-color: black;
 }
@@ -7,7 +17,7 @@
 }
 
 .topheader li a {
-color: white;
+color: whitesmoke;
 }
 
 .logo img {
@@ -24,4 +34,17 @@ color: white;
 .search {
     border-radius: 5px;
     height: 36px;
+}
+
+.leftfooter {
+    background-color: black;
+    color: whitesmoke;
+    display: table-cell;
+}
+
+.rightfooter {
+    background-color: black;
+    color: whitesmoke;
+    display: table-cell;
+    text-align: right;
 }
