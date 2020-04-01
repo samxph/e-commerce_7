@@ -29,7 +29,7 @@
     <div class="row">
 
         <div class="col logo">
-            <a href="frontpage"> <img src=<?php echo base_url("images\headerlogo.jpg") ?> alt="logo"> </a>
+            <a href="frontpage"> <img src=<?php echo base_url("images\headerlogo2.jpg") ?> alt="logo"> </a>
         </div>
     </div>
 
