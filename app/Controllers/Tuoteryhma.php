@@ -14,10 +14,11 @@ class Tuoteryhma extends BaseController
         $tuoteryhma_model = new TuoteryhmaAdminModel;
 
         $data = [
+            'title' => 'Tuoteryhmät',
             'tuotteet' => $tuoteryhma_model->haeKaikki()
         ];
 
-        echo view('templates/header');
+        echo view('templates/header', $data);
         echo view('tuoteryhma_view', $data);
         echo view('templates/footer');
     }
