@@ -17,6 +17,8 @@
         <ul>
             <li><a href="#">Ostoskori <i class="fas fa-shopping-cart"></i> |</a></li>
             <li><a href="#">Kirjaudu sisään <i class="fas fa-user"></i> |</a></li>
+            <li><a href="#">Ota yhteyttä <i class="fas fa-copy"></i> |</a></li>
+            <li><a href="#">Usein kysyttyä <i class="fas fa-info-circle"></i> |</a></li>
         </ul>
     </div>
 
@@ -24,12 +26,10 @@
         <img src=<?php echo base_url("images\dangerpattern.jpg") ?> class="cover" alt="danger">
     </div>
 
-
-<div class="container-fluid">
     <div class="row">
 
         <div class="col logo">
-            <a href="frontpage"> <img src=<?php echo base_url("images\headerlogo.jpg") ?> alt="logo"> </a>
+            <a href="frontpage"> <img src=<?php echo base_url("images\headerlogo2.jpg") ?> alt="logo"> </a>
         </div>
     </div>
 
@@ -142,6 +142,5 @@
             </div>
         </nav>
     </div>
-    </div>
 
-    <div class="container-fluid">
+    <div class="container-fluid"> <!-- div container fluid alkaa -->
