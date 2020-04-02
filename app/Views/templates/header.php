@@ -16,7 +16,7 @@
     <div class="row topheader">
         <ul>
             <li><a href="#">Ostoskori <i class="fas fa-shopping-cart"></i> |</a></li>
-            <li><a href="#">Kirjaudu sisään <i class="fas fa-user"></i> |</a></li>
+            <li><a href="#">Kirjaudu sisään <i class="fas fa-user"></i></a></li>
         </ul>
     </div>
 
@@ -29,7 +29,7 @@
     <div class="row">
 
         <div class="col logo">
-            <a href="frontpage"> <img src=<?php echo base_url("images\headerlogo.jpg") ?> alt="logo"> </a>
+            <a href="frontpage"> <img src=<?php echo base_url("images\headerlogo2.jpg") ?> alt="logo"> </a>
         </div>
     </div>
 
