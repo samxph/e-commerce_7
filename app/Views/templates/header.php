@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-v8BU367qNbs/aIZIxuivaU55N5GPF89WBerHoGA4QTcbUjYiLQtKdrfXnqAcXyTv" crossorigin="anonymous">
     <link rel="stylesheet" href=<?php echo base_url("css\styles.css") ?>>
 
-    <title>Quarantine Games</title>
+    <title><?= $title ?></title>
 </head>
 
 <body>
@@ -17,8 +17,6 @@
         <ul>
             <li><a href="#">Ostoskori <i class="fas fa-shopping-cart"></i> |</a></li>
             <li><a href="#">Kirjaudu sisään <i class="fas fa-user"></i> |</a></li>
-            <li><a href="#">Ota yhteyttä <i class="fas fa-copy"></i> |</a></li>
-            <li><a href="#">Usein kysyttyä <i class="fas fa-info-circle"></i> |</a></li>
         </ul>
     </div>
 
@@ -26,10 +24,12 @@
         <img src=<?php echo base_url("images\dangerpattern.jpg") ?> class="cover" alt="danger">
     </div>
 
+
+<div class="container-fluid">
     <div class="row">
 
         <div class="col logo">
-            <a href="frontpage"> <img src=<?php echo base_url("images\headerlogo2.jpg") ?> alt="logo"> </a>
+            <a href="frontpage"> <img src=<?php echo base_url("images\headerlogo.jpg") ?> alt="logo"> </a>
         </div>
     </div>
 
@@ -54,9 +54,18 @@
                             PS4 <i class="fab fa-playstation"></i>
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
+                            <a class="dropdown-item" href="#">Ajopelit</a>
+                            <a class="dropdown-item" href="#">Arcade</a>
+                            <a class="dropdown-item" href="#">First Person Shooter</a>
+                            <a class="dropdown-item" href="#">Kauhu</a>
+                            <a class="dropdown-item" href="#">Puzzle</a>
+                            <a class="dropdown-item" href="#">RPG</a>
+                            <a class="dropdown-item" href="#">Seikkailu</a>
+                            <a class="dropdown-item" href="#">Simulaattori</a>
+                            <a class="dropdown-item" href="#">Strategia</a>
+                            <a class="dropdown-item" href="#">Tasohyppely</a>
+                            <a class="dropdown-item" href="#">Toiminta</a>
+                            <a class="dropdown-item" href="#">Urheilu</a>
                         </div>
                     </li>
 
@@ -65,9 +74,18 @@
                             XBOX ONE <i class="fab fa-xbox"></i>
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
+                        <a class="dropdown-item" href="#">Ajopelit</a>
+                            <a class="dropdown-item" href="#">Arcade</a>
+                            <a class="dropdown-item" href="#">First Person Shooter</a>
+                            <a class="dropdown-item" href="#">Kauhu</a>
+                            <a class="dropdown-item" href="#">Puzzle</a>
+                            <a class="dropdown-item" href="#">RPG</a>
+                            <a class="dropdown-item" href="#">Seikkailu</a>
+                            <a class="dropdown-item" href="#">Simulaattori</a>
+                            <a class="dropdown-item" href="#">Strategia</a>
+                            <a class="dropdown-item" href="#">Tasohyppely</a>
+                            <a class="dropdown-item" href="#">Toiminta</a>
+                            <a class="dropdown-item" href="#">Urheilu</a>
                         </div>
                     </li>
 
@@ -76,9 +94,17 @@
                             Switch <i class="fas fa-dice-two"></i>
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
+                        <a class="dropdown-item" href="#">Ajopelit</a>
+                            <a class="dropdown-item" href="#">Arcade</a>
+                            <a class="dropdown-item" href="#">First Person Shooter</a>
+                            <a class="dropdown-item" href="#">RPG</a>
+                            <a class="dropdown-item" href="#">Seikkailu</a>
+                            <a class="dropdown-item" href="#">Simulaattori</a>
+                            <a class="dropdown-item" href="#">Strategia</a>
+                            <a class="dropdown-item" href="#">Tasohyppely</a>
+                            <a class="dropdown-item" href="#">Toiminta</a>
+                            <a class="dropdown-item" href="#">Urheilu</a>
+                            <a class="dropdown-item" href="#">Lapset</a>
                         </div>
                     </li>
 
@@ -87,9 +113,18 @@
                             PC <i class="fas fa-mouse"></i>
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
+                            <a class="dropdown-item" href="#">Ajopelit</a>
+                            <a class="dropdown-item" href="#">First Person Shooter</a>
+                            <a class="dropdown-item" href="#">Kauhu</a>
+                            <a class="dropdown-item" href="#">Puzzle</a>
+                            <a class="dropdown-item" href="#">RPG</a>
+                            <a class="dropdown-item" href="#">Shooter</a>
+                            <a class="dropdown-item" href="#">Seikkailu</a>
+                            <a class="dropdown-item" href="#">Simulaattori</a>
+                            <a class="dropdown-item" href="#">Strategia</a>
+                            <a class="dropdown-item" href="#">Toiminta</a>
+                            <a class="dropdown-item" href="#">Urheilu</a>
+                            <a class="dropdown-item" href="#">Virtual Reality</a>
                         </div>
                     </li>
 
@@ -107,5 +142,6 @@
             </div>
         </nav>
     </div>
+    </div>
 
-    <div class="container-fluid"> <!-- div container fluid alkaa -->
+    <div class="container-fluid">
