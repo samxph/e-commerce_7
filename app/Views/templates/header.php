@@ -139,7 +139,6 @@
                         </div>
                     </li>
                 </ul>
-                <a href="ostoskori.php">Ostoskoriin <i class="fas fa-shopping-cart"></i></a>
             </div>
         </nav>
     </div>
