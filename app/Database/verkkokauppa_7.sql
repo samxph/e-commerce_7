@@ -399,7 +399,7 @@ values ("Octopath Traveler", "2018-07-13", 30, "" , "Eight travelers. Eight adve
 
 /*
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
-values ("", "", , "" , "add description here", , , "", );*/
+values ("", "", , "" , "add description here", , , "");*/
 
 /******************************************************/
 
