@@ -160,7 +160,7 @@ of guns and a mayhem-fueled adventure! Blast through new worlds & enemies and sa
  ruthless cult leaders in the galaxy.", 4, 3, "Action, Adventure, First Person Shooter (FPS), Multiplayer,
   Open World, RPG, Single Player");
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
-values ("Sid Meier’s Civilization VI", "2016-10-21", 60, "civilization" , "Civilization VI offers new ways to interact
+values ("Sid Meier’s Civilization VI", "2016-10-21", 60, "civilization.jpg" , "Civilization VI offers new ways to interact
  with your world, expand your empire across the map, advance your culture, and compete against history’s
   greatest leaders to build a civilization that will stand the test of time.", 5, 3, "Multiplayer, Singleplayer, 
   Strategy, Turn Based");
@@ -213,7 +213,7 @@ from the record-setting entertainment franchise, Call of Duty®: Black Ops II pr
  Century Cold War, where technology and weapons have converged to create a new generation of warfare.", 12, 7, "Action, 
  First Person Shooter (FPS), Multiplayer, Single Player, Survival");
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
-values ("Call of Duty: Modern Warfare", "2019-9-12", 60, "codmw2019,jpg" , "The iconic first-person shooter game is back! Cross play,
+values ("Call of Duty: Modern Warfare", "2019-9-12", 60, "codmw2019.jpg" , "The iconic first-person shooter game is back! Cross play,
  free maps and modes, and new engine deliver the largest technical leap in Call of Duty history.", 11, 7, "Action, 
  First Person Shooter (FPS), Multiplayer, Single Player, Survival");
 
