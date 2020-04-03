@@ -28,13 +28,8 @@
 <div class="container-fluid">
     <div class="row">
 
-        <div class="col logo">
+        <div class="col logo mt-2 ml-3 searchbox">
             <a href="frontpage"> <img src=<?php echo base_url("images\headerlogo2.jpg") ?> alt="logo"> </a>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col mt-2 ml-3 searchbox">
             <input type="text" name="searchbar" class="search" placeholder="Hae sivustolta..." size="40">
             <button class="btn btn-warning mb-1 ml-1">Hae</button>
         </div>
@@ -118,7 +113,7 @@
                             <a class="dropdown-item" href="#">Kauhu</a>
                             <a class="dropdown-item" href="#">Puzzle</a>
                             <a class="dropdown-item" href="#">RPG</a>
-                            <a class="dropdown-item" href="#">Shooter</a>
+                            <a class="dropdown-item" href="#">Räiskintä</a>
                             <a class="dropdown-item" href="#">Seikkailu</a>
                             <a class="dropdown-item" href="#">Simulaattori</a>
                             <a class="dropdown-item" href="#">Strategia</a>
@@ -133,9 +128,12 @@
                             Oheislaitteet
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
+                            <a class="dropdown-item" href="#">Konsolit</a>
+                            <a class="dropdown-item" href="#">Peliohjaimet</a>
+                            <a class="dropdown-item" href="#">Pelinäytöt</a>
+                            <a class="dropdown-item" href="#">Hiiret ja näppäimistöt</a>
+                            <a class="dropdown-item" href="#">Virtuaalitodellisuus</a>
+                            <a class="dropdown-item" href="#">Muut pelitarvikkeet</a>
                         </div>
                     </li>
                 </ul>
