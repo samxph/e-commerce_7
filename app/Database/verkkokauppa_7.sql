@@ -48,8 +48,14 @@ insert into developer (name) values ("343 Industries"); /*23*/
 insert into developer (name) values ("SCE Santa Monica Studios"); /*24*/
 insert into developer (name) values ("Pixelopus"); /*25*/
 insert into developer (name) values ("Ryu Ga Gotoku Studio"); /*26*/
-
-
+insert into developer (name) values ("FromSoftware"); /*27*/
+insert into developer (name) values ("Atlus"); /*28*/
+insert into developer (name) values ("Guerrilla Games"); /*29*/
+insert into developer (name) values ("Insomniac Games"); /*30*/
+insert into developer (name) values ("Nintendo"); /*31*/
+insert into developer (name) values ("Game Freak"); /*32*/
+insert into developer (name) values ("Sora"); /*33*/
+insert into developer (name) values ("Intelligent Systems"); /*34*/
 
 
 /******************************************************/
@@ -74,7 +80,9 @@ insert into publisher (name) values ("Codemasters"); /*12*/
 insert into publisher (name) values ("Psyonix"); /*13*/ 
 insert into publisher (name) values ("Microsoft Studios"); /*14*/
 insert into publisher (name) values ("Sony Interactive Entertainment"); /*15*/
-
+insert into publisher (name) values ("BANDAI NAMCO Entertainment"); /*16*/
+insert into publisher (name) values ("Atlus"); /*17*/
+insert into publisher (name) values ("Nintendo"); /*18*/
 
 /******************************************************/
 
@@ -111,54 +119,73 @@ create table tuote (
 
 /* Published by CDPR */
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
-values ("Cyberpunk 2077", "2020-09-17", 60, "", "Cyberpunk 2077 is an open-world, action-adventure story
+values ("Cyberpunk 2077", "2020-09-17", 60, "cyberpunk.jpg", "Cyberpunk 2077 is an open-world, action-adventure story
  set in Night City, a megalopolis obsessed with power, glamour and body modification. You play as V,
   a mercenary outlaw going after a one-of-a-kind implant that is the key to immortality.", 1, 1, "Action,
    First Person Shooter (FPS), Open World, RPG, Single Player");
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
-values ("Thronebreaker: The Witcher Tales", "2018-11-09", 20, "", "Discover a brand new RPG from the
+values ("Thronebreaker: The Witcher Tales", "2018-11-09", 20, "witcher.jpg", "Discover a brand new RPG from the
  creators of The Witcher 3: Wild Hunt. Facing an imminent invasion, Meve — war-veteran and Queen of
   Lyria and Rivia — is forced to once again enter the warpath and set out on a dark journey of destruction
    and revenge.", 1, 1, "Card Game, RPG, Single Player");
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
-values ("The Witcher 3: Wild Hunt", "2015-05-18", 30, "", "As war rages on throughout the Northern Realms,
+values ("The Witcher 3: Wild Hunt", "2015-05-18", 30, "witcher3.jpg", "As war rages on throughout the Northern Realms,
  you take on the greatest contract of your life — tracking down the Child of Prophecy, a living weapon
   that can alter the shape of the world.", 1, 1, "Action, Adventure, Open World, RPG, Single Player");
 
 /* Published by CAPCOM */
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
-values ("Devil May Cry 5", "2019-03-08", 50, "", "The ultimate Devil Hunter is back in style, in the 
+values ("Devil May Cry 5", "2019-03-08", 50, "devilmay.jpg", "The ultimate Devil Hunter is back in style, in the 
 game action fans have been waiting for.", 2, 2, "Action, Fighting, Single Player");
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
-values ("MONSTER HUNTER: WORLD", "2018-08-09", 60, "mhw.jpg" , "add description here", 2, 2, "Action,
+values ("MONSTER HUNTER: WORLD", "2018-08-09", 60, "mhw.jpg" , "Welcome to a new world! In Monster Hunter: 
+World, the latest installment in the series, you can enjoy the ultimate hunting experience, using everything 
+at your disposal to hunt monsters in a new world teeming with surprises and excitement.", 2, 2, "Action,
  Adventure, Multiplayer, Open World, Single Player");
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
-values ("RESIDENT EVIL 2 / BIOHAZARD RE:2", "2019-01-25", 40, "" , "add description here", 2, 2, "Horror,
- Single Player");
+values ("RESIDENT EVIL 2 / BIOHAZARD RE:2", "2019-01-25", 40, "residentevil2.png" , "A deadly virus engulfs the residents 
+of Raccoon City in September of 1998, plunging the city into chaos as flesh eating zombies roam the streets
+ for survivors. An unparalleled adrenaline rush, gripping storyline, and unimaginable horrors await you. 
+ Witness the return of Resident Evil 2.", 2, 2, "Horror, Single Player");
 
 /* Published by 2K */
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
-values ("BioShock Infinite", "2013-03-26", 30, "" , "add description here", 3, 3, "");
+values ("BioShock Infinite", "2013-03-26", 30, "bioshock.png" , "Indebted to the wrong people, with his life on the line,
+ veteran of the U.S. Cavalry and now hired gun, Booker DeWitt has only one opportunity to wipe his slate
+  clean. He must rescue Elizabeth, a mysterious girl imprisoned since childhood and locked up in the flying
+   city of Columbia.", 3, 3, "First Person Shooter (FPS), Single Player");
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
-values ("Borderlands 3", "2019-09-13", 60, "" , "add description here", 4, 3, "");
+values ("Borderlands 3", "2019-09-13", 60, "borderlands3.jpg" , "The original shooter-looter returns, packing bazillions 
+of guns and a mayhem-fueled adventure! Blast through new worlds & enemies and save your home from the most
+ ruthless cult leaders in the galaxy.", 4, 3, "");
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
-values ("Sid Meier’s Civilization VI", "2016-10-21", 60, "" , "add description here", 5, 3, "");
+values ("Sid Meier’s Civilization VI", "2016-10-21", 60, "civilization" , "Civilization VI offers new ways to interact
+ with your world, expand your empire across the map, advance your culture, and compete against history’s
+  greatest leaders to build a civilization that will stand the test of time.", 5, 3, "");
 
 /* Published by Valve */
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
-values ("Half-Life: Alyx", "2020-03-23", 50, "" , "add description here", 6, 4, "");
+values ("Half-Life: Alyx", "2020-03-23", 50, "halflife.jpg" , "Half-Life: Alyx is Valve’s VR return to the Half-Life
+ series. It’s the story of an impossible fight against a vicious alien race known as the Combine, set between 
+ the events of Half-Life and Half-Life 2. Playing as Alyx Vance, you are humanity’s only chance for 
+ survival.", 6, 4, "");
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
-values ("Portal 2", "2011-04-19", 9, "" , "add description here", 6, 4, "");
+values ("Portal 2", "2011-04-19", 9, "portal2.jpg" , "The 'Perpetual Testing Initiative' has been expanded to allow 
+you to design co-op puzzles for you and your friends!", 6, 4, "");
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
-values ("Left 4 Dead 2", "2009-11-17", 9, "" , "add description here", 6, 4, "");
+values ("Left 4 Dead 2", "2009-11-17", 9, "l4d2.jpg" , "Set in the zombie apocalypse,This co-operative action
+ horror FPS takes you and your friends through the cities, swamps and cemeteries of the Deep South,
+  from Savannah to New Orleans ", 6, 4, "");
 
 /* Published by Square Enix */
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
-values ("NieR:Automata", "2017-03-17", 40, "" , "add description here", 7, 5, "");
+values ("NieR:Automata", "2017-03-17", 40, "automata.jpg" , "NieR: Automata tells the story of androids 2B, 9S and A2
+ and their battle to reclaim the machine-driven dystopia overrun by powerful machines.", 7, 5, "");
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
-values ("FINAL FANTASY XIV", "2014-02-18", 10, "" , "add description here", 8, 5, "");
+values ("FINAL FANTASY XIV", "2014-02-18", 10, "finalfantasy.jpg" , "Take part in an epic and ever-changing FINAL FANTASY
+ as you adventure and explore with friends from around the world.", 8, 5, "");
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
-values ("DRAGON QUEST® XI: Echoes of an Elusive Age", "2017-07-29", 60, "" , "DRAGON QUEST® XI: Echoes
+values ("DRAGON QUEST® XI: Echoes of an Elusive Age", "2017-07-29", 60, "dragonquest.jpg" , "DRAGON QUEST® XI: Echoes
  of an Elusive Age™ follows the perilous journey of a hunted Hero who must uncover the mystery of
   his fate with the aid of a charismatic cast of supporting characters.", 8, 5, "Action, Adventure, JRPG,
    Open World, RPG, Single Player");
@@ -166,54 +193,54 @@ values ("DRAGON QUEST® XI: Echoes of an Elusive Age", "2017-07-29", 60, "" , "D
 /* Published by Activision */
 
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
-values ("Call of Duty: Black Ops", "2010-11-9", 40, "" , " The biggest action series of all time returns. Call of Duty®: 
+values ("Call of Duty: Black Ops", "2010-11-9", 40, "codbo.jpg" , " The biggest action series of all time returns. Call of Duty®: 
 Black Ops is an entertainment experience that will take you to conflicts across the globe, as elite Black Ops forces
  fight in the deniable operations and secret wars that occurred under the veil of the Cold War. ", 12, 7, "");
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
-values ("Call of Duty: Modern Warfare 3", "2011-11-8", 40, "" , " Modern Warfare is back. The best-selling first person 
+values ("Call of Duty: Modern Warfare 3", "2011-11-8", 40, "codmw3.jpg" , " Modern Warfare is back. The best-selling first person 
 action series of all-time returns with the epic sequel to multiple Game of the Year award winner,
  Call of Duty®: Modern Warfare 2.", 9, 7, "");
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
-values ("Call of Duty: Black Ops II", "2012-11-13", 40, "" , "Pushing the boundaries of what fans have come to expect 
+values ("Call of Duty: Black Ops II", "2012-11-13", 40, "codbo2.jpg" , "Pushing the boundaries of what fans have come to expect 
 from the record-setting entertainment franchise, Call of Duty®: Black Ops II propels players into a near future, 21st
  Century Cold War, where technology and weapons have converged to create a new generation of warfare.", 12, 7, "");
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
-values ("Call of Duty: Modern Warfare", "2019-9-12", 60, "" , "The iconic first-person shooter game is back! Cross play,
+values ("Call of Duty: Modern Warfare", "2019-9-12", 60, "codmw2019,jpg" , "The iconic first-person shooter game is back! Cross play,
  free maps and modes, and new engine deliver the largest technical leap in Call of Duty history.", 11, 7, "");
 
 /* Published by Ubisoft */
 
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
-values ("Tom Clancy’s Rainbow Six: Siege", "2015-12-7", 20, "" , "Discover the most tactical FPS on PC, PS4 and Xbox One.
+values ("Tom Clancy’s Rainbow Six: Siege", "2015-12-7", 20, "r6s.jpg" , "Discover the most tactical FPS on PC, PS4 and Xbox One.
  Choose your operators for intense 5v5 team matches on one of our numerous iconic maps.", 9, 6, "");
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
-values ("Assasin’s Creed Origins", "2017-10-27", 60, "" , "Sail down the Nile, uncover the mysteries of the pyramids or 
+values ("Assasin’s Creed Origins", "2017-10-27", 60, "acorigins.jpeg" , "Sail down the Nile, uncover the mysteries of the pyramids or 
 fight your way against dangerous ancient factions and wild beasts as you explore this gigantic and unpredictable 
 land.", 9, 6, "");
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
-values ("Assasin’s Creed Odyssey", "2018-10-5", 60, "" , "Write your own epic odyssey and become a legendary Spartan 
+values ("Assasin’s Creed Odyssey", "2018-10-5", 60, "acodyssey.jpg" , "Write your own epic odyssey and become a legendary Spartan 
 hero in Assassin’s Creed Odyssey, an inspiring adventure where you must forge your destiny and define your own path 
 in a world on the brink of tearing itself apart. Influence how history unfolds as you experience a rich and
  ever-changing world shaped by your decisions.", 10, 6, "");
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
-values ("Far Cry 5", "2018-3-27", 60, "" , "add description here", 9, 6, "");
+values ("Far Cry 5", "2018-3-27", 60, "farcry5.jpg" , "add description here", 9, 6, "");
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
-values ("Monopoly Plus", "2014-11-25", 15, "" , "With a colorful and 3D lively city animated by funny little sidekicks,
+values ("Monopoly Plus", "2014-11-25", 15, "monopoly.jpg" , "With a colorful and 3D lively city animated by funny little sidekicks,
  Monopoly+ brings the classic franchise to a new level.", 13, 6, "");
 
 /* Published by EA */
 
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
-values ("FIFA 19", "2018-9-28", 40, "" , "FIFA 19 delivers a champion’s caliber-experience on and off the pitch. Led by 
+values ("FIFA 19", "2018-9-28", 40, "fifa19.jpg" , "FIFA 19 delivers a champion’s caliber-experience on and off the pitch. Led by 
 the prestigious UEFA Champions League, FIFA 19 offers enhanced gameplay mechanics that allow you control the pitch in 
 every moment.", 14, 8, "");
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
-values ("Battlefield 1", "2016-10-10", 40, "" , "Battlefield 1 takes you back to The Great War, WW1, where new technology 
+values ("Battlefield 1", "2016-10-10", 40, "battlefield1.jpg" , "Battlefield 1 takes you back to The Great War, WW1, where new technology 
 and worldwide conflict changed the face of warfare forever. Take part in every battle, control every massive vehicle, 
 and execute every maneuver that turns an entire fight around. The whole world is at war – see what’s beyond the 
 trenches.", 15, 8, "");
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
-values ("Battlefield V", "2018-11-20", 40, "" , "The Battlefield series goes back to its roots in a never-before-seen 
+values ("Battlefield V", "2018-11-20", 40, "battlefieldv.jpg" , "The Battlefield series goes back to its roots in a never-before-seen 
 portrayal of World War 2. Take on physical, all-out multiplayer with your squad in modes like the vast Grand Operations 
 and the cooperative Combined Arms, or witness human drama set against global combat in the single player War Stories.
  As you fight in epic, unexpected locations across the globe, enjoy the richest and most immersive Battlefield yet.
@@ -222,10 +249,10 @@ and the cooperative Combined Arms, or witness human drama set against global com
 /* Published by Bethesda Softworks */
 	
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
-values ("DOOM Eternal", "2020-03-19", 60, "" ,  "Hell’s armies have invaded Earth. Become the Slayer in an epic 
+values ("DOOM Eternal", "2020-03-19", 60, "doom.jpg" ,  "Hell’s armies have invaded Earth. Become the Slayer in an epic 
 single-player campaign to conquer demons across dimensions and stop the final destruction of humanity.", 16, 10, "");
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
-values ("Fallout 76", "2018-11-14", 40, "" ,  "Work together with other players, or not, to survive. Experience the 
+values ("Fallout 76", "2018-11-14", 40, "fallout76.jpg" ,  "Work together with other players, or not, to survive. Experience the 
 largest and most dynamic world ever created in the Fallout universe with major free updates which grow and evolve
  the game with new and different ways to play. Play solo or join together as you explore, quest, build, and triumph 
  against the wasteland’s greatest threats.", 17, 10, "");
@@ -233,90 +260,121 @@ largest and most dynamic world ever created in the Fallout universe with major f
 /* Published by Sega */
 
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
-values ("Total War: Warhammer", "2016-05-24", 60, "" , "Addictive turn-based empire-building with colossal, real-time
+values ("Total War: Warhammer", "2016-05-24", 60, "warhammer.jpg" , "Addictive turn-based empire-building with colossal, real-time
  battles. All set in a world of legendary heroes, giant monsters, flying creatures and storms of magical power"
 , 18, 11, "");
 
 /* Published by Codemasters */
 
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
-values ("DiRT 4", "2016-06-06", 25, "" , "DiRT 4 is all about embracing fear. It’s about the thrill, exhilaration and 
+values ("DiRT 4", "2016-06-06", 25, "dirt4.jpg" , "DiRT 4 is all about embracing fear. It’s about the thrill, exhilaration and 
 adrenaline that is absolutely vital to off-road racing. It’s about loving the feeling of pushing flat out next to a 
 sheer cliff drop, going for the gap that’s too small and seeing how much air you can get. Be Fearless.", 19, 12, "");
 
 /* Published by Psyonix */
 
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
-values ("Rocket League", "2015-07-07", 10, "" , "Rocket League is a high-powered hybrid of arcade-style soccer and 
+values ("Rocket League", "2015-07-07", 10, "rocket.jpg" , "Rocket League is a high-powered hybrid of arcade-style soccer and 
 vehicular mayhem with easy-to-understand controls and fluid, physics-driven competition"
 , 20, 13, "");
 
 /* Xbox One (ja pc) */
 
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
-values ("Sea of Thieves", "2018-3-20", 40, "" , "The freedom of a pirate paradise unfolds before you! Find 
+values ("Sea of Thieves", "2018-3-20", 40, "seaofthieves.jpg" , "The freedom of a pirate paradise unfolds before you! Find 
 a crew or go solo, exploring the world at your own pace. Follow the threads of tall tales, make deals with 
 Trading Companies and take your pick of Voyages leading to Pirate Legend glory.", 21, 14, "");
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
-values ("Forza Motorsport 7", "2017-10-3", 40, "" , "Forza Motorsport 7 immerses players in the exhilarating
+values ("Forza Motorsport 7", "2017-10-3", 40, "forza7.jpg" , "Forza Motorsport 7 immerses players in the exhilarating
  thrill of competitive racing. From mastering the new motorsport-inspired campaign to collecting a wide range 
  of cars to experiencing the excitement of driving at the limit, this is Forza reimagined.", 22, 14, "");
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
-values ("Halo 5: Guardians", "2015-10-27", 20, "" , "Peace has been devastated as colony worlds are unexpectedly 
+values ("Halo 5: Guardians", "2015-10-27", 20, "halo5.jpg" , "Peace has been devastated as colony worlds are unexpectedly 
 attacked. What's more, when humanity's greatest hero goes missing, a new Spartan is assigned the task of hunting
  the Master Chief and solving a mystery that threatens the whole of the galaxy.", 23, 14, "");
 
 /* Ps4 */
 
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
-values ("God of War", "2018-4-20", 30, "" , "Kratos is a father again. As mentor and protector to Atreus,
+values ("God of War", "2018-4-20", 30, "gdofwar.jpg" , "Kratos is a father again. As mentor and protector to Atreus,
  a son determined to earn his respect, he is forced to deal with and control the rage that has long defined
   him while out in a very dangerous world with his son.", 24, 15, "");
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
-values ("Concrete Genie", "2019-10-8", 35, "" , "Concrete Genie follows the heartwarming journey of a bullied
+values ("Concrete Genie", "2019-10-8", 35, "concrete.jpg" , "Concrete Genie follows the heartwarming journey of a bullied
  teen named Ash, who escapes his troubles by bringing his colorful imagination to life in his sketchbook, while
   exploring his hometown of Denska – a once bright and bustling seaside town now polluted by Darkness.", 25, 15, "");
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
-values ("Yakuza 6: The Song of Life", "2018-4-17", 30, "" , "Yakuza 6 features an emotional story that examines 
+values ("Yakuza 6: The Song of Life", "2018-4-17", 30, "yakuza6.jpg" , "Yakuza 6 features an emotional story that examines 
 the strength of family relationships, and highlights an improved battle systems that seamlessly transitions between
  battles and between explorable areas.", 26, 11, "");
 
-/*
+
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
 values ("DARK SOULS III", "2016-04-11", 60, "" , "Dark Souls continues to push the boundaries with the latest,
  ambitious chapter in the critically-acclaimed and genre-defining series. Prepare yourself and Embrace The 
- Darkness!", , , "");
+ Darkness!", 27, 16, "");
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
 values ("Sekiro: Shadows Die Twice", "2019-03-21", 60, "" , "Carve your own clever path to vengeance in the 
 award winning adventure from developer FromSoftware, creators of Bloodborne and the Dark Souls series. 
-Take Revenge. Restore Your Honor. Kill Ingeniously.", , , "");
+Take Revenge. Restore Your Honor. Kill Ingeniously.", 27, 7, "");
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
-values ("Bloodborne", "2015-03-24", 30, "" , "add description here", , , "");
+values ("Bloodborne", "2015-03-24", 30, "" , "Face your fears as you search for answers in the ancient city
+ of Yharnam, now cursed with a strange endemic illness spreading through the streets like wildfire. Danger, 
+ death and madness lurk around every corner of this dark and horrific world, and you must discover its darkest 
+ secrets in order to survive.", 27, 15, "");
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
-values ("Persona 5", "2016-09-15", 40, "" , "add description here", , , "");
+values ("Persona 5", "2016-09-15", 40, "" , "Persona 5 takes place in modern-day Tokyo and follows Joker 
+after his transfer to Shujin Academy due to being put on probation for an assault of which he was falsely 
+accused. During a school year, he and other students awaken to special powers, becoming a group of secret 
+vigilantes known as the Phantom Thieves of Hearts. ", 28, 17, "");
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
-values ("Horizon Zero Dawn", "2017-02-28", 50, "" , "add description here", , , "");
+values ("Horizon Zero Dawn", "2017-02-28", 50, "" , "Horizon Zero Dawn is an action role-playing game 
+played from a third-person view. Players take control of Aloy, a hunter who ventures through a post-apocalyptic 
+land ruled by robotic creatures.", 29, 15, "");
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
-values ("Marvel's Spider-Man", "2018-09-07", 50, "" , "add description here", , , "");
+values ("Marvel's Spider-Man", "2018-09-07", 50, "" , "When Mister Negative threatens to release a deadly virus,
+ Spider-Man must confront him and protect the city while dealing with the personal problems of his civilian 
+ persona, Peter Parker.", 30, 15, "");
 
+/* Nintendo Switch */
+insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
+values ("Animal Crossing: New Horizons", "2020-03-20", 60, "" , "Animal Crossing: New Horizons is a nonlinear 
+life simulation game played in real-time. The player assumes the role of a customizable character who moves
+ to a deserted island after purchasing a deserted island package from Tom Nook.", 31, 18, "");
+insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
+values ("The Legend of Zelda: Breath of the Wild", "2017-03-03", 60, "" , "No kingdom. No memories. After a 
+100-year slumber, Link wakes up alone in a world he no longer remembers. Now the legendary hero must explore 
+a vast and dangerous land and regain his memories before Hyrule is lost forever. Armed only with what he can 
+scavenge, Link sets out to find answers and the resources needed to survive.", 31, 18, "");
+insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
+values ("Pokémon Sword ja Shield", "2019-10-15", 60, "" , "Sword and Shield are extremely familiar and
+ comfortable thanks to a pretty traditional setup: you pick one of three starter Pokemon and then head 
+ off across the Galar region to capture and train more, defeat eight unique and exciting gym challenges,
+  and become a Pokemon master", 32, 18, "");
+insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
+values ("Super Smash Bros. Ultimate", "2018-12-07", 60, "" , "Super Smash Bros. Ultimate looks to the 
+tactical mechanics of traditional fighting games, and then chucks them into a sandpit of all your favorite 
+toys – throwing together characters from Pokemon, Legend of Zelda, Super Mario, Metroid, Animal Crossing, 
+and countless other Nintendo or third-party IP", 33, 18, "");
+insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
+values ("Super Mario Odyssey", "2017-10-27", 60, "" , "Super Mario Odyssey is a platform game in which 
+players control Mario as he travels across many different worlds, known as 'Kingdoms', on the hat-shaped 
+ship Odyssey, to rescue Princess Peach from Bowser, who plans to forcibly marry her.", 32, 18, "");
+insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
+values ("Splatoon 2", "2017-07-21", 60, "" , "Like its predecessor, Splatoon 2 is a third-person shooter
+ in which players control characters, known as Inklings and Octolings, and use colored ink as ammunition. 
+ Ink is also used to cover the ground, or any paintable surface, in order to swim or refill their ink 
+ tanks.", 32, 18, "");
+insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
+values ("Fire Emblem: Three Houses", "2019-07-26", 60, "" , "Three Houses is set on the continent of Fódlan,
+ divided between three rival nations now at peace, connected through the Garreg Mach Monastery. Taking the
+  role of a former mercenary and new tutor at Garreg Mach, the player must choose a nation to support and
+   guide them through a series of battles.", 34, 18, "");
+insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
+values ("Octopath Traveler", "2018-07-13", 30, "" , "Eight travelers. Eight adventures. Eight roles to play. Embark
+ on an epic journey across the vast and wondrous world of Orsterra and discover the captivating stories
+  of each of the eight travelers.", 8, 5, "");
 
-insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
-values ("Animal Crossing: New Horizons", "", , "" , "add description here", , , "");
-insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
-values ("The Legend of Zelda: Breath of the Wild", "", , "" , "add description here", , , "",);
-insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
-values ("Pokémon Sword ja Shield", "", , "" , "add description here", , , "");
-insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
-values ("Super Smash Bros. Ultimate", "", , "" , "add description here", , , "");
-insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
-values ("Super Mario Odyssey", "", , "" , "add description here", , , "");
-insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
-values ("Splatoon 2", "", , "" , "add description here", , , "");
-insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
-values ("Fire Emblem: Three Houses", "", , "" , "add description here", , , "");
-insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
-values ("Octopath Traveler", "", , "" , "add description here", , , "");
-*/
 /*
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
 values ("", "", , "" , "add description here", , , "", );*/
@@ -399,31 +457,133 @@ insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (15, 4);
 /* Published by Activision */
 insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (16, 4);
 
-/*
-insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (, );
-insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (, );
-insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (, );
-insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (, );
-insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (, );
-insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (, );
-insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (, );
-insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (, );
-insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (, );
-insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (, );
-insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (, );
-insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (, );
-insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (, );
-insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (, );
-insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (, );
-insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (, );
-insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (, );
-insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (, );
-insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (, );
-insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (, );
-insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (, );
-insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (, );
-insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (, );
-insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (, ); */
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (17, 4);
+
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (18, 2);
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (18, 4);
+
+/* Published by Ubisoft */
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (19, 2);
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (19, 3);
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (19, 4);
+
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (20, 2);
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (20, 3);
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (20, 4);
+
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (21, 2);
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (21, 3);
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (21, 4);
+
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (22, 2);
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (22, 3);
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (22, 4);
+
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (23, 1);
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (23, 2);
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (23, 3);
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (23, 4);
+
+
+/* Published by EA */
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (24, 1);
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (24, 2);
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (24, 3);
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (24, 4);
+
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (25, 2); 
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (25, 3);
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (25, 4);
+
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (26, 2);
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (26, 3);
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (26, 4);
+
+
+/* Published by Bethesda Softworks */
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (27, 1);
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (27, 2);
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (27, 3);
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (27, 4);
+
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (28, 2); 
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (28, 3);
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (28, 4);
+
+
+/* Published by Sega */
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (29, 4);
+
+
+/* Published by Codemasters */
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (30, 2);
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (30, 3); 
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (30, 4);
+
+
+/* Published by Psyonix */
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (31, 1);
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (31, 2);
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (31, 3);
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (31, 4);
+
+
+/* Xbox One (ja pc) */
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (32, 2);
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (32, 4);
+
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (33, 2);
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (33, 4);
+
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (34, 2); 
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (34, 4);
+
+
+/* Ps4 */
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (35, 2);
+
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (36, 2);
+
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (37, 2);
+
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (38, 2); 
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (38, 3);
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (38, 4);
+
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (39, 2);
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (39, 3);
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (39, 4); 
+
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (40, 2);
+
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (41, 2);
+
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (42, 2);
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (42, 4);
+
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (43, 2);
+
+
+/* Nintendo Switch */
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (43, 1);
+
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (44, 1);
+
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (45, 1);
+
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (46, 1);
+
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (47, 1);
+
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (48, 1);
+
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (49, 1);
+
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (50, 1);
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (50, 4);
+
+/*insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (, );*/
+
 /******************************************************/
 
 create table tilaus (
@@ -433,7 +593,7 @@ create table tilaus (
     index (user_id),
     foreign key (user_id) references user(id)
     on delete restrict,
-    maara smallint
+    amount smallint
 );
 
 /******************************************************/
