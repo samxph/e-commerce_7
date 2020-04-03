@@ -1,5 +1,6 @@
 <div class="col mt-3 mb-5">
 
+<div class="col">
 <h1>Tuoteryhmät</h1>
 
 <table>
@@ -13,11 +14,14 @@
         </tr>
     <?php endforeach ?>
 </table>
+</div>
 
-<p>Lisää uusi tuoteryhmä</p>
+<div class="col row mt-3">
+<p class="mr-1">Lisää uusi tuoteryhmä:</p>
 
 <form action="tuoteryhma/lisaa">
     <input type="text" name="tuoteryhma" />
     <input type="submit" value="Lisää" />
 </form>
+</div>
 </div>
