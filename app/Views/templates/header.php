@@ -133,7 +133,6 @@
                             <a class="dropdown-item" href="#">Gaming displays</a>
                             <a class="dropdown-item" href="#">Gaming chairs and desks</a>
                             <a class="dropdown-item" href="#">Virtual Reality</a>
-                            <a class="dropdown-item" href="#">Virtuaalitodellisuus</a>
                             <a class="dropdown-item" href="#">Other accessories</a>
                         </div>
                     </li>
