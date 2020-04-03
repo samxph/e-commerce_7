@@ -329,71 +329,71 @@ the strength of family relationships, and highlights an improved battle systems 
 
 
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
-values ("DARK SOULS III", "2016-04-11", 60, "" , "Dark Souls continues to push the boundaries with the latest,
+values ("DARK SOULS III", "2016-04-11", 60, "dark3.jpg" , "Dark Souls continues to push the boundaries with the latest,
  ambitious chapter in the critically-acclaimed and genre-defining series. Prepare yourself and Embrace The 
  Darkness!", 27, 16, "Action, Adventure, Multiplayer, RPG, Single Player");
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
-values ("Sekiro: Shadows Die Twice", "2019-03-21", 60, "" , "Carve your own clever path to vengeance in the 
+values ("Sekiro: Shadows Die Twice", "2019-03-21", 60, "sekiro.jpg" , "Carve your own clever path to vengeance in the 
 award winning adventure from developer FromSoftware, creators of Bloodborne and the Dark Souls series. 
 Take Revenge. Restore Your Honor. Kill Ingeniously.", 27, 7, "Action, Adventure, Multiplayer, RPG, Single Player");
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
-values ("Bloodborne", "2015-03-24", 30, "" , "Face your fears as you search for answers in the ancient city
+values ("Bloodborne", "2015-03-24", 30, "bloodborne.jpg" , "Face your fears as you search for answers in the ancient city
  of Yharnam, now cursed with a strange endemic illness spreading through the streets like wildfire. Danger, 
  death and madness lurk around every corner of this dark and horrific world, and you must discover its darkest 
  secrets in order to survive.", 27, 15, "Action, Adventure, Horror, Multiplayer, RPG, Single Player");
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
-values ("Persona 5", "2016-09-15", 40, "" , "Persona 5 takes place in modern-day Tokyo and follows Joker 
+values ("Persona 5", "2016-09-15", 40, "persona5.jpg" , "Persona 5 takes place in modern-day Tokyo and follows Joker 
 after his transfer to Shujin Academy due to being put on probation for an assault of which he was falsely 
 accused. During a school year, he and other students awaken to special powers, becoming a group of secret 
 vigilantes known as the Phantom Thieves of Hearts. ", 28, 17, "Action, JRPG, RPG, Single Player, Strategy, Turn Based");
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
-values ("Horizon Zero Dawn", "2017-02-28", 50, "" , "Horizon Zero Dawn is an action role-playing game 
+values ("Horizon Zero Dawn", "2017-02-28", 50, "horizon.jpg" , "Horizon Zero Dawn is an action role-playing game 
 played from a third-person view. Players take control of Aloy, a hunter who ventures through a post-apocalyptic 
 land ruled by robotic creatures.", 29, 15, "Action, Adventure, Open World, RPG, Single Player");
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
-values ("Marvel's Spider-Man", "2018-09-07", 50, "" , "When Mister Negative threatens to release a deadly virus,
+values ("Marvel's Spider-Man", "2018-09-07", 50, "spider.jpg" , "When Mister Negative threatens to release a deadly virus,
  Spider-Man must confront him and protect the city while dealing with the personal problems of his civilian 
  persona, Peter Parker.", 30, 15, "Action, Adventure, Open World, Single Player");
 
 /* Nintendo Switch */
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
-values ("Animal Crossing: New Horizons", "2020-03-20", 60, "" , "Animal Crossing: New Horizons is a nonlinear 
+values ("Animal Crossing: New Horizons", "2020-03-20", 60, "animal.jpg" , "Animal Crossing: New Horizons is a nonlinear 
 life simulation game played in real-time. The player assumes the role of a customizable character who moves
  to a deserted island after purchasing a deserted island package from Tom Nook.", 31, 18, "Multiplayer, Single Player");
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
-values ("The Legend of Zelda: Breath of the Wild", "2017-03-03", 60, "" , "No kingdom. No memories. After a 
+values ("The Legend of Zelda: Breath of the Wild", "2017-03-03", 60, "tloz.jpg" , "No kingdom. No memories. After a 
 100-year slumber, Link wakes up alone in a world he no longer remembers. Now the legendary hero must explore 
 a vast and dangerous land and regain his memories before Hyrule is lost forever. Armed only with what he can 
 scavenge, Link sets out to find answers and the resources needed to survive.", 31, 18, "Action, Adventure, Open World, 
 RPG, Single Player");
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
-values ("Pokémon Sword ja Shield", "2019-10-15", 60, "" , "Sword and Shield are extremely familiar and
+values ("Pokémon Sword ja Shield", "2019-10-15", 60, "pkmss.jpg" , "Sword and Shield are extremely familiar and
  comfortable thanks to a pretty traditional setup: you pick one of three starter Pokemon and then head 
  off across the Galar region to capture and train more, defeat eight unique and exciting gym challenges,
   and become a Pokemon master", 32, 18, "Action, Adventure, Multiplayer, Open World, RPG, Single Player, Strategy, 
   Turn Based");
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
-values ("Super Smash Bros. Ultimate", "2018-12-07", 60, "" , "Super Smash Bros. Ultimate looks to the 
+values ("Super Smash Bros. Ultimate", "2018-12-07", 60, "smbulti.jpg" , "Super Smash Bros. Ultimate looks to the 
 tactical mechanics of traditional fighting games, and then chucks them into a sandpit of all your favorite 
 toys – throwing together characters from Pokemon, Legend of Zelda, Super Mario, Metroid, Animal Crossing, 
 and countless other Nintendo or third-party IP", 33, 18, "Action, Fighting, Multiplayer, Single Player");
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
-values ("Super Mario Odyssey", "2017-10-27", 60, "" , "Super Mario Odyssey is a platform game in which 
+values ("Super Mario Odyssey", "2017-10-27", 60, "smo.jpg" , "Super Mario Odyssey is a platform game in which 
 players control Mario as he travels across many different worlds, known as 'Kingdoms', on the hat-shaped 
 ship Odyssey, to rescue Princess Peach from Bowser, who plans to forcibly marry her.", 32, 18, "Action, Adventure, 
 Platform, Single Player");
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
-values ("Splatoon 2", "2017-07-21", 60, "" , "Like its predecessor, Splatoon 2 is a third-person shooter
+values ("Splatoon 2", "2017-07-21", 60, "splatoon2.jpg" , "Like its predecessor, Splatoon 2 is a third-person shooter
  in which players control characters, known as Inklings and Octolings, and use colored ink as ammunition. 
  Ink is also used to cover the ground, or any paintable surface, in order to swim or refill their ink 
  tanks.", 32, 18, "Action, Multiplayer, Single Player");
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
-values ("Fire Emblem: Three Houses", "2019-07-26", 60, "" , "Three Houses is set on the continent of Fódlan,
+values ("Fire Emblem: Three Houses", "2019-07-26", 60, "fire.jpg" , "Three Houses is set on the continent of Fódlan,
  divided between three rival nations now at peace, connected through the Garreg Mach Monastery. Taking the
   role of a former mercenary and new tutor at Garreg Mach, the player must choose a nation to support and
    guide them through a series of battles.", 34, 18, "Action, JRPG, RPG, Single Player, Strategy, Turn Based");
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
-values ("Octopath Traveler", "2018-07-13", 30, "" , "Eight travelers. Eight adventures. Eight roles to play. Embark
+values ("Octopath Traveler", "2018-07-13", 30, "octopath.jpg" , "Eight travelers. Eight adventures. Eight roles to play. Embark
  on an epic journey across the vast and wondrous world of Orsterra and discover the captivating stories
   of each of the eight travelers.", 8, 5, "Action, Adventure, JRPG, RPG, Single Player, Strategy, Turn Based");
 

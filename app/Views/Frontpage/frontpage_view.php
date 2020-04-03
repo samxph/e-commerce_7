@@ -44,7 +44,7 @@
           <a href="#"><?= $product['title']?></a>
         </h4>
         <h5>
-          <?= $product['price']?>
+          <?= $product['price']?> €
         </h5>
         <p class="card-text"><?= $product['description']?></p>
       </div>
