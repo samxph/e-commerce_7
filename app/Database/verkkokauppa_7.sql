@@ -649,3 +649,12 @@ List of genres in alphabetical order:
 - Virtual Reality (VR)
 - Visual Novel
 */
+
+/* List of devices and accessories in genres
+- Consoles
+- Gaming controllers
+- Gaming displays
+- Gaming chairs and desks
+- Virtual Reality
+- Other gaming accessories
+ */

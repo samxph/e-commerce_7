@@ -125,15 +125,16 @@
 
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Oheislaitteet
+                            Devices and accessories
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Konsolit</a>
-                            <a class="dropdown-item" href="#">Peliohjaimet</a>
-                            <a class="dropdown-item" href="#">Pelinäytöt</a>
-                            <a class="dropdown-item" href="#">Hiiret ja näppäimistöt</a>
+                            <a class="dropdown-item" href="#">Consoles</a>
+                            <a class="dropdown-item" href="#">Gaming controllers</a>
+                            <a class="dropdown-item" href="#">Gaming displays</a>
+                            <a class="dropdown-item" href="#">Gaming chairs and desks</a>
+                            <a class="dropdown-item" href="#">Virtual Reality</a>
                             <a class="dropdown-item" href="#">Virtuaalitodellisuus</a>
-                            <a class="dropdown-item" href="#">Muut pelitarvikkeet</a>
+                            <a class="dropdown-item" href="#">Other accessories</a>
                         </div>
                     </li>
                 </ul>
