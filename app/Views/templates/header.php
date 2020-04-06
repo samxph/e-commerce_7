@@ -131,7 +131,7 @@
                             <a class="dropdown-item" href="#">Consoles</a>
                             <a class="dropdown-item" href="#">Gaming controllers</a>
                             <a class="dropdown-item" href="#">Gaming displays</a>
-                            <a class="dropdown-item" href="#">Gaming chairs and desks</a>
+                            <a class="dropdown-item" href="#">Gaming chairs</a>
                             <a class="dropdown-item" href="#">Virtual Reality</a>
                             <a class="dropdown-item" href="#">Other accessories</a>
                         </div>
