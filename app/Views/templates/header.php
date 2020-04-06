@@ -25,23 +25,27 @@
     </div>
 
 
-<div class="container-fluid">
-    <div class="row">
+    <div class="container-fluid">
+        <div class="row">
 
-        <div class="col logo mt-2 ml-3 searchbox">
-            <a href="frontpage"> <img src=<?php echo base_url("images\headerlogo2.jpg") ?> alt="logo"> </a>
-            <input type="text" name="searchbar" class="search" placeholder="Search website..." size="40">
-            <button class="btn btn-warning mb-1 ml-1">Search</button>
+            <div class="logo mt-2 ml-3">
+                <a href="frontpage"> <img src=<?php echo base_url("images\headerlogo2.jpg") ?> alt="logo"> </a>
+            </div>
+
+            <div class="ml-4 mt-4">
+                <input type="text" name="searchbar" class="search" placeholder="Search website..." size="40">
+                <button class="btn btn-warning mb-1 ml-1"><i class="fas fa-search"></i></button>
+            </div>
         </div>
-    </div>
 
-    <div class="row col">
-        <nav class="navbar navbar-expand-md navbar-light">
-            <a class="navbar-brand" href="frontpage">Home</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <div class="row col">
+            <nav class="navbar navbar-expand-md navbar-light">
+                <a class="navbar-brand" href="frontpage">Home</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
+<<<<<<< HEAD
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item dropdown">
@@ -110,24 +114,106 @@
                             <a class="dropdown-item" href="#">Virtual Reality</a>
                         </div>
                     </li>
+=======
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                PS4 <i class="fab fa-playstation"></i>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Ajopelit</a>
+                                <a class="dropdown-item" href="#">Arcade</a>
+                                <a class="dropdown-item" href="#">First Person Shooter</a>
+                                <a class="dropdown-item" href="#">Kauhu</a>
+                                <a class="dropdown-item" href="#">Puzzle</a>
+                                <a class="dropdown-item" href="#">RPG</a>
+                                <a class="dropdown-item" href="#">Seikkailu</a>
+                                <a class="dropdown-item" href="#">Simulaattori</a>
+                                <a class="dropdown-item" href="#">Strategia</a>
+                                <a class="dropdown-item" href="#">Tasohyppely</a>
+                                <a class="dropdown-item" href="#">Toiminta</a>
+                                <a class="dropdown-item" href="#">Urheilu</a>
+                            </div>
+                        </li>
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Devices and accessories
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Consoles</a>
-                            <a class="dropdown-item" href="#">Gaming controllers</a>
-                            <a class="dropdown-item" href="#">Gaming displays</a>
-                            <a class="dropdown-item" href="#">Gaming chairs</a>
-                            <a class="dropdown-item" href="#">Virtual Reality</a>
-                            <a class="dropdown-item" href="#">Other accessories</a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </div>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                XBOX ONE <i class="fab fa-xbox"></i>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Ajopelit</a>
+                                <a class="dropdown-item" href="#">Arcade</a>
+                                <a class="dropdown-item" href="#">First Person Shooter</a>
+                                <a class="dropdown-item" href="#">Kauhu</a>
+                                <a class="dropdown-item" href="#">Puzzle</a>
+                                <a class="dropdown-item" href="#">RPG</a>
+                                <a class="dropdown-item" href="#">Seikkailu</a>
+                                <a class="dropdown-item" href="#">Simulaattori</a>
+                                <a class="dropdown-item" href="#">Strategia</a>
+                                <a class="dropdown-item" href="#">Tasohyppely</a>
+                                <a class="dropdown-item" href="#">Toiminta</a>
+                                <a class="dropdown-item" href="#">Urheilu</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Switch <i class="fas fa-dice-two"></i>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Ajopelit</a>
+                                <a class="dropdown-item" href="#">Arcade</a>
+                                <a class="dropdown-item" href="#">First Person Shooter</a>
+                                <a class="dropdown-item" href="#">RPG</a>
+                                <a class="dropdown-item" href="#">Seikkailu</a>
+                                <a class="dropdown-item" href="#">Simulaattori</a>
+                                <a class="dropdown-item" href="#">Strategia</a>
+                                <a class="dropdown-item" href="#">Tasohyppely</a>
+                                <a class="dropdown-item" href="#">Toiminta</a>
+                                <a class="dropdown-item" href="#">Urheilu</a>
+                                <a class="dropdown-item" href="#">Lapset</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                PC <i class="fas fa-mouse"></i>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Ajopelit</a>
+                                <a class="dropdown-item" href="#">First Person Shooter</a>
+                                <a class="dropdown-item" href="#">Kauhu</a>
+                                <a class="dropdown-item" href="#">Puzzle</a>
+                                <a class="dropdown-item" href="#">RPG</a>
+                                <a class="dropdown-item" href="#">Räiskintä</a>
+                                <a class="dropdown-item" href="#">Seikkailu</a>
+                                <a class="dropdown-item" href="#">Simulaattori</a>
+                                <a class="dropdown-item" href="#">Strategia</a>
+                                <a class="dropdown-item" href="#">Toiminta</a>
+                                <a class="dropdown-item" href="#">Urheilu</a>
+                                <a class="dropdown-item" href="#">Virtual Reality</a>
+                            </div>
+                        </li>
+>>>>>>> 85e73a7991d46c961a8f55bbcd704c100726c1de
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Devices and accessories
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Consoles</a>
+                                <a class="dropdown-item" href="#">Gaming controllers</a>
+                                <a class="dropdown-item" href="#">Gaming displays</a>
+                                <a class="dropdown-item" href="#">Gaming chairs</a>
+                                <a class="dropdown-item" href="#">Virtual Reality</a>
+                                <a class="dropdown-item" href="#">Other accessories</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
     </div>
 
     <div class="container-fluid">
