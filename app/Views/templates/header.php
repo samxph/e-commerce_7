@@ -29,7 +29,7 @@
         <div class="row">
 
             <div class="logo mt-2 ml-3">
-                <a href="frontpage"> <img src=<?php echo base_url("images\headerlogo2.jpg") ?> alt="logo"> </a>
+                <a href="frontpage"> <img src=<?php echo base_url("images\headerlogo3.jpg") ?> alt="logo"> </a>
             </div>
             <div class="ml-4 mt-4">
                 <input type="text" name="searchbar" class="search" placeholder="Search website..." size="40">
@@ -38,7 +38,7 @@
         </div>
 
         <div class="row col">
-            <nav class="navbar navbar-expand-md navbar-light">
+            <nav class="navbar navbar-expand-md navbar-dark">
                 <a class="navbar-brand" href="frontpage">Home</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
