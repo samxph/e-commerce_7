@@ -285,7 +285,8 @@ values ("Total War: Warhammer", "2016-05-24", 60, "warhammer.jpg" , "Addictive t
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
 values ("DiRT 4", "2016-06-06", 25, "dirt4.jpg" , "DiRT 4 is all about embracing fear. It’s about the thrill, exhilaration and 
 adrenaline that is absolutely vital to off-road racing. It’s about loving the feeling of pushing flat out next to a 
-sheer cliff drop, going for the gap that’s too small and seeing how much air you can get. Be Fearless.", 19, 12, "");
+sheer cliff drop, going for the gap that’s too small and seeing how much air you can get. Be Fearless.", 19, 12, "Action, 
+Multiplayer, Racing, Single Player, Sports");
 
 /* Published by Psyonix */
 
@@ -551,13 +552,13 @@ insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (31, 4);
 
 
 /* Xbox One (ja pc) */
-insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (32, 2);
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (32, 3);
 insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (32, 4);
 
-insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (33, 2);
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (33, 3);
 insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (33, 4);
 
-insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (34, 2); 
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (34, 3); 
 insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (34, 4);
 
 
