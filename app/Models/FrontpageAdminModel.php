@@ -11,8 +11,15 @@ class FrontpageAdminModel extends Model
     public function getProducts() {
         $this->table('tuote');
         $this->select('title, price, description,picture');
+        $this->where("year(releaseDate) > 2018");
         $query = $this->get();
 
         return $query->getResultArray();
+    }
+    public function getNew() {
+        $this->table('tuote');
+        $this->select('title, price, description, picture');
+        $this->where("releaseDate = '2020'");
+        $query = $this->get();
     }
 }
