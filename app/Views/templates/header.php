@@ -45,7 +45,6 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-<<<<<<< HEAD
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item dropdown">
@@ -114,88 +113,6 @@
                             <a class="dropdown-item" href="#">Virtual Reality</a>
                         </div>
                     </li>
-=======
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                PS4 <i class="fab fa-playstation"></i>
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Ajopelit</a>
-                                <a class="dropdown-item" href="#">Arcade</a>
-                                <a class="dropdown-item" href="#">First Person Shooter</a>
-                                <a class="dropdown-item" href="#">Kauhu</a>
-                                <a class="dropdown-item" href="#">Puzzle</a>
-                                <a class="dropdown-item" href="#">RPG</a>
-                                <a class="dropdown-item" href="#">Seikkailu</a>
-                                <a class="dropdown-item" href="#">Simulaattori</a>
-                                <a class="dropdown-item" href="#">Strategia</a>
-                                <a class="dropdown-item" href="#">Tasohyppely</a>
-                                <a class="dropdown-item" href="#">Toiminta</a>
-                                <a class="dropdown-item" href="#">Urheilu</a>
-                            </div>
-                        </li>
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                XBOX ONE <i class="fab fa-xbox"></i>
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Ajopelit</a>
-                                <a class="dropdown-item" href="#">Arcade</a>
-                                <a class="dropdown-item" href="#">First Person Shooter</a>
-                                <a class="dropdown-item" href="#">Kauhu</a>
-                                <a class="dropdown-item" href="#">Puzzle</a>
-                                <a class="dropdown-item" href="#">RPG</a>
-                                <a class="dropdown-item" href="#">Seikkailu</a>
-                                <a class="dropdown-item" href="#">Simulaattori</a>
-                                <a class="dropdown-item" href="#">Strategia</a>
-                                <a class="dropdown-item" href="#">Tasohyppely</a>
-                                <a class="dropdown-item" href="#">Toiminta</a>
-                                <a class="dropdown-item" href="#">Urheilu</a>
-                            </div>
-                        </li>
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Switch <i class="fas fa-dice-two"></i>
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Ajopelit</a>
-                                <a class="dropdown-item" href="#">Arcade</a>
-                                <a class="dropdown-item" href="#">First Person Shooter</a>
-                                <a class="dropdown-item" href="#">RPG</a>
-                                <a class="dropdown-item" href="#">Seikkailu</a>
-                                <a class="dropdown-item" href="#">Simulaattori</a>
-                                <a class="dropdown-item" href="#">Strategia</a>
-                                <a class="dropdown-item" href="#">Tasohyppely</a>
-                                <a class="dropdown-item" href="#">Toiminta</a>
-                                <a class="dropdown-item" href="#">Urheilu</a>
-                                <a class="dropdown-item" href="#">Lapset</a>
-                            </div>
-                        </li>
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                PC <i class="fas fa-mouse"></i>
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Ajopelit</a>
-                                <a class="dropdown-item" href="#">First Person Shooter</a>
-                                <a class="dropdown-item" href="#">Kauhu</a>
-                                <a class="dropdown-item" href="#">Puzzle</a>
-                                <a class="dropdown-item" href="#">RPG</a>
-                                <a class="dropdown-item" href="#">Räiskintä</a>
-                                <a class="dropdown-item" href="#">Seikkailu</a>
-                                <a class="dropdown-item" href="#">Simulaattori</a>
-                                <a class="dropdown-item" href="#">Strategia</a>
-                                <a class="dropdown-item" href="#">Toiminta</a>
-                                <a class="dropdown-item" href="#">Urheilu</a>
-                                <a class="dropdown-item" href="#">Virtual Reality</a>
-                            </div>
-                        </li>
->>>>>>> 85e73a7991d46c961a8f55bbcd704c100726c1de
 
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
