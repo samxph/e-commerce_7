@@ -95,7 +95,7 @@ insert into tuoteryhma (name) values ("Switch");
 insert into tuoteryhma (name) values ("PS4");
 insert into tuoteryhma (name) values ("Xbox One");
 insert into tuoteryhma (name) values ("PC");
-insert into tuoteryhma (name) values ("Oheistarvikkeet");
+insert into tuoteryhma (name) values ("Devices");
 
 
 /******************************************************/
@@ -605,6 +605,25 @@ insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (50, 1);
 insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (50, 4);
 
 /*insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (, );*/
+
+/******************************************************/
+
+create table devices (
+  id int primary key auto_increment,
+  name varchar(255),
+  price decimal(5,2),
+  picture varchar(50),
+  description text,
+  tuoteryhma_id int not null,
+  index (tuoteryhma_id),
+  foreign key (tuoteryhma_id) references tuoteryhma(id)
+  on delete restrict
+);
+
+/*
+  insert into devices (name, price, picture, description) 
+  values ("" , ,"" ,"" , 5) 
+*/
 
 /******************************************************/
 
