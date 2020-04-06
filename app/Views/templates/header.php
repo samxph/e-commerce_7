@@ -15,8 +15,8 @@
 <body>
     <div class="row topheader">
         <ul>
-            <li><a href="#">Ostoskori <i class="fas fa-shopping-cart"></i> |</a></li>
-            <li><a href="#">Kirjaudu sisään <i class="fas fa-user"></i></a></li>
+            <li><a href="#">Shopping cart <i class="fas fa-shopping-cart"></i> |</a></li>
+            <li><a href="#">Log in <i class="fas fa-user"></i></a></li>
         </ul>
     </div>
 
@@ -30,14 +30,14 @@
 
         <div class="col logo mt-2 ml-3 searchbox">
             <a href="frontpage"> <img src=<?php echo base_url("images\headerlogo2.jpg") ?> alt="logo"> </a>
-            <input type="text" name="searchbar" class="search" placeholder="Hae sivustolta..." size="40">
-            <button class="btn btn-warning mb-1 ml-1">Hae</button>
+            <input type="text" name="searchbar" class="search" placeholder="Search website..." size="40">
+            <button class="btn btn-warning mb-1 ml-1">Search</button>
         </div>
     </div>
 
     <div class="row col">
         <nav class="navbar navbar-expand-md navbar-light">
-            <a class="navbar-brand" href="frontpage">Etusivu</a>
+            <a class="navbar-brand" href="frontpage">Home</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>

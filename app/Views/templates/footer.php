@@ -7,19 +7,19 @@
 <div class="row">
 <footer>
     <div class="leftfooter pl-5">
-        <h6 class="text-uppercase">quarantine games verkkokauppa</h5>
-            <p>osoite</p>
+        <h6 class="text-uppercase">quarantine games webstore</h5>
+            <p>address</p>
             <p>90100 Oulu</p>
-            <p>puhelin</p>
+            <p>phone</p>
             <p>quarantinegames@email.com</p>
     </div>
 
     <div class="rightfooter pr-5">
         <br>
-        <p><a class="text-white" href="#">Ota yhteyttä</a></p>
-        <p><a class="text-white" href="#">Usein kysyttyä</a></p>
-        <p><a class="text-white" href="#">Tietoa meistä</a></p>
-        <p><a class="text-white" href="#">Takaisin ylös</a></p>
+        <p><a class="text-white" href="#">Contact us</a></p>
+        <p><a class="text-white" href="#">About us</a></p>
+        <p><a class="text-white" href="#">FAQ</a></p>
+        
     </div>
 </footer>
 </div>

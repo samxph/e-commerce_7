@@ -48,7 +48,7 @@
         </h5>
         <p class="card-text"><?= $product['description']?></p>
       </div>
-      <button>Lisää ostoskoriin</button>
+      <button>Add to cart</button>
     </div>
   </div>
 
