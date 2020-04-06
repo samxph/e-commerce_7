@@ -31,7 +31,6 @@
             <div class="logo mt-2 ml-3">
                 <a href="frontpage"> <img src=<?php echo base_url("images\headerlogo2.jpg") ?> alt="logo"> </a>
             </div>
-
             <div class="ml-4 mt-4">
                 <input type="text" name="searchbar" class="search" placeholder="Search website..." size="40">
                 <button class="btn btn-warning mb-1 ml-1"><i class="fas fa-search"></i></button>
