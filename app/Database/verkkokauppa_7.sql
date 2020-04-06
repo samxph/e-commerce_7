@@ -654,7 +654,7 @@ List of genres in alphabetical order:
 - Consoles
 - Gaming controllers
 - Gaming displays
-- Gaming chairs and desks
+- Gaming chairs
 - Virtual Reality
 - Other gaming accessories
  */
