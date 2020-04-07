@@ -12,7 +12,7 @@ class ShoppingcartAdminModel extends Model
 
     public function getProducts($ids)
     {
-        $result = [];
+        $result = array();
 
         foreach ($ids as $id) {
             $this->table('tuote');
@@ -30,15 +30,15 @@ class ShoppingcartAdminModel extends Model
         return $result;
     }
 
-    public function addToArray($product, &$array)
+    public function productToArray($product, &$array)
     {
         for ($i = 0; $i < count($array); $i++) {
             if ($array[$i]['id'] === $product['id']) {
-                $array[$i]['maara'] = $array[$i]['maara'] + 1;
+                $array[$i]['amount'] = $array[$i]['amount'] + 1;
                 return;
             }
         }
-        $product['maara'] = 1;
+        $product['amount'] = 1;
         array_push($array, $product);
     }
 

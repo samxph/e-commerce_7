@@ -12,6 +12,11 @@ class Frontpage extends BaseController
 
 public function index() {
 
+    //session_start();
+
+    //if (!isset($_SESSION['ostoskori']))
+    //    $_SESSION['ostoskori'] = []; 
+
     $model = new FrontpageAdminModel();
     $data = [
         'title' => 'Quarantine games',

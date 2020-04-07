@@ -11,7 +11,7 @@ class Shoppingcart extends BaseController
         $session->start();
 
         if (!isset($_SESSION['cart'])) {
-            $_SESSION['cart'] = [];
+            $_SESSION['cart'] = array();
         }
 
         $this->ShoppingcartAdminModel = new ShoppingcartAdminModel();
@@ -24,30 +24,30 @@ class Shoppingcart extends BaseController
         $model = new ShoppingcartAdminModel();
 
 		if (count($_SESSION['cart']) > 0) {
-            $products = $this->ShoppingcartAminModel->getProducts($_SESSION['cart']);
+            $products = $this->ShoppingcartAdminModel->getProducts($_SESSION['cart']);
         } else {
-            $products = [];
+            $products = array();
         }
 
-        $data['prodcuts'] = $products;
-        $data = ['title' => 'Shopping cart'];
+        $data2['products'] = $products;
+        $data1 = ['title' => 'Shopping cart'];
 
 
-        echo view('templates/header', $data);
-        echo view('shoppingcart_view', $data);
+        echo view('templates/header', $data1);
+        echo view('shoppingcart_view', $data2);
         echo view('templates/footer');
     }
     
-    public function add($id) {
-        array_push($_SESSION['cart'], $id);
+    public function add($product_id) {
+        array_push($_SESSION['cart'], $product_id);
         
         return redirect('/');
     }
 
-    public function remove() {
+    public function empty() {
         $_SESSION['cart'] = null;
         
-        return redirect('/');
+        return redirect('shoppingcart');
     }
 
 }
