@@ -29,7 +29,7 @@
         <div class="row">
 
             <div class="logo mt-2 ml-3">
-                <a href="frontpage"> <img src=<?php echo base_url("images\headerlogo3.jpg") ?> alt="logo"> </a>
+                <a href="frontpage"> <img src=<?php echo base_url("images\QG_Logo.png") ?> alt="logo"> </a>
             </div>
             <div class="ml-4 mt-4">
                 <input type="text" name="searchbar" class="search" placeholder="Search website..." size="40">
