@@ -693,6 +693,14 @@ create table devices (
   insert into devices (name, price, picture, description, tuoteryhma_id) 
   values ("Razer Base Station Chroma, Chroma Enabled Headset Stand with USB Hub" , 79,"razer_headphonestand.jpg" ,"COMPACT. CONNECT. READY FOR BATTLE. When it comes to the ideal setup, organization is the name of the game. The Razer Base Station Chroma is a must-have for anyone looking to keep their setup minimal while packing functionality into a small space. GET ORGANIZED When you've got a killer gaming setup, the last thing you need is your gear in a mess. The Razer Base Station Chroma provides a perfectly balanced headphone stand to store and display your headphones when not in use. Easy on the eyes and ready for use whenever you need it." , 5);
 
+  insert into devices (name, price, picture, description, tuoteryhma_id) 
+  values ("Piranha: Rush Medium Mousepad" , 9,"mousepad.jpg" ,"High quality enhanced micro fiber surface for superior glide and pixel precise tracking." , 5);
+
+  insert into devices (name, price, picture, description, tuoteryhma_id) 
+  values ("HyperX™: Pulsefire Core™ Mouse" , 39,"mouse.jpg" ,"The HyperX Pulsefire Core™ delivers the essentials for gamers looking for a solid, comfortable, wired RGB gaming mouse. The Pixart 3327 optical sensor gives players precise, smooth tracking with no hardware acceleration, and has native DPI settings of up to 6200 DPI. The ergonomically designed Pulsefire Core has textured side grips for a comfortable, non-slip grip and its symmetrical shape is suitable for both palm and claw grips." , 5);
+
+  insert into devices (name, price, picture, description, tuoteryhma_id) 
+  values ("HyperX™: Alloy Core RGB™ Keyboard" , 59,"keyboard.jpg" ,"Featuring HyperX’s signature radiant light bar and smooth, dynamic RGB lighting effects, the HyperX Alloy Core RGB™ is ideal for gamers looking to enhance their keyboard’s style and performance without breaking the bank. With six different lighting effects and three brightness levels, it balances both brilliance and budget. Crafted with a durable, reinforced plastic frame, the Alloy Core RGB was constructed for stability and reliability for gamers who want a keyboard that will last. The soft-touch keys have a tactile feel, yet are tuned to be quiet, and they also feature gaming-grade anti-ghosting functionality and key rollover." , 5);
 /*
   insert into devices (name, price, picture, description, tuoteryhma_id) 
   values ("" , ,"" ,"" , 5);

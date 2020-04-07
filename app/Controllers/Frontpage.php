@@ -22,7 +22,12 @@ class Frontpage extends BaseController
 
 public function index($platform_id=null) {
 
-    // $model = new FrontpageAdminModel();
+    //session_start();
+
+    //if (!isset($_SESSION['ostoskori']))
+    //    $_SESSION['ostoskori'] = []; 
+
+    $model = new FrontpageAdminModel();
     $data = [
         'title' => 'Quarantine games',
     ];
@@ -30,7 +35,7 @@ public function index($platform_id=null) {
     $data['allPlatforms'] = $this->HeaderPlatformModel->getPlatforms();
     // get frontpage view if null
     if ($platform_id === null) {
-        //$data['products'] = $this->FrontpageAdminModel->getProducts();
+        $data['products'] = $this->FrontpageAdminModel->getProducts();
     }
 
     $data['platform_id'] = $platform_id;
@@ -43,4 +48,5 @@ public function index($platform_id=null) {
     echo view('Frontpage/frontpage_view',$data);
     echo view('templates/footer');
 }
+
 }

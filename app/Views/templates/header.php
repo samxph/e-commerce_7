@@ -15,8 +15,8 @@
 <body>
     <div class="row topheader">
         <ul>
-            <li><a href="#">Shopping cart <i class="fas fa-shopping-cart"></i> |</a></li>
-            <li><a href="#">Log in <i class="fas fa-user"></i></a></li>
+            <li><?= anchor('shoppingcart/', 'Shopping cart <i class="fas fa-shopping-cart"></i>') ?></li>
+            <li><?= anchor('login/', 'Sign in <i class="fas fa-user"></i>') ?></li>
         </ul>
     </div>
 
@@ -29,7 +29,7 @@
         <div class="row">
 
             <div class="logo mt-2 ml-3">
-                <a href="frontpage"> <img src=<?php echo base_url("images\headerlogo3.jpg") ?> alt="logo"> </a>
+                <a href="/"> <img src=<?php echo base_url("images\QG_Logo.png") ?> alt="logo"> </a>
             </div>
             <div class="ml-4 mt-4">
                 <input type="text" name="searchbar" class="search" placeholder="Search website..." size="40">
@@ -39,10 +39,11 @@
 
         <div class="row col">
             <nav class="navbar navbar-expand-md navbar-dark">
-                <a class="navbar-brand" href="frontpage">Home</a>
+                <a class="navbar-brand" href="/">Home</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
