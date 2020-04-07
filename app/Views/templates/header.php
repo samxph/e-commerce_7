@@ -16,7 +16,7 @@
     <div class="row topheader">
         <ul>
             <li><a href="shoppingcart">Shopping cart <i class="fas fa-shopping-cart"></i> |</a></li>
-            <li><a href="#">Log in <i class="fas fa-user"></i></a></li>
+            <li><?= anchor('login/', 'Sign in <i class="fas fa-user"></i>') ?></li>
         </ul>
     </div>
 
