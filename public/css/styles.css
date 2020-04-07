@@ -60,3 +60,7 @@ color: whitesmoke;
     display: table-cell;
     text-align: right;
 }
+
+.cart {
+    border-radius: 5px;
+}
