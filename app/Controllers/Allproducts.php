@@ -14,7 +14,7 @@ public function index() {
 
     $model = new AllproductsAdminModel();
     $data = [
-        'title' => 'Quarantine games',
+        'title' => 'All Games',
     ];
     $data['products'] = $model->getProducts();
 
