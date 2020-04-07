@@ -52,7 +52,6 @@
           </h5>
           <p class="card-text"><?= $product['description'] ?></p>
         </div class="bg-dark">
-        <div>
         <form method="post" action="<?= site_url('ostoskori/add/' . $product['id']); ?>">
           <button class="bg-dark text-light">Add to cart</button>
         </form>
