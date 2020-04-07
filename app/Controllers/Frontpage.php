@@ -22,4 +22,5 @@ public function index() {
     echo view('Frontpage/frontpage_view',$data);
     echo view('templates/footer');
 }
+
 }
