@@ -38,25 +38,6 @@
 </div>
 </div>
 <div class="row">
-<<<<<<< HEAD
-<?php foreach($products as $product): ?>
-  <div class="col-lg-3 col-md-6 mb-4 opacity-100g">
-    <div class="card h-100 bg-warning">
-      <a href="#"><img class=" img-responsive card-img-top kuvat" src="<?php echo base_url('images/' . $product['picture']); ?>" alt=""></a>
-      <div class="card-body">
-        <h4 class="card-title">
-          <a href="#" class="text-dark"><?= $product['title']?></a>
-        </h4>
-        <h5>
-          <?= $product['price']?> €
-        </h5>
-        <p class="card-text"><?= $product['description']?></p>
-      </div class="bg-dark">
-      <button class="bg-dark text-light">Add to cart</button>
-    </div>
-  </div>
-=======
->>>>>>> d5d7741035fb6df64d6ea20b699e829471e85a6e
 
   <?php foreach ($products as $product) : ?>
     <div class="col-lg-3 col-md-6 mb-4 opacity-100g">
@@ -71,6 +52,7 @@
           </h5>
           <p class="card-text"><?= $product['description'] ?></p>
         </div class="bg-dark">
+        <div>
         <form method="post" action="<?= site_url('ostoskori/add/' . $product['id']); ?>">
           <button class="bg-dark text-light">Add to cart</button>
         </form>
@@ -84,3 +66,4 @@
 
 </div>
 <!-- /.col-lg-9 -->
+  </div>
