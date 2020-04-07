@@ -35,6 +35,7 @@ $routes->get('/', 'Frontpage::index');
 $routes->get('tuoteryhma', 'Tuoteryhma::index');
 $routes->get('frontpage', 'Frontpage::index');
 $routes->get('shoppingcart', 'Shoppingcart::index');
+$routes->get('allproducts', 'Allproducts::index');
 
 /**
  * --------------------------------------------------------------------

@@ -16,10 +16,11 @@ class FrontpageAdminModel extends Model
 
         return $query->getResultArray();
     }
-    public function getNew() {
+    public function getAll() {
         $this->table('tuote');
         $this->select('id, title, price, description, picture');
-        $this->where("releaseDate = '2020'");
         $query = $this->get();
+
+        return $query->getResultArray();
     }
 }
