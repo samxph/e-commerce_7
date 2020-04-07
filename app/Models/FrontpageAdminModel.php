@@ -6,20 +6,21 @@ class FrontpageAdminModel extends Model
 {
     protected $table = 'tuote';
 
-    protected $allowedFields = ['title', 'price', 'description', 'picture'];
+    protected $allowedFields = ['id', 'title', 'price', 'description', 'picture'];
     
     public function getProducts() {
         $this->table('tuote');
-        $this->select('title, price, description,picture');
+        $this->select('id, title, price, description, picture');
         $this->where("year(releaseDate) > 2018");
         $query = $this->get();
 
         return $query->getResultArray();
     }
-    public function getNew() {
+    public function getAll() {
         $this->table('tuote');
-        $this->select('title, price, description, picture');
-        $this->where("releaseDate = '2020'");
+        $this->select('id, title, price, description, picture');
         $query = $this->get();
+
+        return $query->getResultArray();
     }
 }

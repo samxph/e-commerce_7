@@ -15,7 +15,7 @@
 <body>
     <div class="row topheader">
         <ul>
-            <li><a href="#">Shopping cart <i class="fas fa-shopping-cart"></i> |</a></li>
+            <li><a href="shoppingcart">Shopping cart <i class="fas fa-shopping-cart"></i> |</a></li>
             <li><a href="#">Log in <i class="fas fa-user"></i></a></li>
         </ul>
     </div>
@@ -40,6 +40,10 @@
         <div class="row col">
             <nav class="navbar navbar-expand-md navbar-dark">
                 <a class="navbar-brand" href="frontpage">Home</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="allproducts">All Games</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
