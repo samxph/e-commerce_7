@@ -34,11 +34,11 @@ class ShoppingcartAdminModel extends Model
     {
         for ($i = 0; $i < count($array); $i++) {
             if ($array[$i]['id'] === $product['id']) {
-                $array[$i]['amount'] = $array[$i]['amount'] + 1;
+                $array[$i]['qty'] = $array[$i]['qty'] + 1;
                 return;
             }
         }
-        $product['amount'] = 1;
+        $product['qty'] = 1;
         array_push($array, $product);
     }
 

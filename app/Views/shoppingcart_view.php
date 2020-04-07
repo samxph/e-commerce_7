@@ -15,7 +15,7 @@
                     Price
                 </th>
                 <th>
-                    Amount
+                    Qty.
                 </th>
             </tr>
 
@@ -31,7 +31,11 @@
                     </td>
 
                     <td>
-                        <?= $product['amount'] ?>
+                        <?= $product['qty'] ?>
+                    </td>
+                    
+                    <td>
+                    <?= anchor('shoppingcart/delete', 'Remove from cart'); ?>
                     </td>
                 </tr>
 
