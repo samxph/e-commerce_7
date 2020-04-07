@@ -46,12 +46,15 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
+                <?php foreach ($allPlatforms as $platform): ?>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            PS4 <i class="fab fa-playstation"></i>
+                    
+                        <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <?= $platform['name']; ?> <i class=" <?=$platform['logo'];?>"></i>
                         </a>
+                        
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">All Games</a>
+                            <a class="dropdown-item" href="<?= site_url('Frontpage/' . $platform['id']);  ?>">All Games</a>
                             <a class="dropdown-item" href="#">Action</a>
                             <a class="dropdown-item" href="#">Adventure</a>
                             <a class="dropdown-item" href="#">First Person Shooter</a>
@@ -62,8 +65,15 @@
                             <a class="dropdown-item" href="#">Strategy</a>
                         </div>
                     </li>
+                <?php endforeach; ?>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
 
-                    <li class="nav-item dropdown">
+<div class="container-fluid">
+                    <!--<li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             XBOX ONE <i class="fab fa-xbox"></i>
                         </a>
@@ -125,11 +135,5 @@
                                 <a class="dropdown-item" href="#">Virtual Reality</a>
                                 <a class="dropdown-item" href="#">Other accessories</a>
                             </div>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-    </div>
-
-    <div class="container-fluid">
+                        </li>-->
+                 

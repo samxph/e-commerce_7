@@ -5,7 +5,6 @@ use CodeIgniter\Model;
 class FrontpageAdminModel extends Model
 {
     protected $table = 'tuote';
-
     protected $allowedFields = ['title', 'price', 'description', 'picture'];
     
     public function getProducts() {
@@ -23,3 +22,4 @@ class FrontpageAdminModel extends Model
         $query = $this->get();
     }
 }
+

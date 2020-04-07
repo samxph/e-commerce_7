@@ -31,6 +31,7 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Frontpage::index');
+$routes->get('Frontpage/(:segment)', 'Frontpage::index/$1');
 $routes->get('tuoteryhma', 'Tuoteryhma::index');
 $routes->get('frontpage', 'Frontpage::index');
 
