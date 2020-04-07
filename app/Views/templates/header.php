@@ -43,10 +43,7 @@
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="navbar-brand" href="allproducts">All Games</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
@@ -55,7 +52,7 @@
                             PS4 <i class="fab fa-playstation"></i>
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">All Games</a>
+                            <a class="dropdown-item" href="allproducts">All Games</a>
                             <a class="dropdown-item" href="#">Action</a>
                             <a class="dropdown-item" href="#">Adventure</a>
                             <a class="dropdown-item" href="#">First Person Shooter</a>
