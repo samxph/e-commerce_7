@@ -8,10 +8,12 @@
 <footer>
     <div class="leftfooter pl-5">
         <h6 class="text-uppercase">quarantine games webstore</h5>
-            <p>address</p>
-            <p>90100 Oulu</p>
-            <p>phone</p>
-            <p>quarantinegames@email.com</p>
+            <address class="address">
+            address <br>
+            90100 Oulu<br>
+            phone<br>
+            quarantinegames@email.com<br>
+            </address>
     </div>
 
     <div class="rightfooter pr-5">
