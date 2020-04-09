@@ -25,8 +25,9 @@
         <label class="text-light">Password again</label>
         <input class="form-control" type="password" name="confirmpassword" placeholder="Confirm your password" maxlength="30">
     <hr>
-    </div>
     <button class="btn btn-primary">Register</button>
+    </div>
+    
     <div class="container signin">
         <br>
     <p class="text-light">Already have an account? <?= anchor ('login/', 'Sign in') ?>.</p>
