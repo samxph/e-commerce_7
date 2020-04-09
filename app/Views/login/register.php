@@ -28,6 +28,7 @@
     </div>
     <button class="btn btn-primary">Register</button>
     <div class="container signin">
-    <p>Already have an account? <?= anchor ('login/', 'Sign in') ?>.</p>
+        <br>
+    <p class="text-light">Already have an account? <?= anchor ('login/', 'Sign in') ?>.</p>
   </div>
 </form>
