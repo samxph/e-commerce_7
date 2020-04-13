@@ -33,6 +33,7 @@ $routes->setAutoRoute(true);
 
 $routes->get('/', 'Frontpage::index');
 $routes->get('Frontpage/(:segment)', 'Frontpage::index/$1');
+$routes->get('Frontpage/(:segment)/(:segment)', 'Frontpage::index/$1/$1');
 $routes->get('frontpage', 'Frontpage::index');
 $routes->get('tuoteryhma', 'Tuoteryhma::index');
 $routes->get('shoppingcart', 'Shoppingcart::index');
