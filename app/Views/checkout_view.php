@@ -14,7 +14,7 @@
         			<label class="text-light">Postcode</label>
         			<input class="form-control" name="userpostcode" placeholder="Enter Postcode" maxlength="30">
         			<label class="text-light">City</label>
-        			<input class="form-control" name="userpostoffice" placeholder="Enter city" maxlength="30">
+        			<input class="form-control" name="userpostoffice" placeholder="Enter City" maxlength="30">
         			<label class="text-light">Phone number</label>
         			<input class="form-control" name="userphone" placeholder="Enter Phone number" maxlength="30">
 			</div>
