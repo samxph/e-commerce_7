@@ -2,10 +2,7 @@
 
 namespace App\Controllers;
 
-use CodeIgniter\Controller;
-
 use App\Models\ShoppingcartAdminModel;
-use App\Models\HeaderPlatformModel;
 
 class Shoppingcart extends BaseController
 {
@@ -20,12 +17,11 @@ class Shoppingcart extends BaseController
         }
 
         $this->ShoppingcartAdminModel = new ShoppingcartAdminModel();
-        $this->HeaderPlatformModel = new HeaderPlatformModel();
     }
 
     public function index()
     {
-        
+
         $model = new ShoppingcartAdminModel();
 
         if (count($_SESSION['cart']) > 0) {
@@ -35,9 +31,8 @@ class Shoppingcart extends BaseController
         }
 
         $data2['products'] = $products;
-
         $data1 = ['title' => 'Shopping cart'];
-        $data1['allPlatforms'] = $this->HeaderPlatformModel->getPlatforms();
+
 
         echo view('templates/header', $data1);
         echo view('shoppingcart_view', $data2);
