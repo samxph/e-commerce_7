@@ -30,8 +30,8 @@ Traceability: You will have easy access to all of your previous orders any time 
 </p>
 
 <h5 class="font-weight-bold">3.    Q: What information should I input when ordering?</h5>
-A: our online ordering system will ask for all the important information you should submit.
-
+<p>A: our online ordering system will ask for all the important information you should submit.
+</p>
 <h5 class="font-weight-bold">4.    Q: What payment methods can I use?</h5>
 <p>A: You can use all the major credit cards, PayPal and bitcoin.
 
