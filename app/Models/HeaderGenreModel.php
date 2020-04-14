@@ -2,7 +2,7 @@
 
 use CodeIgniter\Model;
 
-class AllGenresModel extends Model {
+class HeaderGenreModel extends Model {
     protected $table = 'genreList';
     protected $allowedFields = ['id', 'name'];
 
