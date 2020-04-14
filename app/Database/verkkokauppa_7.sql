@@ -721,6 +721,13 @@ insert into genreList (name) values ("Open World");
 insert into genreList (name) values ("RPG");
 insert into genreList (name) values ("Sports");
 insert into genreList (name) values ("Strategy");
+insert into genreList (name) values ("Consoles");
+insert into genreList (name) values ("Gaming Controllers");
+insert into genreList (name) values ("Gaming Displays");
+insert into genreList (name) values ("Gaming Chairs");
+insert into genreList (name) values ("Virtual Reality");
+insert into genreList (name) values ("Other Accessories");
+
 
 /******************************************************/
 
