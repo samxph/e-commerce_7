@@ -11,7 +11,7 @@
         <label class="text-light">Last name</label>
         <input class="form-control" name="lname" placeholder="Enter Last name" maxlength="30">
         <label class="text-light">Email</label>
-        <input class="form-control" name="usermail" placeholder="Enter Email" maxlength="30">
+        <input class="form-control" name="usermail" placeholder="Example@email.com" maxlength="30">
         <label class="text-light">Address</label>
         <input class="form-control" name="useraddress" placeholder="Enter Address" maxlength="30">
         <label class="text-light">Postcode</label>
