@@ -41,6 +41,8 @@
 
             <?php endforeach; ?>
         </table>
-
+          <form method="post" action="<?= site_url('shoppingcart/checkout'); ?>">
+          <button class="bg-dark text-light">Checkout</button>
+          </form>
     </div>
 </div>
