@@ -2,8 +2,6 @@
 
 namespace App\Controllers;
 
-use CodeIgniter\Controller;
-
 use App\Models\ShoppingcartAdminModel;
 // 2 riviä alhaalla kopioidaan uusiin controllereihin jotta header toimii
 use App\Models\HeaderPlatformModel;
@@ -29,7 +27,7 @@ class Shoppingcart extends BaseController
 
     public function index()
     {
-        
+
         $model = new ShoppingcartAdminModel();
 
         if (count($_SESSION['cart']) > 0) {
@@ -39,7 +37,6 @@ class Shoppingcart extends BaseController
         }
 
         $data2['products'] = $products;
-
         $data1 = ['title' => 'Shopping cart'];
         // 2 riviä alhaalla kopioidaan uusiin controllereihin jotta header toimii
         $data1['allGenres'] = $this->HeaderGenreModel->getAllGenres();
