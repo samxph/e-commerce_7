@@ -75,7 +75,7 @@ color: whitesmoke;
     font-style: italic;
   }
 
-  /* this title for login and register*/
+  /* this title for page headings (example. login,register)*/
 .title {
     color: goldenrod
 };
