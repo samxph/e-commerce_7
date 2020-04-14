@@ -25,11 +25,11 @@
 					                <input type="radio" name="options"> 
 					            </label>
 					         
-					        </div>        
+					        </div>       
 						</div>
 						<div class="footerNavWrap clearfix">
-							<div class="btn btn-success pull-left btn-fyi"><a href="/"><span class="glyphicon glyphicon-chevron-left"></span> CONTINUE SHOPPING</a></div>
-							<div class="btn btn-success pull-right btn-fyi">CHECKOUT<span class="glyphicon glyphicon-chevron-right"></span></div>
+							<div class="btn btn-success pull-left btn-fyi"><span  class="glyphicon glyphicon-chevron-left"><a class="text-light" href='/'> CONTINUE SHOPPING</a></span></div>
+							<div class="btn btn-success pull-right btn-fyi"><a class="text-light" href='#'> CHECKOUT</a><span class="glyphicon glyphicon-chevron-right"></span></div>
 						</div>
 					</div>
 		
