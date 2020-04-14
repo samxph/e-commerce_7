@@ -73,7 +73,11 @@ color: whitesmoke;
 .address {
     display: block;
     font-style: italic;
-  }
+}
+
+.addtocart {
+    width: 100%;
+}
 
   /* this title for login and register*/
 .title {
