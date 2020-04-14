@@ -76,6 +76,8 @@ class Shoppingcart extends BaseController
 
         $data1 = ['title' => 'Shopping cart'];
         $data1['allPlatforms'] = $this->HeaderPlatformModel->getPlatforms();
+        $data1['allGenres'] = $this->HeaderGenreModel->getAllGenres();
+        $data1['allPlatforms'] = $this->HeaderPlatformModel->getPlatforms();
 
         echo view('templates/header', $data1);
         echo view('checkout_view');
