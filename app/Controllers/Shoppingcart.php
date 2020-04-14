@@ -6,6 +6,7 @@ use CodeIgniter\Controller;
 
 use App\Models\ShoppingcartAdminModel;
 use App\Models\HeaderPlatformModel;
+use App\Models\AllGenresModel;
 
 class Shoppingcart extends BaseController
 {
@@ -21,6 +22,7 @@ class Shoppingcart extends BaseController
 
         $this->ShoppingcartAdminModel = new ShoppingcartAdminModel();
         $this->HeaderPlatformModel = new HeaderPlatformModel();
+        $this->GetAllGenres = new AllGenresModel();
     }
 
     public function index()
@@ -37,8 +39,10 @@ class Shoppingcart extends BaseController
         $data2['products'] = $products;
 
         $data1 = ['title' => 'Shopping cart'];
+        // gets all genres and platforms from database
+        $data1['allGenres'] = $this->GetAllGenres->getAllGenres();
         $data1['allPlatforms'] = $this->HeaderPlatformModel->getPlatforms();
-
+        
         echo view('templates/header', $data1);
         echo view('shoppingcart_view', $data2);
         echo view('templates/footer');

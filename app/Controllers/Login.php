@@ -5,6 +5,7 @@ namespace App\Controllers;
 use App\Models\LoginModel;
 use App\Models\RegisterModel;
 use App\Models\HeaderPlatformModel;
+use App\Models\AllGenresModel;
 
 const REGISTER_TITLE = 'Quarantine games - Register';
 const LOGIN_TITLE = 'Quarantine games - Login';
@@ -16,10 +17,13 @@ class Login extends BaseController {
         $session->start();
 
         $this->HeaderPlatformModel = new HeaderPlatformModel();
+        $this->GetAllGenres = new AllGenresModel();
       }
 
     public function index() {
         $data['title'] = 'Quarantine games - Login';
+        // gets all genres and platforms from database
+        $data['allGenres'] = $this->GetAllGenres->getAllGenres();
         $data['allPlatforms'] = $this->HeaderPlatformModel->getPlatforms();
         echo view('templates/header', $data); //set view and pass data.
         echo view('login/login', $data);
@@ -28,7 +32,10 @@ class Login extends BaseController {
 
     public function register() {
         $data['title'] = REGISTER_TITLE;
+        // gets all genres and platforms from database
+        $data['allGenres'] = $this->GetAllGenres->getAllGenres();
         $data['allPlatforms'] = $this->HeaderPlatformModel->getPlatforms();
+
         echo view('templates/header',$data);
         echo view('login/register', $data);
         echo view('templates/footer', $data);
