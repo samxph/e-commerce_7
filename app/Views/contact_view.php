@@ -1,6 +1,6 @@
 <h3 class="title"><?= $title ?></h3>
 
-<form action="/contact/check">
+<form action="/contact/send">
 
     <div class="col-12">
         <?= \Config\Services::validation()->listErrors(); ?>
