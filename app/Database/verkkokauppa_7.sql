@@ -123,7 +123,7 @@ insert into tuote (title, releaseDate, price, picture, description, developer_id
 values ("Cyberpunk 2077", "2020-09-17", 60, "cyberpunk.jpg", "Cyberpunk 2077 is an open-world, action-adventure story
  set in Night City, a megalopolis obsessed with power, glamour and body modification. You play as V,
   a mercenary outlaw going after a one-of-a-kind implant that is the key to immortality.", 1, 1, "Action,
-   First%20Person%20Shooter (FPS), Open%20World, RPG, Single Player");
+   First Person Shooter (FPS), Open World, RPG, Single Player");
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
 values ("Thronebreaker: The Witcher Tales", "2018-11-09", 20, "witcher.jpg", "Discover a brand new RPG from the
  creators of The Witcher 3: Wild Hunt. Facing an imminent invasion, Meve — war-veteran and Queen of
@@ -132,7 +132,7 @@ values ("Thronebreaker: The Witcher Tales", "2018-11-09", 20, "witcher.jpg", "Di
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
 values ("The Witcher 3: Wild Hunt", "2015-05-18", 30, "witcher3.jpg", "As war rages on throughout the Northern Realms,
  you take on the greatest contract of your life — tracking down the Child of Prophecy, a living weapon
-  that can alter the shape of the world.", 1, 1, "Action, Adventure, Open%20World, RPG, Single Player");
+  that can alter the shape of the world.", 1, 1, "Action, Adventure, Open World, RPG, Single Player");
 
 /* Published by CAPCOM */
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
@@ -142,7 +142,7 @@ insert into tuote (title, releaseDate, price, picture, description, developer_id
 values ("MONSTER HUNTER: WORLD", "2018-08-09", 60, "mhw.jpg" , "Welcome to a new world! In Monster Hunter: 
 World, the latest installment in the series, you can enjoy the ultimate hunting experience, using everything 
 at your disposal to hunt monsters in a new world teeming with surprises and excitement.", 2, 2, "Action,
- Adventure, Multiplayer, Open%20World, Single Player");
+ Adventure, Multiplayer, Open World, Single Player");
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
 values ("RESIDENT EVIL 2 / BIOHAZARD RE:2", "2019-01-25", 40, "residentevil2.png" , "A deadly virus engulfs the residents 
 of Raccoon City in September of 1998, plunging the city into chaos as flesh eating zombies roam the streets
@@ -154,12 +154,12 @@ insert into tuote (title, releaseDate, price, picture, description, developer_id
 values ("BioShock Infinite", "2013-03-26", 30, "bioshock.png" , "Indebted to the wrong people, with his life on the line,
  veteran of the U.S. Cavalry and now hired gun, Booker DeWitt has only one opportunity to wipe his slate
   clean. He must rescue Elizabeth, a mysterious girl imprisoned since childhood and locked up in the flying
-   city of Columbia.", 3, 3, "Action, Adventure, First%20Person%20Shooter (FPS), RPG, Single Player");
+   city of Columbia.", 3, 3, "Action, Adventure, First Person Shooter (FPS), RPG, Single Player");
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
 values ("Borderlands 3", "2019-09-13", 60, "borderlands3.jpg" , "The original shooter-looter returns, packing bazillions 
 of guns and a mayhem-fueled adventure! Blast through new worlds & enemies and save your home from the most
- ruthless cult leaders in the galaxy.", 4, 3, "Action, Adventure, First%20Person%20Shooter (FPS), Multiplayer,
-  Open%20World, RPG, Single Player");
+ ruthless cult leaders in the galaxy.", 4, 3, "Action, Adventure, First Person Shooter (FPS), Multiplayer,
+  Open World, RPG, Single Player");
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
 values ("Sid Meier’s Civilization VI", "2016-10-21", 60, "civilization.jpg" , "Civilization VI offers new ways to interact
  with your world, expand your empire across the map, advance your culture, and compete against history’s
@@ -171,30 +171,30 @@ insert into tuote (title, releaseDate, price, picture, description, developer_id
 values ("Half-Life: Alyx", "2020-03-23", 50, "halflife.jpg" , "Half-Life: Alyx is Valve’s VR return to the Half-Life
  series. It’s the story of an impossible fight against a vicious alien race known as the Combine, set between 
  the events of Half-Life and Half-Life 2. Playing as Alyx Vance, you are humanity’s only chance for 
- survival.", 6, 4, "Action, Adventure, First%20Person%20Shooter (FPS), Single Player, Virtual Reality (VR)");
+ survival.", 6, 4, "Action, Adventure, First Person Shooter (FPS), Single Player, Virtual Reality (VR)");
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
 values ("Portal 2", "2011-04-19", 9, "portal2.jpg" , "The 'Perpetual Testing Initiative' has been expanded to allow 
 you to design co-op puzzles for you and your friends!", 6, 4, "Action, Adventure, Multiplayer, Single Player");
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
 values ("Left 4 Dead 2", "2009-11-17", 9, "l4d2.jpg" , "Set in the zombie apocalypse,This co-operative action
  horror FPS takes you and your friends through the cities, swamps and cemeteries of the Deep South,
-  from Savannah to New Orleans ", 6, 4, "Adventure, First%20Person%20Shooter (FPS), Horror, Multiplayer, 
+  from Savannah to New Orleans ", 6, 4, "Adventure, First Person Shooter (FPS), Horror, Multiplayer, 
   Single Player, Survival");
 
 /* Published by Square Enix */
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
 values ("NieR:Automata", "2017-03-17", 40, "automata.jpg" , "NieR: Automata tells the story of androids 2B, 9S and A2
  and their battle to reclaim the machine-driven dystopia overrun by powerful machines.", 7, 5, "Action, Adventure, JRPG, 
- Open%20World, RPG, Single Player");
+ Open World, RPG, Single Player");
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
 values ("FINAL FANTASY XIV", "2014-02-18", 10, "finalfantasy.jpg" , "Take part in an epic and ever-changing FINAL FANTASY
  as you adventure and explore with friends from around the world.", 8, 5, "Action, Action RPG (ARPG), JRPG, MMORPG, 
- Multiplayer, Open%20World, RPG, Single Player");
+ Multiplayer, Open World, RPG, Single Player");
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
 values ("DRAGON QUEST® XI: Echoes of an Elusive Age", "2017-07-29", 60, "dragonquest.jpg" , "DRAGON QUEST® XI: Echoes
  of an Elusive Age™ follows the perilous journey of a hunted Hero who must uncover the mystery of
   his fate with the aid of a charismatic cast of supporting characters.", 8, 5, "Action, Adventure, JRPG,
-   Open%20World, RPG, Single Player");
+   Open World, RPG, Single Player");
 
 /* Published by Activision */
 
@@ -202,41 +202,41 @@ insert into tuote (title, releaseDate, price, picture, description, developer_id
 values ("Call of Duty: Black Ops", "2010-11-9", 40, "codbo.jpg" , " The biggest action series of all time returns. Call of Duty®: 
 Black Ops is an entertainment experience that will take you to conflicts across the globe, as elite Black Ops forces
  fight in the deniable operations and secret wars that occurred under the veil of the Cold War. ", 12, 7, "Action,  
- First%20Person%20Shooter (FPS), Horror, Multiplayer, Single Player, Survival");
+ First Person Shooter (FPS), Horror, Multiplayer, Single Player, Survival");
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
 values ("Call of Duty: Modern Warfare 3", "2011-11-8", 40, "codmw3.jpg" , " Modern Warfare is back. The best-selling first person 
 action series of all-time returns with the epic sequel to multiple Game of the Year award winner,
- Call of Duty®: Modern Warfare 2.", 9, 7, "Action, First%20Person%20Shooter (FPS), Multiplayer, 
+ Call of Duty®: Modern Warfare 2.", 9, 7, "Action, First Person Shooter (FPS), Multiplayer, 
  Single Player, Survival");
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
 values ("Call of Duty: Black Ops II", "2012-11-13", 40, "codbo2.jpg" , "Pushing the boundaries of what fans have come to expect 
 from the record-setting entertainment franchise, Call of Duty®: Black Ops II propels players into a near future, 21st
  Century Cold War, where technology and weapons have converged to create a new generation of warfare.", 12, 7, "Action, 
- First%20Person%20Shooter (FPS), Multiplayer, Single Player, Survival");
+ First Person Shooter (FPS), Multiplayer, Single Player, Survival");
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
 values ("Call of Duty: Modern Warfare", "2019-9-12", 60, "codmw2019.jpg" , "The iconic first-person shooter game is back! Cross play,
  free maps and modes, and new engine deliver the largest technical leap in Call of Duty history.", 11, 7, "Action, 
- First%20Person%20Shooter (FPS), Multiplayer, Single Player, Survival");
+ First Person Shooter (FPS), Multiplayer, Single Player, Survival");
 
 /* Published by Ubisoft */
 
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
 values ("Tom Clancy’s Rainbow Six: Siege", "2015-12-7", 20, "r6s.jpg" , "Discover the most tactical FPS on PC, PS4 and Xbox One.
- Choose your operators for intense 5v5 team matches on one of our numerous iconic maps.", 9, 6, "Action, First%20Person%20Shooter (FPS), 
+ Choose your operators for intense 5v5 team matches on one of our numerous iconic maps.", 9, 6, "Action, First Person Shooter (FPS), 
  Multiplayer, Single Player, Strategy");
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
 values ("Assasin’s Creed Origins", "2017-10-27", 60, "acorigins.jpeg" , "Sail down the Nile, uncover the mysteries of the pyramids or 
 fight your way against dangerous ancient factions and wild beasts as you explore this gigantic and unpredictable 
-land.", 9, 6, "Action, Adventure, Multiplayer, Open%20World, RPG, Sandbox, Single Player, Stealth");
+land.", 9, 6, "Action, Adventure, Multiplayer, Open World, RPG, Sandbox, Single Player, Stealth");
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
 values ("Assasin’s Creed Odyssey", "2018-10-5", 60, "acodyssey.jpg" , "Write your own epic odyssey and become a legendary Spartan 
 hero in Assassin’s Creed Odyssey, an inspiring adventure where you must forge your destiny and define your own path 
 in a world on the brink of tearing itself apart. Influence how history unfolds as you experience a rich and
- ever-changing world shaped by your decisions.", 10, 6, "Action, Adventure, Open%20World, RPG, Single Player, Stealth");
+ ever-changing world shaped by your decisions.", 10, 6, "Action, Adventure, Open World, RPG, Single Player, Stealth");
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
 values ("Far Cry 5", "2018-3-27", 60, "farcry5.jpg" , "Welcome to Hope County, Montana, home to a fanatical doomsday cult known 
 as Eden’s Gate. Stand up to cult leader Joseph Seed & his siblings, the Heralds, to spark the fires of resistance & liberate the 
-besieged community.", 9, 6, "Action, Adventure, First%20Person%20Shooter (FPS), Multiplayer, Open%20World, Single Player, 
+besieged community.", 9, 6, "Action, Adventure, First Person Shooter (FPS), Multiplayer, Open World, Single Player, 
 Stealth, Survival");
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
 values ("Monopoly Plus", "2014-11-25", 15, "monopoly.jpg" , "With a colorful and 3D lively city animated by funny little sidekicks,
@@ -252,27 +252,27 @@ insert into tuote (title, releaseDate, price, picture, description, developer_id
 values ("Battlefield 1", "2016-10-10", 40, "battlefield1.jpg" , "Battlefield 1 takes you back to The Great War, WW1, where new technology 
 and worldwide conflict changed the face of warfare forever. Take part in every battle, control every massive vehicle, 
 and execute every maneuver that turns an entire fight around. The whole world is at war – see what’s beyond the 
-trenches.", 15, 8, "Action, First%20Person%20Shooter (FPS), Multiplayer, Open%20World, Single Player");
+trenches.", 15, 8, "Action, First Person Shooter (FPS), Multiplayer, Open World, Single Player");
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
 values ("Battlefield V", "2018-11-20", 40, "battlefieldv.jpg" , "The Battlefield series goes back to its roots in a never-before-seen 
 portrayal of World War 2. Take on physical, all-out multiplayer with your squad in modes like the vast Grand Operations 
 and the cooperative Combined Arms, or witness human drama set against global combat in the single player War Stories.
  As you fight in epic, unexpected locations across the globe, enjoy the richest and most immersive Battlefield yet.
-  Now also includes Firestorm – Battle Royale, reimagined for Battlefield.", 15, 8, "Action, First%20Person%20Shooter (FPS), 
-  Multiplayer, Open%20World, Single Player");
+  Now also includes Firestorm – Battle Royale, reimagined for Battlefield.", 15, 8, "Action, First Person Shooter (FPS), 
+  Multiplayer, Open World, Single Player");
 
 /* Published by Bethesda Softworks */
 	
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
 values ("DOOM Eternal", "2020-03-19", 60, "doom.jpg" ,  "Hell’s armies have invaded Earth. Become the Slayer in an epic 
 single-player campaign to conquer demons across dimensions and stop the final destruction of humanity.", 16, 10, "Action, 
-Adventure, First%20Person%20Shooter (FPS), Horror, Multiplayer, Single Player");
+Adventure, First Person Shooter (FPS), Horror, Multiplayer, Single Player");
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
 values ("Fallout 76", "2018-11-14", 40, "fallout76.jpg" ,  "Work together with other players, or not, to survive. Experience the 
 largest and most dynamic world ever created in the Fallout universe with major free updates which grow and evolve
  the game with new and different ways to play. Play solo or join together as you explore, quest, build, and triumph 
- against the wasteland’s greatest threats.", 17, 10, "Action, Adventure, First%20Person%20Shooter (FPS), Multiplayer, 
- Open%20World, RPG, Single Player, Survival");
+ against the wasteland’s greatest threats.", 17, 10, "Action, Adventure, First Person Shooter (FPS), Multiplayer, 
+ Open World, RPG, Single Player, Survival");
 
 /* Published by Sega */
 
@@ -301,7 +301,7 @@ vehicular mayhem with easy-to-understand controls and fluid, physics-driven comp
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
 values ("Sea of Thieves", "2018-3-20", 40, "seaofthieves.jpg" , "The freedom of a pirate paradise unfolds before you! Find 
 a crew or go solo, exploring the world at your own pace. Follow the threads of tall tales, make deals with 
-Trading Companies and take your pick of Voyages leading to Pirate Legend glory.", 21, 14, "Action, Adventure, Multiplayer, Open%20World");
+Trading Companies and take your pick of Voyages leading to Pirate Legend glory.", 21, 14, "Action, Adventure, Multiplayer, Open World");
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
 values ("Forza Motorsport 7", "2017-10-3", 40, "forza7.jpg" , "Forza Motorsport 7 immerses players in the exhilarating
  thrill of competitive racing. From mastering the new motorsport-inspired campaign to collecting a wide range 
@@ -310,7 +310,7 @@ values ("Forza Motorsport 7", "2017-10-3", 40, "forza7.jpg" , "Forza Motorsport 
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
 values ("Halo 5: Guardians", "2015-10-27", 20, "halo5.jpg" , "Peace has been devastated as colony worlds are unexpectedly 
 attacked. What's more, when humanity's greatest hero goes missing, a new Spartan is assigned the task of hunting
- the Master Chief and solving a mystery that threatens the whole of the galaxy.", 23, 14, "Action, First%20Person%20Shooter (FPS), 
+ the Master Chief and solving a mystery that threatens the whole of the galaxy.", 23, 14, "Action, First Person Shooter (FPS), 
  Multiplayer, Single Player");
 
 /* Ps4 */
@@ -327,7 +327,7 @@ values ("Concrete Genie", "2019-10-8", 35, "concrete.jpg" , "Concrete Genie foll
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
 values ("Yakuza 6: The Song of Life", "2018-4-17", 30, "yakuza6.jpg" , "Yakuza 6 features an emotional story that examines 
 the strength of family relationships, and highlights an improved battle systems that seamlessly transitions between
- battles and between explorable areas.", 26, 11, "Action, Adventure, Open%20World, RPG, Single Player");
+ battles and between explorable areas.", 26, 11, "Action, Adventure, Open World, RPG, Single Player");
 
 
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
@@ -351,11 +351,11 @@ vigilantes known as the Phantom Thieves of Hearts. ", 28, 17, "Action, JRPG, RPG
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
 values ("Horizon Zero Dawn", "2017-02-28", 50, "horizon.jpg" , "Horizon Zero Dawn is an action role-playing game 
 played from a third-person view. Players take control of Aloy, a hunter who ventures through a post-apocalyptic 
-land ruled by robotic creatures.", 29, 15, "Action, Adventure, Open%20World, RPG, Single Player");
+land ruled by robotic creatures.", 29, 15, "Action, Adventure, Open World, RPG, Single Player");
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
 values ("Marvel's Spider-Man", "2018-09-07", 50, "spider.jpg" , "When Mister Negative threatens to release a deadly virus,
  Spider-Man must confront him and protect the city while dealing with the personal problems of his civilian 
- persona, Peter Parker.", 30, 15, "Action, Adventure, Open%20World, Single Player");
+ persona, Peter Parker.", 30, 15, "Action, Adventure, Open World, Single Player");
 
 /* Nintendo Switch */
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
@@ -366,13 +366,13 @@ insert into tuote (title, releaseDate, price, picture, description, developer_id
 values ("The Legend of Zelda: Breath of the Wild", "2017-03-03", 60, "tloz.jpg" , "No kingdom. No memories. After a 
 100-year slumber, Link wakes up alone in a world he no longer remembers. Now the legendary hero must explore 
 a vast and dangerous land and regain his memories before Hyrule is lost forever. Armed only with what he can 
-scavenge, Link sets out to find answers and the resources needed to survive.", 31, 18, "Action, Adventure, Open%20World, 
+scavenge, Link sets out to find answers and the resources needed to survive.", 31, 18, "Action, Adventure, Open World, 
 RPG, Single Player");
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
 values ("Pokémon Sword and Shield", "2019-10-15", 60, "pkmss.jpg" , "Sword and Shield are extremely familiar and
  comfortable thanks to a pretty traditional setup: you pick one of three starter Pokemon and then head 
  off across the Galar region to capture and train more, defeat eight unique and exciting gym challenges,
-  and become a Pokemon master", 32, 18, "Action, Adventure, Multiplayer, Open%20World, RPG, Single Player, Strategy, 
+  and become a Pokemon master", 32, 18, "Action, Adventure, Multiplayer, Open World, RPG, Single Player, Strategy, 
   Turn Based");
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
 values ("Super Smash Bros. Ultimate", "2018-12-07", 60, "smbulti.jpg" , "Super Smash Bros. Ultimate looks to the 
@@ -744,12 +744,12 @@ Used:
 - Action RPG (ARPG)
 - Adventure
 - Fighting
-- First%20Person%20Shooter (FPS)
+- First Person Shooter (FPS)
 - Horror
 - JRPG
 - MMORPG
 - Multiplayer
-- Open%20World
+- Open World
 - RPG
 - Racing
 - Single Player
