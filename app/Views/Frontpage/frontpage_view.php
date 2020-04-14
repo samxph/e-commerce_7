@@ -34,7 +34,7 @@
   </div>
 </div>
 <div class="col-lg-3 col-md-6 mb-4">
-  <h2 class="text-light"><?= $productsTitle ?> Games</h2>
+  <h2 class="text-light"><?= $productsTitle ?></h2>
 </div>
 </div>
 <div class="row">

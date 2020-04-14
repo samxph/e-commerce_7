@@ -10,6 +10,7 @@ use App\Models\HeaderPlatformModel;
 use App\Models\HeaderGenreModel;
 use App\Models\SelectPlatformModel;
 use App\Models\GenreModel;
+use App\Models\DeviceModel;
 
 class Frontpage extends BaseController
 {
@@ -23,6 +24,7 @@ class Frontpage extends BaseController
         $this->HeaderGenreModel = new HeaderGenreModel();
         $this->SelectPlatformModel = new SelectPlatformModel();
         $this->GenreModel = new GenreModel();
+        $this->DeviceModel = new DeviceModel();
 
     }
 
@@ -44,16 +46,21 @@ public function index($platform_id=null, $genre_id=null) {
 
 
     if ($genre_id !== null) {   
-        $data['products'] = $this->GenreModel->getGenres($platform_name, $genre_name);
-        $data['productsTitle'] = $genre_name;
+        if ($platform_name = "Devices and Accessories") {
+            $data['products'] = $this->DeviceModel->DeviceModel($genre_name);
+            $data['productsTitle'] = "$genre_name";
+        } else {
+            $data['products'] = $this->GenreModel->getGenres($platform_name, $genre_name);
+            $data['productsTitle'] = "$genre_name Games";
+        }       
     } 
     else if ($platform_id !== null) {
         $data['products'] = $this->SelectPlatformModel->selectPlatform($platform_name);     
-        $data['productsTitle'] = $platform_name;
+        $data['productsTitle'] = "$platform_name Games";
         } 
     else {
         $data['products'] = $this->FrontpageAdminModel->getProducts();
-        $data['productsTitle'] = 'New Released';
+        $data['productsTitle'] = 'New Released Games';
     }
 
     echo view('templates/header', $data);
