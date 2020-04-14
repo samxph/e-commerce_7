@@ -22,7 +22,7 @@
 						<div class="headingWrap">
 								<h3 class="headingTop text-center text-light">Select Your Payment Method</h3>	
 						</div>
-						<div class="paymentWrap bg-light">
+						<div class="paymentWrap bg-light col-12">
 							<div class="btn-group paymentBtnGroup btn-group-justified" data-toggle="buttons">
 					            <label class="btn paymentMethod active">
 					            	<div class="method visa"></div>
@@ -41,12 +41,50 @@
 					                <input type="radio" name="options"> 
 					            </label>
 					         
-					        </div>       
-						</div>
-						<div class="footerNavWrap clearfix">
-							<div class="btn btn-success pull-left btn-fyi"><span  class="glyphicon glyphicon-chevron-left"><a class="text-light" href='/'> CONTINUE SHOPPING</a></span></div>
-							<div class="btn btn-success pull-right btn-fyi"><a class="text-light" href='#'> CHECKOUT</a><span class="glyphicon glyphicon-chevron-right"></span></div>
-						</div>
+                            </div> 
+                            <h2>Summary</h2>
+                            <div class="row">
+                                <div class="col-12 ml-3 mb-3 cart">
+
+                                    <table class="table">
+
+                                        <tr>
+                                            <th>
+                                                Title
+                                            </th>
+                                            <th>
+                                                Price
+                                            </th>
+                                            <th>
+                                                Qty.
+                                            </th>
+                                        </tr>
+
+                                        <?php foreach ($products as $product) : ?>
+
+                                            <tr>
+                                                <td>
+                                                    <?= $product['title'] ?>
+                                                </td>
+
+                                                <td>
+                                                    <?= $product['price'] ?> €
+                                                </td>
+
+                                                <td>
+                                                    <?= $product['qty'] ?>
+                                                </td>
+                                                
+                                            </tr>
+
+                                        <?php endforeach; ?>
+                                    </table>
+                                    <div class="footerNavWrap clearfix">
+							<div class="btn btn-success float-left btn-fyi"><span  class="glyphicon glyphicon-chevron-left"><a class="text-light" href='/'> CONTINUE SHOPPING</a></span></div>
+							<div class="btn btn-success float-right btn-fyi"><a class="text-light" href='#'> PLACE ORDER</a><span class="glyphicon glyphicon-chevron-right"></span></div>  
+                             </div>
+                        </div>
+                        
 					</div>
 		
 			</div>
