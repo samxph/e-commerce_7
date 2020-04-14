@@ -2,10 +2,10 @@
 
 namespace App\Controllers;
 
-use CodeIgniter\Controller;
-
 use App\Models\ShoppingcartAdminModel;
+// 2 riviä alhaalla kopioidaan uusiin controllereihin jotta header toimii
 use App\Models\HeaderPlatformModel;
+use App\Models\HeaderGenreModel;
 
 class Shoppingcart extends BaseController
 {
@@ -20,12 +20,14 @@ class Shoppingcart extends BaseController
         }
 
         $this->ShoppingcartAdminModel = new ShoppingcartAdminModel();
+        // 2 riviä alhaalla kopioidaan uusiin controllereihin jotta header toimii
         $this->HeaderPlatformModel = new HeaderPlatformModel();
+        $this->HeaderGenreModel = new HeaderGenreModel();
     }
 
     public function index()
     {
-        
+
         $model = new ShoppingcartAdminModel();
 
         if (count($_SESSION['cart']) > 0) {
@@ -35,8 +37,9 @@ class Shoppingcart extends BaseController
         }
 
         $data2['products'] = $products;
-
         $data1 = ['title' => 'Shopping cart'];
+        // 2 riviä alhaalla kopioidaan uusiin controllereihin jotta header toimii
+        $data1['allGenres'] = $this->HeaderGenreModel->getAllGenres();
         $data1['allPlatforms'] = $this->HeaderPlatformModel->getPlatforms();
 
         echo view('templates/header', $data1);
@@ -51,9 +54,9 @@ class Shoppingcart extends BaseController
         return redirect('/');
     }
 
-    public function remove($product_id)
+    public function remove()
     {
-        array_splice($_SESSION['cart'], $product_id);
+        
 
         return redirect('shoppingcart');
     }

@@ -4,7 +4,9 @@ namespace App\Controllers;
 
 use App\Models\LoginModel;
 use App\Models\RegisterModel;
+// 2 riviä alhaalla kopioidaan uusiin controllereihin jotta header toimii
 use App\Models\HeaderPlatformModel;
+use App\Models\HeaderGenreModel;
 
 const REGISTER_TITLE = 'Quarantine games - Register';
 const LOGIN_TITLE = 'Quarantine games - Login';
@@ -15,11 +17,15 @@ class Login extends BaseController {
         $session = \Config\Services::session();
         $session->start();
 
+        // 2 riviä alhaalla kopioidaan uusiin controllereihin jotta header toimii
         $this->HeaderPlatformModel = new HeaderPlatformModel();
+        $this->HeaderGenreModel = new HeaderGenreModel();
       }
 
     public function index() {
         $data['title'] = 'Quarantine games - Login';
+        // 2 riviä alhaalla kopioidaan uusiin controllereihin jotta header toimii
+        $data['allGenres'] = $this->HeaderGenreModel->getAllGenres();
         $data['allPlatforms'] = $this->HeaderPlatformModel->getPlatforms();
         echo view('templates/header', $data); //set view and pass data.
         echo view('login/login', $data);
@@ -28,7 +34,10 @@ class Login extends BaseController {
 
     public function register() {
         $data['title'] = REGISTER_TITLE;
+        // 2 riviä alhaalla kopioidaan uusiin controllereihin jotta header toimii
+        $data['allGenres'] = $this->HeaderGenreModel->getAllGenres();
         $data['allPlatforms'] = $this->HeaderPlatformModel->getPlatforms();
+
         echo view('templates/header',$data);
         echo view('login/register', $data);
         echo view('templates/footer', $data);
