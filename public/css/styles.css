@@ -146,3 +146,6 @@ color: whitesmoke;
 [type='radio'] {
     display: none;
 }
+.order {
+    margin-right: 15px;
+}
