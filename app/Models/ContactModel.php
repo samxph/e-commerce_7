@@ -5,9 +5,7 @@ use CodeIgniter\Model;
 class ContactModel extends Model {
     protected $table = 'contact';
 
-    protected $allowedFields = ['email','subject', 'message'];
-
-
+    protected $allowedFields = ['name', 'email','subject', 'message'];
 }
 
 ?>
