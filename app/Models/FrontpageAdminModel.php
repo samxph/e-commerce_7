@@ -24,3 +24,4 @@ class FrontpageAdminModel extends Model
         return $query->getResultArray();
     }
 }
+

@@ -4,6 +4,7 @@ namespace App\Controllers;
 
 use App\Models\LoginModel;
 use App\Models\RegisterModel;
+use App\Models\HeaderPlatformModel;
 
 const REGISTER_TITLE = 'Quarantine games - Register';
 const LOGIN_TITLE = 'Quarantine games - Login';
@@ -13,10 +14,13 @@ class Login extends BaseController {
     public function __construct() {
         $session = \Config\Services::session();
         $session->start();
+
+        $this->HeaderPlatformModel = new HeaderPlatformModel();
       }
 
     public function index() {
         $data['title'] = 'Quarantine games - Login';
+        $data['allPlatforms'] = $this->HeaderPlatformModel->getPlatforms();
         echo view('templates/header', $data); //set view and pass data.
         echo view('login/login', $data);
         echo view('templates/footer', $data);
@@ -24,6 +28,7 @@ class Login extends BaseController {
 
     public function register() {
         $data['title'] = REGISTER_TITLE;
+        $data['allPlatforms'] = $this->HeaderPlatformModel->getPlatforms();
         echo view('templates/header',$data);
         echo view('login/register', $data);
         echo view('templates/footer', $data);

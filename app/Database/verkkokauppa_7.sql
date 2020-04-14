@@ -88,14 +88,15 @@ insert into publisher (name) values ("Nintendo"); /*18*/
 
 create table tuoteryhma (
     id int primary key auto_increment,
-    name varchar(50)
+    name varchar(50),
+    logo varchar(100)
 );
 
-insert into tuoteryhma (name) values ("Switch");
-insert into tuoteryhma (name) values ("PS4");
-insert into tuoteryhma (name) values ("Xbox One");
-insert into tuoteryhma (name) values ("PC");
-insert into tuoteryhma (name) values ("Devices");
+insert into tuoteryhma (name, logo) values ("Switch", "fas fa-dice-two");
+insert into tuoteryhma (name, logo) values ("PS4", "fab fa-playstation");
+insert into tuoteryhma (name, logo) values ("Xbox One", "fab fa-xbox");
+insert into tuoteryhma (name, logo) values ("PC", "fas fa-mouse");
+insert into tuoteryhma (name, logo) values ("Devices", "");
 
 
 /******************************************************/
@@ -368,7 +369,7 @@ a vast and dangerous land and regain his memories before Hyrule is lost forever.
 scavenge, Link sets out to find answers and the resources needed to survive.", 31, 18, "Action, Adventure, Open World, 
 RPG, Single Player");
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
-values ("Pokémon Sword ja Shield", "2019-10-15", 60, "pkmss.jpg" , "Sword and Shield are extremely familiar and
+values ("Pokémon Sword and Shield", "2019-10-15", 60, "pkmss.jpg" , "Sword and Shield are extremely familiar and
  comfortable thanks to a pretty traditional setup: you pick one of three starter Pokemon and then head 
  off across the Galar region to capture and train more, defeat eight unique and exciting gym challenges,
   and become a Pokemon master", 32, 18, "Action, Adventure, Multiplayer, Open World, RPG, Single Player, Strategy, 
