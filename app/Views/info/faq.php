@@ -68,9 +68,10 @@ On pricing and shipping related issues you can contact customer support at quara
 <h5 class="font-weight-bold">12.    Q: Can I return a product?</h5>
 <p>A: If you want to return a product, please contact quarantinegames@email.com
 </p>
+<br>
 
 <h4 class="font-weight-bold">Your account</h4>
-
+<br>
 <h5 class="font-weight-bold">13.    Q: How do create an account?</h5>
 <p>A: Go to <?= anchor('login/register', 'this page') ?>, then just fill in all the needed information and click "register".  After submitting the form, your account will be confirmed and you will be notified.  
 </p>
