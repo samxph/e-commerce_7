@@ -96,7 +96,7 @@ insert into tuoteryhma (name, logo) values ("Switch", "fas fa-dice-two");
 insert into tuoteryhma (name, logo) values ("PS4", "fab fa-playstation");
 insert into tuoteryhma (name, logo) values ("Xbox One", "fab fa-xbox");
 insert into tuoteryhma (name, logo) values ("PC", "fas fa-mouse");
-insert into tuoteryhma (name, logo) values ("Devices", "");
+insert into tuoteryhma (name, logo) values ("Devices and Accessories", "");
 
 
 /******************************************************/
@@ -708,6 +708,22 @@ create table devices (
 
 /******************************************************/
 
+create table genreList(
+  id int primary key auto_increment,
+  name varchar(255)
+);
+
+insert into genreList (name) values ("Action");
+insert into genreList (name) values ("Adventure");
+insert into genreList (name) values ("First Person Shooter");
+insert into genreList (name) values ("Horror");
+insert into genreList (name) values ("Open World");
+insert into genreList (name) values ("RPG");
+insert into genreList (name) values ("Sports");
+insert into genreList (name) values ("Strategy");
+
+/******************************************************/
+
 create table tilaus (
     id int primary key auto_increment,
     orderTime timestamp default current_timestamp,
@@ -721,12 +737,12 @@ create table tilaus (
 /******************************************************/
 
 /* 
-List of genres in alphabetical order:
+List of genres:
 
+Used: 
 - Action
 - Action RPG (ARPG)
 - Adventure
-- Card Game
 - Fighting
 - First Person Shooter (FPS)
 - Horror
@@ -734,20 +750,24 @@ List of genres in alphabetical order:
 - MMORPG
 - Multiplayer
 - Open World
-- Party Game
-- Platform
 - RPG
 - Racing
-- Rhythm
-- Sandbox
 - Single Player
 - Sports
-- Stealth
 - Strategy
 - Survival
 - Turn Based
 - Virtual Reality (VR)
+
+Unused
 - Visual Novel
+- Stealth
+- Rhythm
+- Sandbox
+- Party Game
+- Platform
+- Card Game
+
 */
 
 /* List of devices and accessories in genres
