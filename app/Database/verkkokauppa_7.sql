@@ -708,8 +708,6 @@ create table devices (
 
 /******************************************************/
 
-/* */
-
 create table genreList(
   id int primary key auto_increment,
   name varchar(255)
@@ -723,24 +721,6 @@ insert into genreList (name) values ("Open World");
 insert into genreList (name) values ("RPG");
 insert into genreList (name) values ("Sports");
 insert into genreList (name) values ("Strategy");
-
-/******************************************************/
-
-create table tuote_genreList (
-  tuote_id int not null,
-  index (tuote_id),
-  foreign key (tuote_id) references tuote(id)
-  on delete restrict,
-  genreList_id int not null,
-  index (genreList_id),
-  foreign key (genreList_id) references genreList(id)
-  on delete restrict
-);
-
-insert into tuote_genreList (tuote_id, genreList_id) values (1, 1);
-insert into tuote_genreList (tuote_id, genreList_id) values (1, 2);
-insert into tuote_genreList (tuote_id, genreList_id) values (1, 5);
-insert into tuote_genreList (tuote_id, genreList_id) values (1, 6);
 
 /******************************************************/
 

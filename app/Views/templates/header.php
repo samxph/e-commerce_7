@@ -57,7 +57,7 @@
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="<?= site_url('Frontpage/' . $platform['id']);  ?>">All Games</a>
                             <?php foreach ($allGenres as $genre): ?>
-                            <a class="dropdown-item" href="<?= site_url('Frontpage/' . $platform['id'] . '/' . $genre['id']); ?>"><?= $genre['name'] ?></a>
+                            <a class="dropdown-item" href="<?= site_url('Frontpage/' . $platform['id'] . '/' . $genre['name']); ?>"><?= $genre['name'] ?></a>
                             <?php endforeach; ?>
                             <!--
                             <a class="dropdown-item" href="#">Adventure</a>

@@ -55,7 +55,7 @@ public function index($platform_id=null, $genre_id=null) {
     // gets genre's and platform's id 
     
     $data['platform_id'] = $platform_id;
-    $data['genre_id'] = $genre_id;
+    $data['genre_name'] = $genre_id;
     //$data['products'] = $this->GenreModel->getGenres($platform_id, $genre_name);
 
     if ($genre_id !== null) {           
