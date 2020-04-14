@@ -67,5 +67,26 @@ class Shoppingcart extends BaseController
 
         return redirect('shoppingcart');
     }
+    public function checkout()
+
+    {
+        $model = new ShoppingcartAdminModel();
+
+        if (count($_SESSION['cart']) > 0) {
+            $products = $this->ShoppingcartAdminModel->getProducts($_SESSION['cart']);
+        } else {
+            $products = array();
+        }
+
+        $data2['products'] = $products;
+        $data1 = ['title' => 'Shopping cart'];
+        $data1['allPlatforms'] = $this->HeaderPlatformModel->getPlatforms();
+        $data1['allGenres'] = $this->HeaderGenreModel->getAllGenres();
+        $data1['allPlatforms'] = $this->HeaderPlatformModel->getPlatforms();
+
+        echo view('templates/header', $data1);
+        echo view('checkout_view', $data2);
+        echo view('templates/footer');
+    }
 
 }

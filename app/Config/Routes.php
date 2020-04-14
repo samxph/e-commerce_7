@@ -40,9 +40,12 @@ $routes->get('shoppingcart', 'Shoppingcart::index');
 $routes->get('allproducts', 'Allproducts::index');
 $routes->get('shoppingcart/add(:segment)', 'Shoppingcart::add/$1');
 $routes->get('empty', 'Ostokori::empty');
+$routes->get('Contact', 'Contact::index');
 
 // login
+$routes->get('faq', 'FAQ::index');
 $routes->get('login', 'Login::index');
+
 
 /**
  * --------------------------------------------------------------------
