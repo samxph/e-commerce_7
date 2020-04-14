@@ -135,10 +135,6 @@ color: whitesmoke;
 	background-image: url("http://i.imgur.com/VkiM7PL.jpg");
 }
 
-.paymentWrap .paymentBtnGroup .paymentMethod .method.ez-cash {
-	background-image: url("http://www.busbooking.lk/img/carousel/BusBooking.lk_ezCash_offer.png");
-}
-
 
 .paymentWrap .paymentBtnGroup .paymentMethod .method:hover {
 	border-color: #4cd264;
