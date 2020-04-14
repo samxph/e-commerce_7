@@ -46,9 +46,9 @@ class Shoppingcart extends BaseController
         return redirect('/');
     }
 
-    public function remove($product_id)
+    public function remove()
     {
-        array_splice($_SESSION['cart'], $product_id);
+        
 
         return redirect('shoppingcart');
     }

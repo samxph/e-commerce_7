@@ -35,7 +35,7 @@
                     </td>
                     
                     <td>
-                    <?= anchor('shoppingcart/delete', 'Remove from cart'); ?>
+                    <?= anchor('shoppingcart/remove', 'Remove item from cart'); ?>
                     </td>
                 </tr>
 
