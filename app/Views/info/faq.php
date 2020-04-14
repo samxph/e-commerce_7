@@ -29,15 +29,14 @@ Reordering:  you can make a re-order anytime based on your previous orders by on
 <h5 class="font-weight-bold">3.    Q: What information should I input when ordering?</h5>
 A: our online ordering system will ask for all the important information you should submit. If you have a VAT number, please remember to submit it. This will make sure the shipment is not delayed because of the lack of VAT number
 
-4.    Q: What payment methods can I use?
-A: You can use all the major credit cards.
+<h5 class="font-weight-bold">4.    Q: What payment methods can I use?</h5>
+<p>A: You can use all the major credit cards.
 
 If you are a customer with established customer relationship with HyTest Ltd. you are able to use invoice as a payment method on our online shopping checkout process.  If invoicing option is not activated for you although you are repeated customer, please contact hytest@hytest.fi and notify us.
-
-5.    Q: Is VAT charged?
-A: If you have VAT number, then VAT is not charged. You need to remember to add the VAT number to your account information section. Online checkout system will automatically fill in the submitted VAT number when you order products.
-You can also add your VAT number during the checkout process manually.
-
+</p>
+<h5 class="font-weight-bold">5.    Q: Is VAT charged?</h5>
+<p>A: Online checkout prices already include VAT.
+</p>
 6.    Q: Can I use pro-forma invoice?
 A: Yes, you can use pro-forma invoice. Please contact hytest@hytest.fi if you want to use pro-forma invoice.
 
