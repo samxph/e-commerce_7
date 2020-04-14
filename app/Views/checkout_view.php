@@ -21,9 +21,8 @@
 			<div class="paymentCont">
 						<div class="headingWrap">
 								<h3 class="headingTop text-center text-light">Select Your Payment Method</h3>	
-								<p class="text-center">Created with bootsrap button and using radio button</p>
 						</div>
-						<div class="paymentWrap">
+						<div class="paymentWrap bg-light">
 							<div class="btn-group paymentBtnGroup btn-group-justified" data-toggle="buttons">
 					            <label class="btn paymentMethod active">
 					            	<div class="method visa"></div>
@@ -34,11 +33,11 @@
 					                <input type="radio" name="options"> 
 					            </label>
 					            <label class="btn paymentMethod">
-				            		<div class="method amex"></div>
+				            		<div class="method paypal"></div>
 					                <input type="radio" name="options">
 					            </label>
 					             <label class="btn paymentMethod">
-				             		<div class="method vishwa"></div>
+				             		<div class="method bitcoin"></div>
 					                <input type="radio" name="options"> 
 					            </label>
 					         
