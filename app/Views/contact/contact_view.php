@@ -1,6 +1,6 @@
 <h3 class="title"><?= $title ?></h3>
 
-<form action="/contact/send">
+<form method="post" action="/contact/send">
 
     <div class="col-12">
         <?= \Config\Services::validation()->listErrors(); ?>
@@ -14,10 +14,9 @@
         <label class="text-light">Subject:</label>
         <input class="form-control" name="subject" placeholder="Enter subject" maxlength="30">
 
-        <label class="text-light">Message:</label>
-        <textarea rows="10" cols="30"></textarea>
+        <label class="text-light">Message:</label> <br>
+        <textarea type="text"  rows="10" placeholder="Enter Message" cols="85"></textarea>
 
-        <hr>
-        <button class="btn btn-primary">Send</button>
+        <button class="btn btn-primary mt-1">Send</button>
     </div>
 </form>
