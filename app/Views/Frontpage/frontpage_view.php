@@ -9,7 +9,7 @@
       </ol>
       <div class="carousel-inner" role="listbox">
         <div class="carousel-item">
-          <img class="d-block img-fluid" src="images/mainos4.png" alt="First slide">
+          <img class="d-block img-fluid" src="images/mainos5.png" alt="First slide">
         </div>
         <div class="carousel-item">
           <img class="d-block img-fluid" src="images/mainos2.png" alt="Second slide">
