@@ -1,9 +1,26 @@
-<h1 class='text-light'>Select your payment method</h1>
+<h1 class='text-light'>Shipping and payment</h1>
 <div class="container">
 	<div class="row">
-		<div class="paymentCont">
+			<div class="form-group col-md-6 col-12">
+				<h3 class="text-light">Shipping details</h3>
+       				<label class="text-light">First name</label>
+        			<input class="form-control" name="fname" placeholder="Enter First name" maxlength="30">
+        			<label class="text-light">Last name</label>
+       	 			<input class="form-control" name="lname" placeholder="Enter Last name" maxlength="30">
+        			<label class="text-light">Email</label>
+        			<input class="form-control" name="usermail" placeholder="Enter Email" maxlength="30">
+        			<label class="text-light">Address</label>
+        			<input class="form-control" name="useraddress" placeholder="Enter Address" maxlength="30">
+        			<label class="text-light">Postcode</label>
+        			<input class="form-control" name="userpostcode" placeholder="Enter Postcode" maxlength="30">
+        			<label class="text-light">City</label>
+        			<input class="form-control" name="userpostoffice" placeholder="Enter city" maxlength="30">
+        			<label class="text-light">Phone number</label>
+        			<input class="form-control" name="userphone" placeholder="Enter Phone number" maxlength="30">
+			</div>
+			<div class="paymentCont">
 						<div class="headingWrap">
-								<h3 class="headingTop text-center">Select Your Payment Method</h3>	
+								<h3 class="headingTop text-center text-light">Select Your Payment Method</h3>	
 								<p class="text-center">Created with bootsrap button and using radio button</p>
 						</div>
 						<div class="paymentWrap">
@@ -33,5 +50,5 @@
 						</div>
 					</div>
 		
-	</div>
+			</div>
 </div>
