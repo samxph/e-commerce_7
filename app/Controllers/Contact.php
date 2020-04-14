@@ -32,24 +32,32 @@ class Contact extends BaseController
         echo view('templates/footer');
     }
 
-    public function send() {
-
+    public function send()
+    {
         $model = new ContactModel();
+
         $data = ['title' => 'Contact us'];
         $data['allGenres'] = $this->HeaderGenreModel->getAllGenres();
         $data['allPlatforms'] = $this->HeaderPlatformModel->getPlatforms();
-        
+
         if (!$this->validate([
-            'email' => 'required|min_length[5]|max_length[30]',
-            'subject' => 'required|min_length[1]|max_length[30]',
-            'message' => 'required|min_length[1]|max_length[400]'
+            'name' => 'required|min_length[5]|max_length[100]',
+            'email' => 'required|min_length[5]|max_length[100]',
+            'subject' => 'required|min_length[1]|max_length[50]',
+            'message' => 'required|min_length[1]|max_length[500]'
         ])) {
             echo view('templates/header', $data);
             echo view('contact/contactsent_view');
             echo view('templates/footer');
-        } 
-            else { // if validation not passed, redirect to contact page
-                return redirect('contact');
-            }
+        } else {
+            $model->save([
+                'email' => $this->request->getVar('email'),
+                'name' => $this->request->getVar('name'),
+                'subject' => $this->request->getVar('subject'),
+                'message' => $this->request->getVar('message')
+            ]);
+            // if validation passed, redirect
+            return redirect('Contactsent');
         }
+    }
 }

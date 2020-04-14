@@ -40,9 +40,27 @@
                 </tr>
 
             <?php endforeach; ?>
+                    <td>
+                        Total
+                    </td>
+                    <td>
+                    <p><?php
+                                    $total = 0;
+                                     foreach($products as $product) {
+                                         $total += $product['price'];
+                                     }
+                                    echo $total;
+                                    
+                                    ?> €</p>
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                     </td>
+                    
         </table>
           <form method="post" action="<?= site_url('shoppingcart/checkout'); ?>">
-          <button class="bg-dark text-light">Checkout</button>
+          <button class="bg-dark text-light float-right">Checkout</button>
           </form>
     </div>
 </div>

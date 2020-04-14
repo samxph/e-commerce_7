@@ -53,7 +53,7 @@
           <p class="card-text"><?= $product['description'] ?></p>
         </div class="bg-dark">
         <form method="post" action="<?= site_url('shoppingcart/add/' . $product['id']); ?>">
-          <button class="bg-dark text-light">Add to cart</button>
+          <button class="bg-dark text-light addtocart">Add to cart</button>
         </form>
       </div>
     </div>
