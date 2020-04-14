@@ -27,40 +27,22 @@ class Frontpage extends BaseController
     }
 
 public function index($platform_id=null, $genre_id=null) {
-
-    //session_start();
-
-    //if (!isset($_SESSION['ostoskori']))
-    //    $_SESSION['ostoskori'] = []; 
-
-    //$model = new FrontpageAdminModel();
+    
     $data = [
         'title' => 'Quarantine games',
     ];
 
-    
-    
-    // get frontpage view if null
-
-    /*
-    if ($platform_id === null) {
-        $data['products'] = $this->FrontpageAdminModel->getProducts();
-    }
-    */
-
-    // get products based on platform from the header view and takes it to model
-    //$data['products'] = $this->SelectPlatformModel->selectPlatform($platform_id);
-    
     // 2 riviä alhaalla kopioidaan uusiin controllereihin jotta header toimii
     $data['allGenres'] = $this->HeaderGenreModel->getAllGenres();
     $data['allPlatforms'] = $this->HeaderPlatformModel->getPlatforms();
-    // gets genre's and platform's id 
-    
+
+    // gets genre's and platform's id     
     $data['platform_id'] = $platform_id;
     $data['genre_name'] = $genre_id;
     //$data['products'] = $this->GenreModel->getGenres($platform_id, $genre_name);
 
-    if ($genre_id !== null) {           
+    if ($genre_id !== null) {      
+        str_replace("%20", " ", $genre_id);  
         $data['products'] = $this->GenreModel->getGenres($platform_id, $genre_id);
     } 
     else if ($platform_id !== null) {
