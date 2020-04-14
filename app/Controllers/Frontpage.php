@@ -5,10 +5,11 @@ namespace App\Controllers;
 use CodeIgniter\Controller;
 
 use App\Models\FrontpageAdminModel;
+// 2 riviä alhaalla kopioidaan uusiin controllereihin jotta header toimii
 use App\Models\HeaderPlatformModel;
+use App\Models\HeaderGenreModel;
 use App\Models\SelectPlatformModel;
 use App\Models\GenreModel;
-use App\Models\AllGenresModel;
 
 class Frontpage extends BaseController
 {
@@ -17,10 +18,11 @@ class Frontpage extends BaseController
         $session = \Config\Services::session();
         $session->start();
         $this->FrontpageAdminModel = new FrontpageAdminModel();
+        // 2 riviä alhaalla kopioidaan uusiin controllereihin jotta header toimii
         $this->HeaderPlatformModel = new HeaderPlatformModel();
+        $this->HeaderGenreModel = new HeaderGenreModel();
         $this->SelectPlatformModel = new SelectPlatformModel();
         $this->GenreModel = new GenreModel();
-        $this->GetAllGenres = new AllGenresModel();
 
     }
 
@@ -49,8 +51,8 @@ public function index($platform_id=null, $genre_id=null) {
     // get products based on platform from the header view and takes it to model
     //$data['products'] = $this->SelectPlatformModel->selectPlatform($platform_id);
     
-    // gets all genres and platforms from database
-    $data['allGenres'] = $this->GetAllGenres->getAllGenres();
+    // 2 riviä alhaalla kopioidaan uusiin controllereihin jotta header toimii
+    $data['allGenres'] = $this->HeaderGenreModel->getAllGenres();
     $data['allPlatforms'] = $this->HeaderPlatformModel->getPlatforms();
     // gets genre's and platform's id 
     
