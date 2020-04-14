@@ -18,9 +18,10 @@
 
     <div class="rightfooter pr-5">
         <br>
+        
         <p><a class="text-white" href="Contact">Contact us</a></p>
         <p><a class="text-white" href="#">About us</a></p>
-        <p><a class="text-white" href="#">FAQ</a></p>
+        <p><a class="text-white" href="Faq">FAQ</a></p>
         
     </div>
 </footer>
