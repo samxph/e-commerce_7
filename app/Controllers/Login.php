@@ -23,7 +23,7 @@ class Login extends BaseController {
       }
 
     public function index() {
-        $data['title'] = 'Quarantine games - Login';
+        $data['title'] = 'Login';
         // 2 riviä alhaalla kopioidaan uusiin controllereihin jotta header toimii
         $data['allGenres'] = $this->HeaderGenreModel->getAllGenres();
         $data['allPlatforms'] = $this->HeaderPlatformModel->getPlatforms();
