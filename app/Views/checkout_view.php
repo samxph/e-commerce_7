@@ -79,13 +79,24 @@
 
                                         <?php endforeach; ?>
                                     </table>
+                                    <h2>Total <?php
+                                    $total = 0;
+                                     foreach($products as $product) {
+                                         $total += $product['price'];
+                                     }
+                                    echo $total;
+                                    
+                                    ?> €</h2>
+
+                                    <p>Tax is included in the price</p>
                                     <div class="footerNavWrap clearfix">
 							<div class="btn btn-success float-left btn-fyi"><span  class="glyphicon glyphicon-chevron-left"><a class="text-light" href='/'> CONTINUE SHOPPING</a></span></div>
-							<div class="btn btn-success float-right btn-fyi"><a class="text-light" href='#'> PLACE ORDER</a><span class="glyphicon glyphicon-chevron-right"></span></div>  
+							<div class="btn btn-success float-right btn-fyi order"><a class="text-light" href='#'> PLACE ORDER</a><span class="glyphicon glyphicon-chevron-right"></span></div>  
                              </div>
                         </div>
                         
 					</div>
 		
-			</div>
-</div>
+		    </div>
+    </div>
+ </div>

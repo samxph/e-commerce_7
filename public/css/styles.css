@@ -73,7 +73,11 @@ color: whitesmoke;
 .address {
     display: block;
     font-style: italic;
-  }
+}
+
+.addtocart {
+    width: 100%;
+}
 
   /* this title for page headings (example. login,register)*/
 .title {
@@ -116,7 +120,8 @@ color: whitesmoke;
 	background-position: center;
 	background-repeat: no-repeat;
 	border: 2px solid transparent;
-	transition: all 0.5s;
+    transition: all 0.5s;
+    
 }
 
 .paymentWrap .paymentBtnGroup .paymentMethod .method.visa {
@@ -137,4 +142,10 @@ color: whitesmoke;
 .paymentWrap .paymentBtnGroup .paymentMethod .method:hover {
 	border-color: #4cd264;
 	outline: none !important;
+}
+[type='radio'] {
+    display: none;
+}
+.order {
+    margin-right: 15px;
 }
