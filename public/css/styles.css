@@ -81,8 +81,12 @@ color: whitesmoke;
 
   /* this title for page headings (example. login,register)*/
 .title {
-    color: goldenrod
-};
+    color: goldenrod;
+}
+
+.faq {
+    background-color: black;
+}
 
 /*Checkout css*/
 .paymentWrap {
