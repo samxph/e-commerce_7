@@ -8,13 +8,13 @@
         			<label class="text-light">Last name</label>
        	 			<input class="form-control" name="lname" placeholder="Enter Last name" maxlength="30">
         			<label class="text-light">Email</label>
-        			<input class="form-control" name="usermail" placeholder="Enter Email" maxlength="30">
+        			<input class="form-control" name="usermail" placeholder="Example@email.com" maxlength="30">
         			<label class="text-light">Address</label>
         			<input class="form-control" name="useraddress" placeholder="Enter Address" maxlength="30">
         			<label class="text-light">Postcode</label>
         			<input class="form-control" name="userpostcode" placeholder="Enter Postcode" maxlength="30">
         			<label class="text-light">City</label>
-        			<input class="form-control" name="userpostoffice" placeholder="Enter city" maxlength="30">
+        			<input class="form-control" name="userpostoffice" placeholder="Enter City" maxlength="30">
         			<label class="text-light">Phone number</label>
         			<input class="form-control" name="userphone" placeholder="Enter Phone number" maxlength="30">
 			</div>
