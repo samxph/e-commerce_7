@@ -116,7 +116,8 @@ color: whitesmoke;
 	background-position: center;
 	background-repeat: no-repeat;
 	border: 2px solid transparent;
-	transition: all 0.5s;
+    transition: all 0.5s;
+    
 }
 
 .paymentWrap .paymentBtnGroup .paymentMethod .method.visa {
@@ -137,4 +138,7 @@ color: whitesmoke;
 .paymentWrap .paymentBtnGroup .paymentMethod .method:hover {
 	border-color: #4cd264;
 	outline: none !important;
+}
+[type='radio'] {
+    display: none;
 }
