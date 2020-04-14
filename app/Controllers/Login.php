@@ -8,8 +8,8 @@ use App\Models\RegisterModel;
 use App\Models\HeaderPlatformModel;
 use App\Models\HeaderGenreModel;
 
-const REGISTER_TITLE = 'Quarantine games - Register';
-const LOGIN_TITLE = 'Quarantine games - Login';
+const REGISTER_TITLE = 'Register';
+const LOGIN_TITLE = 'Login';
 
 class Login extends BaseController {
 
