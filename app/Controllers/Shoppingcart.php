@@ -5,8 +5,9 @@ namespace App\Controllers;
 use CodeIgniter\Controller;
 
 use App\Models\ShoppingcartAdminModel;
+// 2 riviä alhaalla kopioidaan uusiin controllereihin jotta header toimii
 use App\Models\HeaderPlatformModel;
-use App\Models\AllGenresModel;
+use App\Models\HeaderGenreModel;
 
 class Shoppingcart extends BaseController
 {
@@ -21,8 +22,9 @@ class Shoppingcart extends BaseController
         }
 
         $this->ShoppingcartAdminModel = new ShoppingcartAdminModel();
+        // 2 riviä alhaalla kopioidaan uusiin controllereihin jotta header toimii
         $this->HeaderPlatformModel = new HeaderPlatformModel();
-        $this->GetAllGenres = new AllGenresModel();
+        $this->HeaderGenreModel = new HeaderGenreModel();
     }
 
     public function index()
@@ -39,10 +41,10 @@ class Shoppingcart extends BaseController
         $data2['products'] = $products;
 
         $data1 = ['title' => 'Shopping cart'];
-        // gets all genres and platforms from database
-        $data1['allGenres'] = $this->GetAllGenres->getAllGenres();
+        // 2 riviä alhaalla kopioidaan uusiin controllereihin jotta header toimii
+        $data1['allGenres'] = $this->HeaderGenreModel->getAllGenres();
         $data1['allPlatforms'] = $this->HeaderPlatformModel->getPlatforms();
-        
+
         echo view('templates/header', $data1);
         echo view('shoppingcart_view', $data2);
         echo view('templates/footer');
