@@ -44,15 +44,13 @@ public function index($platform_id=null, $genre_id=null) {
     $data['genre_name'] = $genre_id;    
     $genre_name = str_replace('%20', ' ', $genre_id);
 
-
-    if ($genre_id !== null) {   
-        if ($platform_name = "Devices and Accessories") {
-            $data['products'] = $this->DeviceModel->DeviceModel($genre_name);
-            $data['productsTitle'] = "$genre_name";
-        } else {
-            $data['products'] = $this->GenreModel->getGenres($platform_name, $genre_name);
-            $data['productsTitle'] = "$genre_name Games";
-        }       
+    /*if ($platform_name = "Devices and Accessories") {
+        $data['products'] = $this->DeviceModel->DeviceModel($genre_name);
+        $data['productsTitle'] = "$genre_name";
+    }*/
+    if ($genre_id !== null) {            
+        $data['products'] = $this->GenreModel->getGenres($platform_name, $genre_name);
+        $data['productsTitle'] = "$genre_name Games";              
     } 
     else if ($platform_id !== null) {
         $data['products'] = $this->SelectPlatformModel->selectPlatform($platform_name);     
