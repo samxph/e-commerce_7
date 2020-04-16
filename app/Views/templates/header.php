@@ -15,8 +15,8 @@
 <body>
     <div class="row topheader">
         <ul>
-            <li><?= anchor('shoppingcart/', 'Shopping cart <i class="fas fa-shopping-cart"></i>') ?></li>
-            <li><?= anchor('login/', 'Sign in <i class="fas fa-user"></i>') ?></li>
+            <li><?= anchor('shoppingcart/', 'Shopping cart <i class="fas fa-shopping-cart"></i>') ?> <?php echo('<span class="text-light"> (' . count($_SESSION['cart'])) . ') </span>'; ?> </li>
+            <li class="ml-3"><?= anchor('login/', 'Sign in <i class="fas fa-user"></i>') ?></li>
         </ul>
     </div>
 
