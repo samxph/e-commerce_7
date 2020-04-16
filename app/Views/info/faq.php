@@ -8,7 +8,7 @@
 <body>
 
 <div class="text-left col-xs-12 col-sm-6 col-md-8">
-<h3 class="title">Quarantine games FAQ</h3></div>
+<h3 class="title">FAQ</h3></div>
 <hr>
 
 <div class="row faq">
