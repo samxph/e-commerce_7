@@ -645,10 +645,7 @@ create table devices (
 
 /* Gaming controllers */
 
-  insert into devices (title, price, picture, description, type, tuoteryhma_id) 
-  values ("Nintendo Switch Pro Wireless controller" , 75, "nintendo_switch_procontroller.jpg", "Take your game
-   sessions up a notch with the Nintendo Switch Pro Controller. Includes motion controls, HD rumble, built in 
-   amiibo functionality, and more. Comes with charging cable (USB C to USB A)", "Gaming controllers" , 5);
+
 
   insert into devices (title, price, picture, description, type, tuoteryhma_id) 
   values ("DualShock 4 Wireless Controller for PlayStation 4" , 59,"ps4_controller.jpg" ,"he DualShock 4 Wireless
@@ -656,9 +653,7 @@ create table devices (
    interactive experiences. Its definitive analog sticks and trigger buttons have been improved for greater feel 
    and sensitivity. A multi touch, clickable touch pad expands gameplay possibilities, while the incorporated light 
    bar in conjunction with the PlayStation Camera allows for easy player identification and screen adjustment when 
-   playing with friends in the same room. The addition of the Share button makes utilizing the social capabilities 
-   of the PlayStation 4 as easy as the push of a button. The DualShock 4 Wireless Controller is more than a controller; 
-   it's your physical connection to a new era of gaming.", "Gaming controllers" , 5);
+   playing with friends in the same room.", "Gaming controllers" , 5);
 
   insert into devices (title, price, picture, description, type, tuoteryhma_id) 
   values ("Microsoft - Wireless Controller for Xbox One and Windows 10 " , 55,"xbox_controller_wireless.jpg" ,"Capture
@@ -688,6 +683,11 @@ create table devices (
   insert into devices (title, price, picture, description, type, tuoteryhma_id) 
   values ("LOGITECH Driving Force G920 Xbox One & PC Racing Wheel & Pedals" , 239,"xbox_racingset.jpg" ,"The Logitech 
   Driving Force G920 Racing Wheel gives you the definitive racing experience for Xbox One and PC.", "Gaming controllers" , 5);
+
+  insert into devices (title, price, picture, description, type, tuoteryhma_id) 
+  values ("Nintendo Switch Pro Wireless controller" , 75, "nintendo_switch_procontroller.jpg", "Take your game
+   sessions up a notch with the Nintendo Switch Pro Controller. Includes motion controls, HD rumble, built in 
+   amiibo functionality, and more. Comes with charging cable (USB C to USB A)", "Gaming controllers" , 5);
 
 /* Gaming displays */
 
@@ -746,8 +746,7 @@ create table devices (
   values ("Kaliento : gaming hand warmer" , 39, "kaliento_hand_warmer.jpg", "Gaming with cold hands is over! 
   Increase your dexterity with the Kaliento, first gaming hand warmer. Designed for eSport, this small device has 
   the shape of a roller and will quickly become your essential accessory during your tournaments or just at home 
-  when you want to succeed fantastic games. Reusable, it is also equipped with a battery 5600 mAh allowing you to 
-  charge your smartphone.", "Other accessories" , 5);
+  when you want to succeed fantastic games.", "Other accessories" , 5);
 
   insert into devices (title, price, picture, description, type, tuoteryhma_id) 
   values ("Razer Base Station Chroma, Chroma Enabled Headset Stand with USB Hub" , 79,"razer_headphonestand.jpg" ,"COMPACT. 
@@ -757,25 +756,21 @@ create table devices (
   The Razer Base Station Chroma provides a perfectly balanced headphone stand to store and display your headphones 
   when not in use. Easy on the eyes and ready for use whenever you need it.", "" , 5);
 
-  insert into devices (title, price, picture, description, type, tuoteryhma_id) 
-  values ("Piranha: Rush Medium Mousepad" , 9,"mousepad.jpg" ,"High quality enhanced micro fiber surface for superior 
-  glide and pixel precise tracking.", "Other accessories" , 5);
 
   insert into devices (title, price, picture, description, type, tuoteryhma_id) 
   values ("HyperX™: Pulsefire Core™ Mouse" , 39,"mouse.jpg" ,"The HyperX Pulsefire Core™ delivers the essentials for 
   gamers looking for a solid, comfortable, wired RGB gaming mouse. The Pixart 3327 optical sensor gives players precise, 
-  smooth tracking with no hardware acceleration, and has native DPI settings of up to 6200 DPI. The ergonomically 
-  designed Pulsefire Core has textured side grips for a comfortable, non-slip grip and its symmetrical shape is 
-  suitable for both palm and claw grips.", "Other accessories" , 5);
+  smooth tracking with no hardware acceleration, and has native DPI settings of up to 6200 DPI.", "Other accessories" , 5);
 
   insert into devices (title, price, picture, description, type, tuoteryhma_id) 
   values ("HyperX™: Alloy Core RGB™ Keyboard" , 59,"keyboard.jpg" ,"Featuring HyperX’s signature radiant light bar 
   and smooth, dynamic RGB lighting effects, the HyperX Alloy Core RGB™ is ideal for gamers looking to enhance their 
   keyboard’s style and performance without breaking the bank. With six different lighting effects and three brightness 
-  levels, it balances both brilliance and budget. Crafted with a durable, reinforced plastic frame, the Alloy Core RGB 
-  was constructed for stability and reliability for gamers who want a keyboard that will last. The soft-touch keys 
-  have a tactile feel, yet are tuned to be quiet, and they also feature gaming-grade anti-ghosting functionality and 
-  key rollover.", "Other accessories" , 5);
+  levels, it balances both brilliance and budget.", "Other accessories" , 5);
+
+  insert into devices (title, price, picture, description, type, tuoteryhma_id) 
+  values ("Piranha: Rush Medium Mousepad" , 9,"mousepad.jpg" ,"High quality enhanced micro fiber surface for superior 
+  glide and pixel precise tracking.", "Other accessories" , 5);
 
   insert into devices (title, price, picture, description, type, tuoteryhma_id) 
   values ("Razer - RGB LED Knife" , 159,"knife_rgb.jpg" ,"Prepare your food at home with this knife like a REAL 
