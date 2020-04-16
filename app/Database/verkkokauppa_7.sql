@@ -741,9 +741,6 @@ create table devices (
 
 /* Other accessories */
 
-  insert into devices (title, price, picture, description, type, tuoteryhma_id) 
-  values ("Razer - RGB LED Knife" , 159,"knife_rgb.jpg" ,"Prepare your food at home with this knife like a REAL 
-  PROFESSIONAL GAMER.", "Other accessories" , 5);
 
   insert into devices (title, price, picture, description, type, tuoteryhma_id) 
   values ("Kaliento : gaming hand warmer" , 39, "kaliento_hand_warmer.jpg", "Gaming with cold hands is over! 
@@ -779,6 +776,10 @@ create table devices (
   was constructed for stability and reliability for gamers who want a keyboard that will last. The soft-touch keys 
   have a tactile feel, yet are tuned to be quiet, and they also feature gaming-grade anti-ghosting functionality and 
   key rollover.", "Other accessories" , 5);
+
+  insert into devices (title, price, picture, description, type, tuoteryhma_id) 
+  values ("Razer - RGB LED Knife" , 159,"knife_rgb.jpg" ,"Prepare your food at home with this knife like a REAL 
+  PROFESSIONAL GAMER.", "Other accessories" , 5);
 /*
   insert into devices (title, price, picture, description, type, tuoteryhma_id) 
   values ("" , ,"" ,"" , 5);
