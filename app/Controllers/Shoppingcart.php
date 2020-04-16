@@ -27,9 +27,6 @@ class Shoppingcart extends BaseController
 
     public function index()
     {
-
-        $model = new ShoppingcartAdminModel();
-
         if (count($_SESSION['cart']) > 0) {
             $products = $this->ShoppingcartAdminModel->getProducts($_SESSION['cart']);
         } else {
@@ -54,11 +51,18 @@ class Shoppingcart extends BaseController
         return redirect('/');
     }
 
-    public function remove()
+    public function remove($product_id)
     {
-        
+        $index = -1;
+        for ($i = 0; $i < count($_SESSION['cart']); $i++) {
+            if ($_SESSION['cart'][$i] === $product_id) {
+                $index = $i;
+            }
+        }
 
-        return redirect('shoppingcart');
+        array_splice($_SESSION['cart'], $index, 1);
+
+        print_r($_SESSION['cart']);
     }
 
     public function empty()
