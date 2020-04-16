@@ -337,7 +337,7 @@ values ("DARK SOULS III", "2016-04-11", 60, "dark3.jpg" , "Dark Souls continues 
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
 values ("Sekiro: Shadows Die Twice", "2019-03-21", 60, "sekiro.jpg" , "Carve your own clever path to vengeance in the 
 award winning adventure from developer FromSoftware, creators of Bloodborne and the Dark Souls series. 
-Take Revenge. Restore Your Honor. Kill Ingeniously.", 27, 7, "Action, Adventure, Multiplayer, RPG, Single Player");
+Take Revenge. Restore Your Honor. Kill Ingeniously.", 27, 7, "Action, Adventure, RPG, Single Player");
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id, genres)
 values ("Bloodborne", "2015-03-24", 30, "bloodborne.jpg" , "Face your fears as you search for answers in the ancient city
  of Yharnam, now cursed with a strange endemic illness spreading through the streets like wildfire. Danger, 
@@ -589,8 +589,6 @@ insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (43, 2);
 
 
 /* Nintendo Switch */
-insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (43, 1);
-
 insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (44, 1);
 
 insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (45, 1);
@@ -604,9 +602,42 @@ insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (48, 1);
 insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (49, 1);
 
 insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (50, 1);
-insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (50, 4);
+
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (51, 1);
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (51, 4);
 
 /*insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (, );*/
+
+
+
+/******************************************************/
+
+create table genre (
+  id int primary key auto_increment,
+  name varchar(255)
+);
+
+insert into genre (name) values ("Action"); /*1*/
+insert into genre (name) values ("Adventure");/*3*/ 
+insert into genre (name) values ("Fighting");/*4*/ 
+insert into genre (name) values ("First Person Shooter");/*5*/ 
+insert into genre (name) values ("Horror");/*6*/ 
+insert into genre (name) values ("Multiplayer");/*9*/ 
+insert into genre (name) values ("Open World");/*10*/ 
+insert into genre (name) values ("RPG");/*11*/
+insert into genre (name) values ("Single Player");/*12*/
+insert into genre (name) values ("Sports");/*13*/
+insert into genre (name) values ("Strategy");/*14*/
+insert into genre (name) values ("Survival");/*15*/
+insert into genre (name) values ("Turn Based");/*16*/
+insert into genre (name) values ("Virtual Reality");/*17*/
+
+insert into genre (name) values ("Consoles");/*18*/
+insert into genre (name) values ("Gaming Controllers");/*19*/
+insert into genre (name) values ("Gaming Displays");/*20*/
+insert into genre (name) values ("Gaming Chairs");/*21*/
+insert into genre (name) values ("Virtual Reality");/*22*/
+insert into genre (name) values ("Other Accessories");/*23*/
 
 /******************************************************/
 
@@ -616,7 +647,10 @@ create table devices (
   price decimal(5,2),
   picture varchar(50),
   description text,
-  type varchar(100),
+  genre_id int not null,
+  index (genre_id),
+  foreign key (genre_id) references genre(id)
+  on delete restrict,
   tuoteryhma_id int not null,
   index (tuoteryhma_id),
   foreign key (tuoteryhma_id) references tuoteryhma(id)
@@ -625,32 +659,32 @@ create table devices (
 
 /* Consoles */
 
-  insert into devices (title, price, picture, description, type, tuoteryhma_id) 
+  insert into devices (title, price, picture, description, genre_id, tuoteryhma_id) 
   values ("Nintendo Switch with Neon Blue and Neon Red Joy‑Con" , 349, "nintendoswitch_console.jpg" ,"Get the gaming 
-  system that lets you play the games you want, wherever you are, however you like.", "Consoles" , 5);
+  system that lets you play the games you want, wherever you are, however you like.", 15 , 5);
 
-  insert into devices (title, price, picture, description, type, tuoteryhma_id) 
+  insert into devices (title, price, picture, description, genre_id, tuoteryhma_id) 
   values ("PlayStation 4 Pro 1TB Console" , 379, "ps4_consolepro.jpg", "Battle friends and foes with the Sony 
   PlayStation 4 Pro console. Its 1TB capacity lets you store plenty of games without an external hard drive, 
   and the dual-shock controller improves your hands-on gaming experience. See enemies in clear, vibrant detail 
-  with the included HDMI cable of the Sony PlayStation 4 Pro console.", "Consoles" , 5);
+  with the included HDMI cable of the Sony PlayStation 4 Pro console.", 15 , 5);
 
-  insert into devices (title, price, picture, description, type, tuoteryhma_id) 
+  insert into devices (title, price, picture, description, genre_id, tuoteryhma_id) 
   values ("Xbox One X 1TB Console" , 299, "xone_xconsole.jpg", "Games play better on Xbox One X. Experience 40 
   percent more power than any other console. 6 teraflops of graphical processing power and a 4K Blu ray player 
   provides more immersive gaming and entertainment. Play with the greatest community of gamers on the most advanced 
   multiplayer network. Works with all your Xbox One games and accessories. Great for 1080p screens games run smoothly,
-   look great, and load quickly.", "Consoles" , 5); 
+   look great, and load quickly.", 15 , 5); 
 
 
 /* Gaming controllers */
 
-  insert into devices (title, price, picture, description, type, tuoteryhma_id) 
+  insert into devices (title, price, picture, description, genre_id, tuoteryhma_id) 
   values ("Nintendo Switch Pro Wireless controller" , 75, "nintendo_switch_procontroller.jpg", "Take your game
    sessions up a notch with the Nintendo Switch Pro Controller. Includes motion controls, HD rumble, built in 
-   amiibo functionality, and more. Comes with charging cable (USB C to USB A)", "Gaming controllers" , 5);
+   amiibo functionality, and more. Comes with charging cable (USB C to USB A)", 16 , 5);
 
-  insert into devices (title, price, picture, description, type, tuoteryhma_id) 
+  insert into devices (title, price, picture, description, genre_id, tuoteryhma_id) 
   values ("DualShock 4 Wireless Controller for PlayStation 4" , 59,"ps4_controller.jpg" ,"he DualShock 4 Wireless
    Controller features familiar controls, and incorporates several innovative features to usher in a new era of 
    interactive experiences. Its definitive analog sticks and trigger buttons have been improved for greater feel 
@@ -658,60 +692,60 @@ create table devices (
    bar in conjunction with the PlayStation Camera allows for easy player identification and screen adjustment when 
    playing with friends in the same room. The addition of the Share button makes utilizing the social capabilities 
    of the PlayStation 4 as easy as the push of a button. The DualShock 4 Wireless Controller is more than a controller; 
-   it's your physical connection to a new era of gaming.", "Gaming controllers" , 5);
+   it's your physical connection to a new era of gaming.", 16 , 5);
 
-  insert into devices (title, price, picture, description, type, tuoteryhma_id) 
+  insert into devices (title, price, picture, description, genre_id, tuoteryhma_id) 
   values ("Microsoft - Wireless Controller for Xbox One and Windows 10 " , 55,"xbox_controller_wireless.jpg" ,"Capture
    all the fine detail with this Xbox wireless controller. Extra-comfortable grips and a streamlined design make 
    gaming more the joy than ever before, and powerful wireless connectivity gives you even more range and connects 
    you to Windows 10 PCs and devices. Create the ideal setup with this Xbox wireless controller thanks to custom button 
-   mapping.", "Gaming controllers" , 5);
+   mapping.", 16 , 5);
 
-  insert into devices (title, price, picture, description, type, tuoteryhma_id) 
+  insert into devices (title, price, picture, description, genre_id, tuoteryhma_id) 
   values ("PDP - Wired Controller for PC and Microsoft Xbox One - Black camo" , 29,"xbox_controller_wired.jpg" ,"Execute
    video game moves smoothly with this PDP wired controller for the Xbox One. Its nonslip grips, textured trigger and 
    shoulder buttons provide sturdy, comfortable use, and the vibration feedback and impulse triggers let you feel the 
    action of the game. This PDP wired controller is also PC-compatible, and it has built-in audio controls for 
-   convenient sound adjustment.", "Gaming controllers" , 5);
+   convenient sound adjustment.", 16 , 5);
 
-  insert into devices (title, price, picture, description, type, tuoteryhma_id) 
+  insert into devices (title, price, picture, description, genre_id, tuoteryhma_id) 
   values ("Xbox Elite Wireless Controller Series 2" , 169 ,"xbox_controller_series2elite.jpg" ,"Designed to meet the 
   needs of today’s competitive gamers, the all-new Xbox Elite Wireless Controller Series 2 features over 30 new ways 
   to play like a pro. Enhance your aiming with new adjustable-tension thumbsticks, fire even faster with shorter hair 
-  trigger locks, and stay on target with a wrap-around rubberized grip.", "Gaming controllers" , 5);
+  trigger locks, and stay on target with a wrap-around rubberized grip.", 16 , 5);
 
-  insert into devices (title, price, picture, description, type, tuoteryhma_id) 
+  insert into devices (title, price, picture, description, genre_id, tuoteryhma_id) 
   values ("Thrustmaster T150 RS Racing Wheel for PlayStation4, PlayStation3 and PC" , 199,"playstation_racingset.jpg" ,"Official 
   Racing Simulator for PS4 and PS3 (also compatible with PC); 1080 degree force feedback racing wheel; Built-in PS4/PS3 
-  sliding switch; Realistic wheel; Large pedal set included.", "Gaming controllers" , 5);
+  sliding switch; Realistic wheel; Large pedal set included.", 16 , 5);
 
-  insert into devices (title, price, picture, description, type, tuoteryhma_id) 
+  insert into devices (title, price, picture, description, genre_id, tuoteryhma_id) 
   values ("LOGITECH Driving Force G920 Xbox One & PC Racing Wheel & Pedals" , 239,"xbox_racingset.jpg" ,"The Logitech 
-  Driving Force G920 Racing Wheel gives you the definitive racing experience for Xbox One and PC.", "Gaming controllers" , 5);
+  Driving Force G920 Racing Wheel gives you the definitive racing experience for Xbox One and PC.", 16 , 5);
 
 /* Gaming displays */
 
-  insert into devices (title, price, picture, description, type, tuoteryhma_id) 
+  insert into devices (title, price, picture, description, genre_id, tuoteryhma_id) 
   values ("LG - UltraGear 27 inch IPS LED FHD FreeSync Monitor" , 299,"lg_display27.jpg" ,"Game seamlessly with the 
   quality visuals of this LG 27-inch UltraGear Full HD monitor. AMD FreeSync technology reduces screen tearing and 
   stuttering, while Dynamic Action Sync helps minimize input delays for fluid gameplay. This LG 27-inch UltraGear 
   Full HD monitor has a 178-degree viewing angle, which delivers crisp, detailed images regardless of your vantage 
-  point.", "Gaming displays" , 5);
+  point.", 17 , 5);
 
-  insert into devices (title, price, picture, description, type, tuoteryhma_id) 
+  insert into devices (title, price, picture, description, genre_id, tuoteryhma_id) 
   values ("MSI - Optix MAG240VC 23.6 inch LED Curved FHD FreeSync Monitor" , 199,"msi_display23.jpg" ,"Marvel at 
   stunning PC graphics with this 23.6-inch MSI Optix gaming monitor. It has AMD FreeSync technology for stutter-free 
   display, and the 144Hz refresh rate and 1 ms response time ensure a smooth flow of fast-paced scenes. This curved, 
-  Full HD MSI Optix gaming monitor has HDMI, DisplayPort and DVI ports for versatile connectivity.", "Gaming displays" , 5);
+  Full HD MSI Optix gaming monitor has HDMI, DisplayPort and DVI ports for versatile connectivity.", 17 , 5);
 
-  insert into devices (title, price, picture, description, type, tuoteryhma_id) 
+  insert into devices (title, price, picture, description, genre_id, tuoteryhma_id) 
   values ("Acer - Predator XB272 27 inch LED FHD G-SYNC Monitor" , 599,"acer_display27.jpg" ,"Get a better view of 
   the enemy in dark spaces with this 27-inch Acer Predator XB2 gaming monitor. Full HD and NVIDIA G-SYNC and ULMB 
   technology decrease blur and ghosting to make images clearer. The lightning-fast 240Hz refresh rate and 1ms response 
-  time of this Acer Predator XB2 gaming monitor mean your shot reaches the target faster.", "Gaming displays" , 5);
+  time of this Acer Predator XB2 gaming monitor mean your shot reaches the target faster.", 17 , 5);
 
 /* Gaming chairs */
-  insert into devices (title, price, picture, description, type, tuoteryhma_id) 
+  insert into devices (title, price, picture, description, genre_id, tuoteryhma_id) 
   values ("X Rocker V Rocker SE Black Foam Floor Video Gaming Chair for Adult, Teen, and Kid Gamers -2.1 High Tech 
   Audio and Wireless Capacity - Foldable and Ergonomic Back Support" , 69,"chair_nolegs.jpg" ,"Fuel your gaming 
   experience with the V Rocker multimedia game chair. Fully immerse yourself into games, movies, and music with Ace 
@@ -720,96 +754,412 @@ create table devices (
   for extra comfort with breathable foam mesh material while the ergonomic design provides full back support. The 
   V Rocker connects to Xbox, PlayStation, Gameboy, MP3/CD/DVD, and Home Theatre systems. The control panel on the 
   side lets you adjust the volume and bass to personal preference. Regular and professional gamers alike can now 
-  enjoy a multi-sensory experience with this fully assembled, foldable foam rocker.", "Gaming chairs" , 5);
+  enjoy a multi-sensory experience with this fully assembled, foldable foam rocker.", 18 , 5);
 
-  insert into devices (title, price, picture, description, type, tuoteryhma_id) 
+  insert into devices (title, price, picture, description, genre_id, tuoteryhma_id) 
   values ("JUMMICO Gaming Chair Ergonomic Executive Office Desk Chair High Back Leather Swivel Computer Racing Chair 
   with Lumbar Support" , 80,"gaming_chair.jpg" ,"Our gaming chair is crafted to perfection and designed to the bodies 
   natural shape, high-quality soft leather provides extra comfort. It is a Perfect choice for gaming, working and 
-  studying.", "Gaming chairs" , 5);
+  studying.", 18 , 5);
 
 /* Virtual Reality */
 
-  insert into devices (title, price, picture, description, type, tuoteryhma_id) 
+  insert into devices (title, price, picture, description, genre_id, tuoteryhma_id) 
   values ("Oculus - Rift S PC-Powered VR Gaming Headset" , 399,"vr_oculus.jpg" ,"Step into virtual reality with this 
   Oculus Rift S PC-powered headset. The advanced optics produce a sharp display with bright, vivid colors, and Oculus 
   Insight tracking removes the need for external sensors to convert movements into virtual reality. This Oculus Rift 
-  S PC-powered headset has a fit wheel that secures the headset with a quick twist.", "Virtual Reality" , 5);
+  S PC-powered headset has a fit wheel that secures the headset with a quick twist.", 19 , 5);
 
-  insert into devices (title, price, picture, description, type, tuoteryhma_id) 
+  insert into devices (title, price, picture, description, genre_id, tuoteryhma_id) 
   values ("Sony - Refurbished PlayStation VR" , 199,"vr_ps4.jpg" ,"Explore worlds with this factory-recertified Sony 
   PlayStation VR Core headset. Its 5.7-inch OLED display lets you experience dynamic environments in Full HD, while 
   the three-axis accelerometer and gyroscope provide accurate motion tracking for smooth gaming. Connect this 
   refurbished Sony PlayStation VR Core headset to a PC, PS4 or other game console via its HDMI or USB 
-  interface.", "Virtual Reality" , 5);
+  interface.", 19 , 5);
 
 /* Other accessories */
 
-  insert into devices (title, price, picture, description, type, tuoteryhma_id) 
+  insert into devices (title, price, picture, description, genre_id, tuoteryhma_id) 
   values ("Razer - RGB LED Knife" , 159,"knife_rgb.jpg" ,"Prepare your food at home with this knife like a REAL 
-  PROFESSIONAL GAMER.", "Other accessories" , 5);
+  PROFESSIONAL GAMER.", 20 , 5);
 
-  insert into devices (title, price, picture, description, type, tuoteryhma_id) 
+  insert into devices (title, price, picture, description, genre_id, tuoteryhma_id) 
   values ("Kaliento : gaming hand warmer" , 39, "kaliento_hand_warmer.jpg", "Gaming with cold hands is over! 
   Increase your dexterity with the Kaliento, first gaming hand warmer. Designed for eSport, this small device has 
   the shape of a roller and will quickly become your essential accessory during your tournaments or just at home 
   when you want to succeed fantastic games. Reusable, it is also equipped with a battery 5600 mAh allowing you to 
-  charge your smartphone.", "Other accessories" , 5);
+  charge your smartphone.", 20 , 5);
 
-  insert into devices (title, price, picture, description, type, tuoteryhma_id) 
+  insert into devices (title, price, picture, description, genre_id, tuoteryhma_id) 
   values ("Razer Base Station Chroma, Chroma Enabled Headset Stand with USB Hub" , 79,"razer_headphonestand.jpg" ,"COMPACT. 
   CONNECT. READY FOR BATTLE. When it comes to the ideal setup, organization is the name of the game. The Razer Base 
   Station Chroma is a must-have for anyone looking to keep their setup minimal while packing functionality into a 
   small space. GET ORGANIZED When you've got a killer gaming setup, the last thing you need is your gear in a mess. 
   The Razer Base Station Chroma provides a perfectly balanced headphone stand to store and display your headphones 
-  when not in use. Easy on the eyes and ready for use whenever you need it.", "" , 5);
+  when not in use. Easy on the eyes and ready for use whenever you need it.", 20 , 5);
 
-  insert into devices (title, price, picture, description, type, tuoteryhma_id) 
+  insert into devices (title, price, picture, description, genre_id, tuoteryhma_id) 
   values ("Piranha: Rush Medium Mousepad" , 9,"mousepad.jpg" ,"High quality enhanced micro fiber surface for superior 
-  glide and pixel precise tracking.", "Other accessories" , 5);
+  glide and pixel precise tracking.", 20 , 5);
 
-  insert into devices (title, price, picture, description, type, tuoteryhma_id) 
+  insert into devices (title, price, picture, description, genre_id, tuoteryhma_id) 
   values ("HyperX™: Pulsefire Core™ Mouse" , 39,"mouse.jpg" ,"The HyperX Pulsefire Core™ delivers the essentials for 
   gamers looking for a solid, comfortable, wired RGB gaming mouse. The Pixart 3327 optical sensor gives players precise, 
   smooth tracking with no hardware acceleration, and has native DPI settings of up to 6200 DPI. The ergonomically 
   designed Pulsefire Core has textured side grips for a comfortable, non-slip grip and its symmetrical shape is 
-  suitable for both palm and claw grips.", "Other accessories" , 5);
+  suitable for both palm and claw grips.", 20 , 5);
 
-  insert into devices (title, price, picture, description, type, tuoteryhma_id) 
+  insert into devices (title, price, picture, description, genre_id, tuoteryhma_id) 
   values ("HyperX™: Alloy Core RGB™ Keyboard" , 59,"keyboard.jpg" ,"Featuring HyperX’s signature radiant light bar 
   and smooth, dynamic RGB lighting effects, the HyperX Alloy Core RGB™ is ideal for gamers looking to enhance their 
   keyboard’s style and performance without breaking the bank. With six different lighting effects and three brightness 
   levels, it balances both brilliance and budget. Crafted with a durable, reinforced plastic frame, the Alloy Core RGB 
   was constructed for stability and reliability for gamers who want a keyboard that will last. The soft-touch keys 
   have a tactile feel, yet are tuned to be quiet, and they also feature gaming-grade anti-ghosting functionality and 
-  key rollover.", "Other accessories" , 5);
+  key rollover.", 20 , 5);
+
 /*
-  insert into devices (title, price, picture, description, type, tuoteryhma_id) 
+  insert into devices (title, price, picture, description, genre_id, tuoteryhma_id) 
   values ("" , ,"" ,"" , 5);
 */
 
 /******************************************************/
 
-create table genreList(
-  id int primary key auto_increment,
-  name varchar(255)
+create table genre_tuote (
+  tuote_id int not null,
+  index (tuote_id),
+  foreign key (tuote_id) references tuote(id)
+  on delete restrict,
+  genre_id int not null,
+  index (genre_id),
+  foreign key (genre_id) references genre(id)
+  on delete restrict
 );
 
-insert into genreList (name) values ("Action");
-insert into genreList (name) values ("Adventure");
-insert into genreList (name) values ("First Person Shooter");
-insert into genreList (name) values ("Horror");
-insert into genreList (name) values ("Open World");
-insert into genreList (name) values ("RPG");
-insert into genreList (name) values ("Sports");
-insert into genreList (name) values ("Strategy");
-insert into genreList (name) values ("Consoles");
-insert into genreList (name) values ("Gaming Controllers");
-insert into genreList (name) values ("Gaming Displays");
-insert into genreList (name) values ("Gaming Chairs");
-insert into genreList (name) values ("Virtual Reality");
-insert into genreList (name) values ("Other Accessories");
+insert into genre_tuote (tuote_id, genre_id) values (1 ,1);
+insert into genre_tuote (tuote_id, genre_id) values (1 ,4);
+insert into genre_tuote (tuote_id, genre_id) values (1 ,7);
+insert into genre_tuote (tuote_id, genre_id) values (1 ,8);
+insert into genre_tuote (tuote_id, genre_id) values (1 ,9);
 
+insert into genre_tuote (tuote_id, genre_id) values (2 ,8);
+insert into genre_tuote (tuote_id, genre_id) values (2 ,9);
+
+insert into genre_tuote (tuote_id, genre_id) values (3 ,1);
+insert into genre_tuote (tuote_id, genre_id) values (3 ,2);
+insert into genre_tuote (tuote_id, genre_id) values (3 ,7);
+insert into genre_tuote (tuote_id, genre_id) values (3 ,8);
+insert into genre_tuote (tuote_id, genre_id) values (3 ,9);
+
+
+
+insert into genre_tuote (tuote_id, genre_id) values (4 ,1);
+insert into genre_tuote (tuote_id, genre_id) values (4 ,3);
+insert into genre_tuote (tuote_id, genre_id) values (4 ,9);
+
+insert into genre_tuote (tuote_id, genre_id) values (5 ,1);
+insert into genre_tuote (tuote_id, genre_id) values (5 ,2);
+insert into genre_tuote (tuote_id, genre_id) values (5 ,6);
+insert into genre_tuote (tuote_id, genre_id) values (5 ,7);
+insert into genre_tuote (tuote_id, genre_id) values (5 ,9);
+
+insert into genre_tuote (tuote_id, genre_id) values (6 ,5);
+insert into genre_tuote (tuote_id, genre_id) values (6 ,9);
+
+
+
+insert into genre_tuote (tuote_id, genre_id) values (7 ,1);
+insert into genre_tuote (tuote_id, genre_id) values (7 ,2);
+insert into genre_tuote (tuote_id, genre_id) values (7 ,4);
+insert into genre_tuote (tuote_id, genre_id) values (7 ,8);
+insert into genre_tuote (tuote_id, genre_id) values (7 ,9);
+
+insert into genre_tuote (tuote_id, genre_id) values (8 ,1);
+insert into genre_tuote (tuote_id, genre_id) values (8 ,2);
+insert into genre_tuote (tuote_id, genre_id) values (8 ,4);
+insert into genre_tuote (tuote_id, genre_id) values (8 ,6);
+insert into genre_tuote (tuote_id, genre_id) values (8 ,7);
+insert into genre_tuote (tuote_id, genre_id) values (8 ,8);
+insert into genre_tuote (tuote_id, genre_id) values (8 ,9);
+
+insert into genre_tuote (tuote_id, genre_id) values (9 ,6);
+insert into genre_tuote (tuote_id, genre_id) values (9 ,9);
+insert into genre_tuote (tuote_id, genre_id) values (9 ,11);
+insert into genre_tuote (tuote_id, genre_id) values (9 ,13);
+
+
+
+insert into genre_tuote (tuote_id, genre_id) values (10 ,1);
+insert into genre_tuote (tuote_id, genre_id) values (10 ,2);
+insert into genre_tuote (tuote_id, genre_id) values (10 ,4);
+insert into genre_tuote (tuote_id, genre_id) values (10 ,9);
+insert into genre_tuote (tuote_id, genre_id) values (10 ,14);
+
+insert into genre_tuote (tuote_id, genre_id) values (11 ,1);
+insert into genre_tuote (tuote_id, genre_id) values (11 ,2);
+insert into genre_tuote (tuote_id, genre_id) values (11 ,6);
+insert into genre_tuote (tuote_id, genre_id) values (11 ,9);
+
+insert into genre_tuote (tuote_id, genre_id) values (12 ,2);
+insert into genre_tuote (tuote_id, genre_id) values (12 ,4);
+insert into genre_tuote (tuote_id, genre_id) values (12 ,5);
+insert into genre_tuote (tuote_id, genre_id) values (12 ,6);
+insert into genre_tuote (tuote_id, genre_id) values (12 ,9);
+insert into genre_tuote (tuote_id, genre_id) values (12 ,12);
+
+
+
+insert into genre_tuote (tuote_id, genre_id) values (13 ,1);
+insert into genre_tuote (tuote_id, genre_id) values (13 ,2);
+insert into genre_tuote (tuote_id, genre_id) values (13 ,7);
+insert into genre_tuote (tuote_id, genre_id) values (13 ,8);
+insert into genre_tuote (tuote_id, genre_id) values (13 ,9);
+
+insert into genre_tuote (tuote_id, genre_id) values (14 ,1);
+insert into genre_tuote (tuote_id, genre_id) values (14 ,6);
+insert into genre_tuote (tuote_id, genre_id) values (14 ,7);
+insert into genre_tuote (tuote_id, genre_id) values (14 ,8);
+insert into genre_tuote (tuote_id, genre_id) values (14 ,9);
+
+insert into genre_tuote (tuote_id, genre_id) values (15 ,1);
+insert into genre_tuote (tuote_id, genre_id) values (15 ,2);
+insert into genre_tuote (tuote_id, genre_id) values (15 ,7);
+insert into genre_tuote (tuote_id, genre_id) values (15 ,8);
+insert into genre_tuote (tuote_id, genre_id) values (15 ,9);
+
+
+
+insert into genre_tuote (tuote_id, genre_id) values (16 ,1);
+insert into genre_tuote (tuote_id, genre_id) values (16 ,4);
+insert into genre_tuote (tuote_id, genre_id) values (16 ,5);
+insert into genre_tuote (tuote_id, genre_id) values (16 ,6);
+insert into genre_tuote (tuote_id, genre_id) values (16 ,9);
+insert into genre_tuote (tuote_id, genre_id) values (16 ,12);
+
+insert into genre_tuote (tuote_id, genre_id) values (17 ,1);
+insert into genre_tuote (tuote_id, genre_id) values (17 ,4);
+insert into genre_tuote (tuote_id, genre_id) values (17 ,6);
+insert into genre_tuote (tuote_id, genre_id) values (17 ,9);
+insert into genre_tuote (tuote_id, genre_id) values (17 ,12);
+
+insert into genre_tuote (tuote_id, genre_id) values (18 ,1);
+insert into genre_tuote (tuote_id, genre_id) values (18 ,4);
+insert into genre_tuote (tuote_id, genre_id) values (18 ,6);
+insert into genre_tuote (tuote_id, genre_id) values (18 ,9);
+insert into genre_tuote (tuote_id, genre_id) values (18 ,12);
+
+
+
+insert into genre_tuote (tuote_id, genre_id) values (19 ,1);
+insert into genre_tuote (tuote_id, genre_id) values (19 ,4);
+insert into genre_tuote (tuote_id, genre_id) values (19 ,6);
+insert into genre_tuote (tuote_id, genre_id) values (19 ,9);
+insert into genre_tuote (tuote_id, genre_id) values (19 ,11);
+
+insert into genre_tuote (tuote_id, genre_id) values (20 ,1);
+insert into genre_tuote (tuote_id, genre_id) values (20 ,2);
+insert into genre_tuote (tuote_id, genre_id) values (20 ,6);
+insert into genre_tuote (tuote_id, genre_id) values (20 ,7);
+insert into genre_tuote (tuote_id, genre_id) values (20 ,8);
+insert into genre_tuote (tuote_id, genre_id) values (20 ,9);
+
+insert into genre_tuote (tuote_id, genre_id) values (21 ,1);
+insert into genre_tuote (tuote_id, genre_id) values (21 ,2);
+insert into genre_tuote (tuote_id, genre_id) values (21 ,7);
+insert into genre_tuote (tuote_id, genre_id) values (21 ,8);
+insert into genre_tuote (tuote_id, genre_id) values (21 ,9);
+
+insert into genre_tuote (tuote_id, genre_id) values (22 ,1);
+insert into genre_tuote (tuote_id, genre_id) values (22 ,2);
+insert into genre_tuote (tuote_id, genre_id) values (22 ,4);
+insert into genre_tuote (tuote_id, genre_id) values (22 ,6);
+insert into genre_tuote (tuote_id, genre_id) values (22 ,7);
+insert into genre_tuote (tuote_id, genre_id) values (22 ,9);
+insert into genre_tuote (tuote_id, genre_id) values (22 ,12);
+
+insert into genre_tuote (tuote_id, genre_id) values (23 ,6);
+insert into genre_tuote (tuote_id, genre_id) values (23 ,9);
+insert into genre_tuote (tuote_id, genre_id) values (23 ,11);
+insert into genre_tuote (tuote_id, genre_id) values (23 ,13);
+
+
+
+insert into genre_tuote (tuote_id, genre_id) values (24 ,6);
+insert into genre_tuote (tuote_id, genre_id) values (24 ,9);
+insert into genre_tuote (tuote_id, genre_id) values (24 ,10);
+
+insert into genre_tuote (tuote_id, genre_id) values (25 ,1);
+insert into genre_tuote (tuote_id, genre_id) values (25 ,4);
+insert into genre_tuote (tuote_id, genre_id) values (25 ,6);
+insert into genre_tuote (tuote_id, genre_id) values (25 ,7);
+insert into genre_tuote (tuote_id, genre_id) values (25 ,9);
+
+insert into genre_tuote (tuote_id, genre_id) values (26 ,1);
+insert into genre_tuote (tuote_id, genre_id) values (26 ,4);
+insert into genre_tuote (tuote_id, genre_id) values (26 ,6);
+insert into genre_tuote (tuote_id, genre_id) values (26 ,7);
+insert into genre_tuote (tuote_id, genre_id) values (26 ,9);
+
+
+
+insert into genre_tuote (tuote_id, genre_id) values (27 ,1);
+insert into genre_tuote (tuote_id, genre_id) values (27 ,2);
+insert into genre_tuote (tuote_id, genre_id) values (27 ,4);
+insert into genre_tuote (tuote_id, genre_id) values (27 ,5);
+insert into genre_tuote (tuote_id, genre_id) values (27 ,6);
+insert into genre_tuote (tuote_id, genre_id) values (27 ,9);
+
+insert into genre_tuote (tuote_id, genre_id) values (28 ,1);
+insert into genre_tuote (tuote_id, genre_id) values (28 ,2);
+insert into genre_tuote (tuote_id, genre_id) values (28 ,4);
+insert into genre_tuote (tuote_id, genre_id) values (28 ,6);
+insert into genre_tuote (tuote_id, genre_id) values (28 ,7);
+insert into genre_tuote (tuote_id, genre_id) values (28 ,8);
+insert into genre_tuote (tuote_id, genre_id) values (28 ,9);
+insert into genre_tuote (tuote_id, genre_id) values (28 ,12);
+
+
+
+insert into genre_tuote (tuote_id, genre_id) values (29 ,1);
+insert into genre_tuote (tuote_id, genre_id) values (29 ,6);
+insert into genre_tuote (tuote_id, genre_id) values (29 ,8);
+insert into genre_tuote (tuote_id, genre_id) values (29 ,9);
+insert into genre_tuote (tuote_id, genre_id) values (29 ,11);
+insert into genre_tuote (tuote_id, genre_id) values (29 ,13);
+
+
+
+
+insert into genre_tuote (tuote_id, genre_id) values (30 ,1);
+insert into genre_tuote (tuote_id, genre_id) values (30 ,6);
+insert into genre_tuote (tuote_id, genre_id) values (30 ,9);
+insert into genre_tuote (tuote_id, genre_id) values (30 ,10);
+
+
+/* Published by Psyonix */
+insert into genre_tuote (tuote_id, genre_id) values (31 ,1);
+insert into genre_tuote (tuote_id, genre_id) values (31 ,6);
+insert into genre_tuote (tuote_id, genre_id) values (31 ,9);
+insert into genre_tuote (tuote_id, genre_id) values (31 ,12);
+insert into genre_tuote (tuote_id, genre_id) values (31 ,14);
+
+
+
+/* Xbox One (ja pc) */
+insert into genre_tuote (tuote_id, genre_id) values (32 ,1);
+insert into genre_tuote (tuote_id, genre_id) values (32 ,2);
+insert into genre_tuote (tuote_id, genre_id) values (32 ,6);
+insert into genre_tuote (tuote_id, genre_id) values (32 ,7);
+
+insert into genre_tuote (tuote_id, genre_id) values (33 ,1);
+insert into genre_tuote (tuote_id, genre_id) values (33 ,6);
+insert into genre_tuote (tuote_id, genre_id) values (33 ,9);
+insert into genre_tuote (tuote_id, genre_id) values (33 ,10);
+
+insert into genre_tuote (tuote_id, genre_id) values (34 ,1);
+insert into genre_tuote (tuote_id, genre_id) values (34 ,4);
+insert into genre_tuote (tuote_id, genre_id) values (34 ,6);
+insert into genre_tuote (tuote_id, genre_id) values (34 ,9);
+
+
+
+insert into genre_tuote (tuote_id, genre_id) values (35 ,1);
+insert into genre_tuote (tuote_id, genre_id) values (35 ,2);
+insert into genre_tuote (tuote_id, genre_id) values (35 ,8);
+insert into genre_tuote (tuote_id, genre_id) values (35 ,9);
+
+insert into genre_tuote (tuote_id, genre_id) values (36 ,1);
+insert into genre_tuote (tuote_id, genre_id) values (36 ,2);
+insert into genre_tuote (tuote_id, genre_id) values (36 ,9);
+
+insert into genre_tuote (tuote_id, genre_id) values (37 ,1);
+insert into genre_tuote (tuote_id, genre_id) values (37 ,2);
+insert into genre_tuote (tuote_id, genre_id) values (37 ,7);
+insert into genre_tuote (tuote_id, genre_id) values (37 ,8);
+insert into genre_tuote (tuote_id, genre_id) values (37 ,9);
+
+
+
+insert into genre_tuote (tuote_id, genre_id) values (38 ,1);
+insert into genre_tuote (tuote_id, genre_id) values (38 ,2);
+insert into genre_tuote (tuote_id, genre_id) values (38 ,6);
+insert into genre_tuote (tuote_id, genre_id) values (38 ,8);
+insert into genre_tuote (tuote_id, genre_id) values (38 ,9);
+
+insert into genre_tuote (tuote_id, genre_id) values (39 ,1);
+insert into genre_tuote (tuote_id, genre_id) values (39 ,2);
+insert into genre_tuote (tuote_id, genre_id) values (39 ,8);
+insert into genre_tuote (tuote_id, genre_id) values (39 ,9);
+
+insert into genre_tuote (tuote_id, genre_id) values (40 ,1);
+insert into genre_tuote (tuote_id, genre_id) values (40 ,2);
+insert into genre_tuote (tuote_id, genre_id) values (40 ,5);
+insert into genre_tuote (tuote_id, genre_id) values (40 ,6);
+insert into genre_tuote (tuote_id, genre_id) values (40 ,8);
+insert into genre_tuote (tuote_id, genre_id) values (40 ,9);
+
+insert into genre_tuote (tuote_id, genre_id) values (41 ,1);
+insert into genre_tuote (tuote_id, genre_id) values (41 ,8);
+insert into genre_tuote (tuote_id, genre_id) values (41 ,9);
+insert into genre_tuote (tuote_id, genre_id) values (41 ,11);
+insert into genre_tuote (tuote_id, genre_id) values (41 ,13);
+
+insert into genre_tuote (tuote_id, genre_id) values (42 ,1);
+insert into genre_tuote (tuote_id, genre_id) values (42 ,2);
+insert into genre_tuote (tuote_id, genre_id) values (42 ,7);
+insert into genre_tuote (tuote_id, genre_id) values (42 ,8);
+insert into genre_tuote (tuote_id, genre_id) values (42 ,9);
+
+insert into genre_tuote (tuote_id, genre_id) values (43 ,1);
+insert into genre_tuote (tuote_id, genre_id) values (43 ,2);
+insert into genre_tuote (tuote_id, genre_id) values (43 ,7);
+insert into genre_tuote (tuote_id, genre_id) values (43 ,9);
+
+
+
+insert into genre_tuote (tuote_id, genre_id) values (44 ,6);
+insert into genre_tuote (tuote_id, genre_id) values (44 ,9);
+
+insert into genre_tuote (tuote_id, genre_id) values (45 ,1);
+insert into genre_tuote (tuote_id, genre_id) values (45 ,2);
+insert into genre_tuote (tuote_id, genre_id) values (45 ,7);
+insert into genre_tuote (tuote_id, genre_id) values (45 ,8);
+insert into genre_tuote (tuote_id, genre_id) values (45 ,9);
+
+insert into genre_tuote (tuote_id, genre_id) values (46 ,1);
+insert into genre_tuote (tuote_id, genre_id) values (46 ,2);
+insert into genre_tuote (tuote_id, genre_id) values (46 ,6);
+insert into genre_tuote (tuote_id, genre_id) values (46 ,7);
+insert into genre_tuote (tuote_id, genre_id) values (46 ,8);
+insert into genre_tuote (tuote_id, genre_id) values (46 ,9);
+insert into genre_tuote (tuote_id, genre_id) values (46 ,11);
+insert into genre_tuote (tuote_id, genre_id) values (46 ,13);
+
+insert into genre_tuote (tuote_id, genre_id) values (47 ,1);
+insert into genre_tuote (tuote_id, genre_id) values (47 ,3);
+insert into genre_tuote (tuote_id, genre_id) values (47 ,6);
+insert into genre_tuote (tuote_id, genre_id) values (47 ,9);
+
+insert into genre_tuote (tuote_id, genre_id) values (48 ,1);
+insert into genre_tuote (tuote_id, genre_id) values (48 ,2);
+insert into genre_tuote (tuote_id, genre_id) values (48 ,9);
+
+insert into genre_tuote (tuote_id, genre_id) values (49 ,1);
+insert into genre_tuote (tuote_id, genre_id) values (49 ,6);
+insert into genre_tuote (tuote_id, genre_id) values (49 ,9);
+
+insert into genre_tuote (tuote_id, genre_id) values (50 ,1);
+insert into genre_tuote (tuote_id, genre_id) values (50 ,8);
+insert into genre_tuote (tuote_id, genre_id) values (50 ,9);
+insert into genre_tuote (tuote_id, genre_id) values (50 ,11);
+insert into genre_tuote (tuote_id, genre_id) values (50 ,13);
+
+insert into genre_tuote (tuote_id, genre_id) values (51 ,1);
+insert into genre_tuote (tuote_id, genre_id) values (51 ,2);
+insert into genre_tuote (tuote_id, genre_id) values (51 ,8);
+insert into genre_tuote (tuote_id, genre_id) values (51 ,9);
+insert into genre_tuote (tuote_id, genre_id) values (51 ,11);
+insert into genre_tuote (tuote_id, genre_id) values (51 ,13);
 
 /******************************************************/
 
@@ -841,13 +1191,10 @@ List of genres:
 
 Used: 
 - Action
-- Action RPG (ARPG)
 - Adventure
 - Fighting
 - First Person Shooter (FPS)
 - Horror
-- JRPG
-- MMORPG
 - Multiplayer
 - Open World
 - RPG
@@ -860,6 +1207,9 @@ Used:
 - Virtual Reality (VR)
 
 Unused
+- Action RPG (ARPG)
+- JRPG
+- MMORPG
 - Visual Novel
 - Stealth
 - Rhythm

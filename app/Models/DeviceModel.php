@@ -4,13 +4,14 @@ use CodeIgniter\Model;
 
 
 class DeviceModel extends Model {
-    protected $table = 'devices';
+    protected $table = 'devices, genre';
      protected $allowedFields = ['id', 'title', 'price', 'description', 'picture'];
 
     public function DeviceModel($type) {
-        $this->table('devices');
-        $this->select('id, title, price, description, picture');
-        $this->where("type = '$type'");
+        $this->table('devices, genre');
+        $this->select('devices.id, title, price, description, picture');
+        $this->where("devices.genre_id = genre.id               
+        AND genre.name = '$type'");
                 
         $query = $this->get();
 

@@ -1,6 +1,6 @@
 <div class="col-lg-12">
 
-  <div class="row">
+  <div id="carousel" class="row">
     <div id="carouselExampleIndicators" class="carousel slide my-4 ad1" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class=""></li>
@@ -33,6 +33,7 @@
     </div>
   </div>
 </div>
+
 <div class="col-lg-3 col-md-6 mb-4">
   <h2 class="text-light"><?= $productsTitle ?></h2>
 </div>
