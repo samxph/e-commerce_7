@@ -42,9 +42,7 @@ $routes->get('shoppingcart/add(:segment)', 'Shoppingcart::add/$1');
 $routes->get('empty', 'Ostokori::empty');
 $routes->get('Contact', 'Contact::index');
 $routes->get('Contactsent', 'Contact::send');
-
-// login
-$routes->get('faq', 'FAQ::index');
+$routes->get('Faq', 'FAQ::index');
 $routes->get('login', 'Login::index');
 
 

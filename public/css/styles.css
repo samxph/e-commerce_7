@@ -79,10 +79,14 @@ color: whitesmoke;
     width: 100%;
 }
 
-  /* this title for login and register*/
+  /* this title for page headings (example. login,register)*/
 .title {
-    color: goldenrod
-};
+    color: goldenrod;
+}
+
+.faq {
+    background-color: black;
+}
 
 /*Checkout css*/
 .paymentWrap {
@@ -145,4 +149,7 @@ color: whitesmoke;
 }
 [type='radio'] {
     display: none;
+}
+.order {
+    margin-right: 15px;
 }
