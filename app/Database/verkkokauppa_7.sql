@@ -716,11 +716,7 @@ create table devices (
   Audio and Wireless Capacity - Foldable and Ergonomic Back Support" , 69,"chair_nolegs.jpg" ,"Fuel your gaming 
   experience with the V Rocker multimedia game chair. Fully immerse yourself into games, movies, and music with Ace 
   Bayou's high tech audio system. This chair features two speakers near the head rest and a built-in subwoofer 
-  positioned to pound your back with bass-heavy sound effects or music. This high-tech video rocker is oversized 
-  for extra comfort with breathable foam mesh material while the ergonomic design provides full back support. The 
-  V Rocker connects to Xbox, PlayStation, Gameboy, MP3/CD/DVD, and Home Theatre systems. The control panel on the 
-  side lets you adjust the volume and bass to personal preference. Regular and professional gamers alike can now 
-  enjoy a multi-sensory experience with this fully assembled, foldable foam rocker.", "Gaming chairs" , 5);
+  positioned to pound your back with bass-heavy sound effects or music.", "Gaming chairs" , 5);
 
   insert into devices (title, price, picture, description, type, tuoteryhma_id) 
   values ("JUMMICO Gaming Chair Ergonomic Executive Office Desk Chair High Back Leather Swivel Computer Racing Chair 
