@@ -141,6 +141,12 @@ color: whitesmoke;
 .paymentWrap .paymentBtnGroup .paymentMethod .method.bitcoin {
 	background-image: url("images/bitcoin.png");
 }
+.paymentWrap .paymentBtnGroup .paymentMethod .method.posti {
+	background-image: url("images/posti.png");
+}
+.paymentWrap .paymentBtnGroup .paymentMethod .method.matkahuolto {
+	background-image: url("images/matkahuolto.png");
+}
 
 
 .paymentWrap .paymentBtnGroup .paymentMethod .method:hover {

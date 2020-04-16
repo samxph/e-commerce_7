@@ -34,6 +34,9 @@ public function index($platform_id=null, $genre_id=null) {
         'title' => 'Quarantine games',
     ];
 
+    $_SESSION['platform'] = $platform_id;
+    $_SESSION['genre'] = $genre_id;
+
     // 2 riviä alhaalla kopioidaan uusiin controllereihin jotta header toimii
     $data['allGenres'] = $this->HeaderGenreModel->getAllGenres();
     $data['allPlatforms'] = $this->HeaderPlatformModel->getPlatforms();

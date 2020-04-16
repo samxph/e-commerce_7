@@ -27,9 +27,6 @@ class Shoppingcart extends BaseController
 
     public function index()
     {
-
-        $model = new ShoppingcartAdminModel();
-
         if (count($_SESSION['cart']) > 0) {
             $products = $this->ShoppingcartAdminModel->getProducts($_SESSION['cart']);
         } else {
@@ -51,12 +48,22 @@ class Shoppingcart extends BaseController
     {
         array_push($_SESSION['cart'], $product_id);
 
-        return redirect('/');
+        $platform_id = $_SESSION['platform'];
+        $genre_id = $_SESSION['genre'];
+
+        return redirect("Frontpage/$platform_id/$genre_id");
     }
 
-    public function remove()
+    public function remove($product_id)
     {
-        
+        $index = -1;
+        for ($i = 0; $i < count($_SESSION['cart']); $i++) {
+            if ($_SESSION['cart'][$i] === $product_id) {
+                $index = $i;
+            }
+        }
+
+        array_splice($_SESSION['cart'], $index, 1);
 
         return redirect('shoppingcart');
     }
@@ -87,6 +94,29 @@ class Shoppingcart extends BaseController
         echo view('templates/header', $data1);
         echo view('checkout_view', $data2);
         echo view('templates/footer');
+    }
+    public function ordersuccess()
+
+    {
+        $model = new ShoppingcartAdminModel();
+
+        if (count($_SESSION['cart']) > 0) {
+            $products = $this->ShoppingcartAdminModel->getProducts($_SESSION['cart']);
+        } else {
+            $products = array();
+        }
+
+        $data2['products'] = $products;
+        $data1 = ['title' => 'Shopping cart'];
+        $data1['allPlatforms'] = $this->HeaderPlatformModel->getPlatforms();
+        $data1['allGenres'] = $this->HeaderGenreModel->getAllGenres();
+        $data1['allPlatforms'] = $this->HeaderPlatformModel->getPlatforms();
+        
+        
+        echo view('templates/header', $data1);
+        echo view('order_view', $data2);
+        echo view('templates/footer');
+    
     }
 
 }

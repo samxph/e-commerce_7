@@ -43,6 +43,7 @@ $routes->get('empty', 'Ostokori::empty');
 $routes->get('Contact', 'Contact::index');
 $routes->get('Contactsent', 'Contact::send');
 $routes->get('Faq', 'FAQ::index');
+$routes->get('About', 'about::index');
 $routes->get('login', 'Login::index');
 
 
