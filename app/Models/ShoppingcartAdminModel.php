@@ -41,5 +41,4 @@ class ShoppingcartAdminModel extends Model
         $product['qty'] = 1;
         array_push($array, $product);
     }
-
 }
