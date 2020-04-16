@@ -7,8 +7,10 @@ use CodeIgniter\Model;
 class ShoppingcartAdminModel extends Model
 {
     protected $table = 'tuote';
+    protected $table1 = 'tilaus';
 
     protected $allowedFields = ['id', 'title', 'price'];
+    protected $allowedFields1 = ['id', 'orderTime', 'user_id','amount'];
 
     public function getProducts($ids)
     {
