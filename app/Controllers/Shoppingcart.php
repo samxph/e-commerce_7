@@ -113,9 +113,6 @@ class Shoppingcart extends BaseController
         echo view('templates/header', $data1);
         echo view('order_view', $data2);
         echo view('templates/footer');
-        
-            
-        
     
     }
 
