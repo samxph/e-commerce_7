@@ -18,7 +18,7 @@ class Faq extends BaseController
       }
 
     public function index() {
-        $data['title'] = 'Quarantine games - FAQ';
+        $data['title'] = 'FAQ';
         // gets all genres and platforms from database
         $data['allGenres'] = $this->HeaderGenreModel->getAllGenres();
         $data['allPlatforms'] = $this->HeaderPlatformModel->getPlatforms();

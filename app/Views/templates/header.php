@@ -48,26 +48,21 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                 <?php foreach ($allPlatforms as $platform): ?>
-                    <li class="nav-item dropdown">
-                    
+                    <li class="nav-item dropdown">                    
                         <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <?= $platform['name']; ?> <i class=" <?=$platform['logo'];?>"></i>
-                        </a>
-                        
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="<?= site_url('Frontpage/' . $platform['id']);  ?>">All Games</a>
-                            <?php foreach ($allGenres as $genre): ?>
-                            <a class="dropdown-item" href="<?= site_url('Frontpage/' . $platform['id'] . '/' . $genre['name']); ?>"><?= $genre['name'] ?></a>
-                            <?php endforeach; ?>
-                            <!--
-                            <a class="dropdown-item" href="#">Adventure</a>
-                            <a class="dropdown-item" href="#">First Person Shooter</a>
-                            <a class="dropdown-item" href="#">Horror</a>
-                            <a class="dropdown-item" href="#">Open World</a>
-                            <a class="dropdown-item" href="#">RPG</a>
-                            <a class="dropdown-item" href="#">Sports</a>
-                            <a class="dropdown-item" href="#">Strategy</a>
-                            -->
+                        </a>                        
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">                              
+                            <?php if ($platform['id'] < 5) { ?> 
+                                <a class="dropdown-item" href="<?= site_url('Frontpage/' . $platform['name']);  ?>">All Games</a>
+                                <?php foreach (array_slice($allGenres, 0, 8) as $genre): ?>                                                                                
+                                    <a class="dropdown-item" href="<?= site_url('Frontpage/' . $platform['name'] . '/' . $genre['name']); ?>"><?= $genre['name'] ?></a>
+                                <?php endforeach;  
+                                } else  { 
+                                    foreach (array_slice($allGenres, 8, 14) as $genre): ?>                                                
+                                        <a class="dropdown-item" href="<?= site_url('Frontpage/' . $platform['name'] . '/' . $genre['name']); ?>"><?= $genre['name'] ?></a>
+                                    <?php endforeach;  
+                                    } ?>
                         </div>
                     </li>
                 <?php endforeach; ?>
@@ -78,56 +73,7 @@
 </div>
 
 <div class="container-fluid">
-                    <!--<li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            XBOX ONE <i class="fab fa-xbox"></i>
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">All Games</a>
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Adventure</a>
-                            <a class="dropdown-item" href="#">First Person Shooter</a>
-                            <a class="dropdown-item" href="#">Horror</a>
-                            <a class="dropdown-item" href="#">Open World</a>
-                            <a class="dropdown-item" href="#">RPG</a>
-                            <a class="dropdown-item" href="#">Sports</a>
-                            <a class="dropdown-item" href="#">Strategy</a>
-                        </div>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Switch <i class="fas fa-dice-two"></i>
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">All Games</a>
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Adventure</a>
-                            <a class="dropdown-item" href="#">Open World</a>
-                            <a class="dropdown-item" href="#">RPG</a>
-                        </div>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            PC <i class="fas fa-mouse"></i>
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">All Games</a>
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Adventure</a>
-                            <a class="dropdown-item" href="#">Fighting</a>
-                            <a class="dropdown-item" href="#">First Person Shooter</a>
-                            <a class="dropdown-item" href="#">Horror</a>
-                            <a class="dropdown-item" href="#">Open World</a>
-                            <a class="dropdown-item" href="#">RPG</a>
-                            <a class="dropdown-item" href="#">Sports</a>
-                            <a class="dropdown-item" href="#">Strategy</a>
-                            <a class="dropdown-item" href="#">Survival</a>
-                            <a class="dropdown-item" href="#">Virtual Reality</a>
-                        </div>
-                    </li>
-
+<!--
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Devices and accessories
