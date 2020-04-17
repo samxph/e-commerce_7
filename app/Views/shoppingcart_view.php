@@ -47,7 +47,7 @@
                     <p><?php
                                     $total = 0;
                                      foreach($products as $product) {
-                                         $total += $product['price'];
+                                         $total += $product['price'] * $product['qty'];
                                      }
                                     echo $total;
                                     
