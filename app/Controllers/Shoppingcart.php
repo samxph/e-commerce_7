@@ -27,6 +27,9 @@ class Shoppingcart extends BaseController
 
     public function index()
     {
+
+        $model = new ShoppingcartAdminModel();
+
         if (count($_SESSION['cart']) > 0) {
             $products = $this->ShoppingcartAdminModel->getProducts($_SESSION['cart']);
         } else {
@@ -51,18 +54,11 @@ class Shoppingcart extends BaseController
         return redirect('/');
     }
 
-    public function remove($product_id)
+    public function remove()
     {
-        $index = -1;
-        for ($i = 0; $i < count($_SESSION['cart']); $i++) {
-            if ($_SESSION['cart'][$i] === $product_id) {
-                $index = $i;
-            }
-        }
+        
 
-        array_splice($_SESSION['cart'], $index, 1);
-
-        print_r($_SESSION['cart']);
+        return redirect('shoppingcart');
     }
 
     public function empty()
@@ -91,6 +87,7 @@ class Shoppingcart extends BaseController
         echo view('templates/header', $data1);
         echo view('checkout_view', $data2);
         echo view('templates/footer');
+        
     }
     public function ordersuccess()
 
@@ -108,12 +105,11 @@ class Shoppingcart extends BaseController
         $data1['allPlatforms'] = $this->HeaderPlatformModel->getPlatforms();
         $data1['allGenres'] = $this->HeaderGenreModel->getAllGenres();
         $data1['allPlatforms'] = $this->HeaderPlatformModel->getPlatforms();
-        
-        
+
         echo view('templates/header', $data1);
         echo view('order_view', $data2);
         echo view('templates/footer');
-    
     }
+
 
 }
