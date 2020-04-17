@@ -32,6 +32,7 @@
       <img class="d-block img-fluid" src="images/mainos1.png" alt="">
     </div>
   </div>
+
 </div>
 <div class="col-lg-3 col-md-6 mb-4">
   <h2 class="text-light"><?= $productsTitle ?></h2>
@@ -65,4 +66,4 @@
 
 </div>
 <!-- /.col-lg-9 -->
-  </div>
+</div>
