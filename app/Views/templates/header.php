@@ -27,12 +27,11 @@
 
     <div class="container-fluid">
         <div class="row">
-
             <div class="logo mt-2 ml-3">
                 <a href="/"> <img src=<?php echo base_url("images/QG_Logo.png") ?> alt="logo"> </a>
             </div>
-            <div class="ml-4 mt-4">
-                <input type="text" name="searchbar" class="search" placeholder="Search website..." size="40">
+            <div class="ml-4 mt-4 input-group">                
+                <input type="text" name="searchbar" class="search col-3" placeholder="Search website..." size="40">
                 <button class="btn btn-warning mb-1 ml-1"><i class="fas fa-search"></i></button>
             </div>
         </div>
@@ -54,13 +53,13 @@
                         </a>                        
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">                              
                             <?php if ($platform['id'] < 5) { ?> 
-                                <a class="dropdown-item" href="<?= site_url('Frontpage/' . $platform['name']);  ?>">All Games</a>
+                                <a class="dropdown-item" href="<?= site_url('frontpage/searchplatform/' . $platform['name']);  ?>">All Games</a>
                                 <?php foreach (array_slice($allGenres, 0, 14) as $genre): ?>                                                                                
-                                    <a class="dropdown-item" href="<?= site_url('Frontpage/' . $platform['name'] . '/' . $genre['name']); ?>"><?= $genre['name'] ?></a>
+                                    <a class="dropdown-item" href="<?= site_url('frontpage/searchgenre/' . $platform['name'] . '/' . $genre['name']); ?>"><?= $genre['name'] ?></a>
                                 <?php endforeach;  
                                 } else  { 
                                     foreach (array_slice($allGenres, 14, 20) as $genre): ?>                                                
-                                        <a class="dropdown-item" href="<?= site_url('Frontpage/' . $platform['name'] . '/' . $genre['name']); ?>"><?= $genre['name'] ?></a>
+                                        <a class="dropdown-item" href="<?= site_url('frontpage/searchgenre/' . $platform['name'] . '/' . $genre['name']); ?>"><?= $genre['name'] ?></a>
                                     <?php endforeach;  
                                     } ?>
                         </div>
