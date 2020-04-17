@@ -1,6 +1,6 @@
 <div class="col-lg-12">
 
-  <div id="carousel" class="row">
+  <div class="row">
     <div id="carouselExampleIndicators" class="carousel slide my-4 ad1" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class=""></li>
@@ -32,13 +32,12 @@
       <img class="d-block img-fluid" src="images/mainos1.png" alt="">
     </div>
   </div>
-
 </div>
 
 <div class="col-lg-3 col-md-6 mb-4">
   <h2 class="text-light"><?= $productsTitle ?></h2>
 </div>
-</div>
+
 <div class="row">
 
   <?php foreach ($products as $product) : ?>
@@ -62,9 +61,6 @@
 
   <?php endforeach; ?>
 
-</div>
-<!-- /.row -->
+</div> <!-- /col-lg-3 -->
 
-</div>
-<!-- /.col-lg-9 -->
-</div>
+</div> <!-- /row -->

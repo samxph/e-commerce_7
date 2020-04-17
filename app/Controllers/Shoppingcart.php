@@ -118,5 +118,10 @@ class Shoppingcart extends BaseController
         echo view('templates/footer');
     
     }
+    public function emptycode()
+    {
+        $_SESSION['codes'] = null;
 
+        return redirect('checkout');
+    }
 }

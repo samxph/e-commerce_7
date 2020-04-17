@@ -26,9 +26,6 @@ class Frontpage extends BaseController
         $this->GenreModel = new GenreModel();
         $this->DeviceModel = new DeviceModel();
 
-        if (!isset($_SESSION['cart'])) {
-            $_SESSION['cart'] = array();
-        }
     }
 
 public function index() {

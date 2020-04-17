@@ -5,9 +5,27 @@ namespace App\Controllers;
 use CodeIgniter\Controller;
 
 use App\Models\TuoteryhmaAdminModel;
+use App\Models\HeaderPlatformModel;
+use App\Models\HeaderGenreModel;
+use App\Models\ShoppingcartAdminModel;
 
 class Tuoteryhma extends BaseController
 {
+
+    public function __construct()
+    {
+        $session = \Config\Services::session();
+        $session->start();
+
+        if (!isset($_SESSION['cart'])) {
+            $_SESSION['cart'] = array();
+        }
+
+        $this->ShoppingcartAdminModel = new ShoppingcartAdminModel();
+        // 2 riviä alhaalla kopioidaan uusiin controllereihin jotta header toimii
+        $this->HeaderPlatformModel = new HeaderPlatformModel();
+        $this->HeaderGenreModel = new HeaderGenreModel();
+    }
 
     public function index()
     {
@@ -17,6 +35,9 @@ class Tuoteryhma extends BaseController
             'title' => 'Tuoteryhmät',
             'tuotteet' => $tuoteryhma_model->haeKaikki()
         ];
+
+        $data['allGenres'] = $this->HeaderGenreModel->getAllGenres();
+        $data['allPlatforms'] = $this->HeaderPlatformModel->getPlatforms();
 
         echo view('templates/header', $data);
         echo view('tuoteryhma_view', $data);
