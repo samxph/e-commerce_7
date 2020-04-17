@@ -42,7 +42,7 @@
 <div class="row">
 
   <?php foreach ($products as $product) : ?>
-    <div class="col-lg-3 col-md-6 mb-4 opacity-100g">
+    <div id="search" class="col-lg-3 col-md-6 mb-4 opacity-100g">
       <div class="card h-100 bg-warning">
         <a href="#"><img class="card-img-top kuvat" src="<?php echo base_url('images/' . $product['picture']); ?>" alt=""></a>
         <div class="card-body">

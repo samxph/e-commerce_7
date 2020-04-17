@@ -32,7 +32,7 @@
                 <a href="/"> <img src=<?php echo base_url("images/QG_Logo.png") ?> alt="logo"> </a>
             </div>
             <div class="ml-4 mt-4">
-                <input type="text" name="searchbar" class="search" placeholder="Search website..." size="40">
+                <input type="text" id="searchinput" onkeyup="searchProducts()" name="searchbar" class="search" placeholder="Search website..." size="40">
                 <button class="btn btn-warning mb-1 ml-1"><i class="fas fa-search"></i></button>
             </div>
         </div>
