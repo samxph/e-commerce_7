@@ -3,11 +3,11 @@
 use CodeIgniter\Model;
 
 class HeaderGenreModel extends Model {
-    protected $table = 'genreList';
+    protected $table = 'genre';
     protected $allowedFields = ['id', 'name'];
 
     public function getAllGenres() {
-        $this->table('genreList');
+        $this->table('genre');
         $this->select('id, name');        
 
         $query = $this->get();

@@ -15,7 +15,11 @@
 <body>
     <div class="row topheader">
         <ul>
+<<<<<<< HEAD
             <li><?= anchor('shoppingcart/', 'Shopping cart <i class="fas fa-shopping-cart"></i>') ?> <?php // echo('<span class="text-light"> (' . count($_SESSION['cart'])) . ') </span>'; ?> </li>
+=======
+            <li><?= anchor('shoppingcart/', 'Shopping cart <i class="fas fa-shopping-cart"></i>') ?> <?php //echo('<span class="text-light"> (' . count($_SESSION['cart'])) . ') </span>'; ?> </li>
+>>>>>>> 37e24409bd3d3917f628ad8cec28ee397e26934f
             <li class="ml-3"><?= anchor('login/', 'Sign in <i class="fas fa-user"></i>') ?></li>
         </ul>
     </div>
@@ -29,7 +33,11 @@
         <div class="row">
 
             <div class="logo mt-2 ml-3">
+<<<<<<< HEAD
                 <a href="/"> <img src=<?php echo base_url("images/QG_Logo.png") ?> alt="logo"> </a>
+=======
+                <a href="\"> <img src=<?php echo base_url("images\QG_Logo.png") ?> alt="logo"> </a>
+>>>>>>> 37e24409bd3d3917f628ad8cec28ee397e26934f
             </div>
             <div class="ml-4 mt-4">
                 <input type="text" name="searchbar" class="search" placeholder="Search website..." size="40">
@@ -39,7 +47,7 @@
 
         <div class="row col">
             <nav class="navbar navbar-expand-md navbar-dark">
-                <a class="navbar-brand" href="/">Home</a>
+                <a class="navbar-brand" href="\">Home</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -55,11 +63,11 @@
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">                              
                             <?php if ($platform['id'] < 5) { ?> 
                                 <a class="dropdown-item" href="<?= site_url('Frontpage/' . $platform['name']);  ?>">All Games</a>
-                                <?php foreach (array_slice($allGenres, 0, 8) as $genre): ?>                                                                                
+                                <?php foreach (array_slice($allGenres, 0, 14) as $genre): ?>                                                                                
                                     <a class="dropdown-item" href="<?= site_url('Frontpage/' . $platform['name'] . '/' . $genre['name']); ?>"><?= $genre['name'] ?></a>
                                 <?php endforeach;  
                                 } else  { 
-                                    foreach (array_slice($allGenres, 8, 14) as $genre): ?>                                                
+                                    foreach (array_slice($allGenres, 14, 20) as $genre): ?>                                                
                                         <a class="dropdown-item" href="<?= site_url('Frontpage/' . $platform['name'] . '/' . $genre['name']); ?>"><?= $genre['name'] ?></a>
                                     <?php endforeach;  
                                     } ?>
