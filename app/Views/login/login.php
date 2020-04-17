@@ -1,6 +1,8 @@
-<h3 class="title ml-3"><?= $title ?></h3>
+<div class="col">
+<h3 class="title"><?= $title ?></h3>
+
 <form action="/login/check">
-    <div class="col-12">
+    <div>
         <?= \Config\Services::validation()->listErrors(); ?>
     </div>
 
@@ -16,3 +18,4 @@
         <button type="button" class="btn btn-secondary" onclick="window.location='<?php echo site_url('login/register'); ?>'">Register</button>
     </div>
 </form>
+</div>
