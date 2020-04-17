@@ -42,10 +42,14 @@ color: whitesmoke;
 
 .ad1 {
     margin-left: 20px;
+    border: 2px solid #ffc107;
+    border-radius: 5px;
 }
 
 .ad2 {
     margin-left: 32px;
+    border: 2px solid #ffc107;
+    border-radius: 5px;
 }
 
 .leftfooter {
