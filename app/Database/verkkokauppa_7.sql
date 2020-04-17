@@ -760,9 +760,7 @@ create table devices (
   values ("Razer Base Station Chroma, Chroma Enabled Headset Stand with USB Hub" , 79,"razer_headphonestand.jpg" ,"COMPACT. 
   CONNECT. READY FOR BATTLE. When it comes to the ideal setup, organization is the name of the game. The Razer Base 
   Station Chroma is a must-have for anyone looking to keep their setup minimal while packing functionality into a 
-  small space. GET ORGANIZED When you've got a killer gaming setup, the last thing you need is your gear in a mess. 
-  The Razer Base Station Chroma provides a perfectly balanced headphone stand to store and display your headphones 
-  when not in use. Easy on the eyes and ready for use whenever you need it.", 20 , 5);
+  small space. GET ORGANIZED When you've got a killer gaming setup, the last thing you need is your gear in a mess.", 20 , 5);
 
 
   insert into devices (title, price, picture, description, genre_id, tuoteryhma_id) 
