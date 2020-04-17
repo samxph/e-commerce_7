@@ -36,6 +36,7 @@
                     
                     <td>
                     <?= anchor('shoppingcart/remove/' . $product['id'], 'Remove item from cart'); ?>
+                    
                     </td>
                 </tr>
 
