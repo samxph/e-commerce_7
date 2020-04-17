@@ -1,3 +1,14 @@
+<?php
+
+
+
+$discount = 0;
+if(count($_POST)>0) {
+    if($_POST['code'] == "covid"){
+    $discount = 1  ;
+    }
+}
+ ?>
 <h1 class='text-light'>Shipping and payment</h1>
 <div class="container">
 	<div class="row">
@@ -14,7 +25,7 @@
         			<label class="text-light">Postcode</label>
         			<input class="form-control" name="userpostcode" placeholder="Enter Postcode" maxlength="30">
         			<label class="text-light">City</label>
-        			<input class="form-control" name="userpostoffice" placeholder="Enter city" maxlength="30">
+        			<input class="form-control" name="userpostoffice" placeholder="Enter City" maxlength="30">
         			
 			</div>
 			<div class="paymentCont">
@@ -44,7 +55,13 @@
                             <h2>Summary</h2>
                             <div class="row">
                                 <div class="col-12 ml-3 mb-3 cart">
-
+                                <form action="" method="post" enctype="multipart/form-data">                         
+                                <input id="code" type="text" name="code" id="code">
+                                <input type="submit" name="submit" value="Submit">
+                                <?= anchor('shoppingcart/emptycode', 'remove code'); ?>
+  
+                                </form>
+                                
                                     <table class="table">
 
                                         <tr>
@@ -77,12 +94,39 @@
                                             </tr>
 
                                         <?php endforeach; ?>
+                                        <tr>
+                                                <td>
+                                                    Discount Code
+                                                </td>
+
+                                                <td>
+                                                -<?=$discount ?> %
+                                                </td>
+                                                <td>
+                                                </td>
+                                                
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Spring sale
+                                                </td>
+
+                                                <td>
+                                                -5 %
+                                                </td>
+
+                                                <td>
+                                                </td>
+                                                
+                                            </tr>
                                     </table>
                                     <h2>Total <?php
                                     $total = 0;
+                                    $sum = 0;
                                      foreach($products as $product) {
-                                         $total += $product['price'];
+                                         $sum += $product['price'] * $product['qty'];
                                      }
+                                     $total = $sum - ($sum * ($discount / 100) +  $sum * 0.05);
                                     echo $total;
                                     
                                     ?> €</h2>
