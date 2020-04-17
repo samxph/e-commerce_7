@@ -51,7 +51,10 @@ class Shoppingcart extends BaseController
     {
         array_push($_SESSION['cart'], $product_id);
 
-        return redirect('/');
+        $platform_id = $_SESSION['platform'];
+        $genre_id = $_SESSION['genre'];
+
+        return redirect("Frontpage/$platform_id/$genre_id");
     }
 
     public function remove()
@@ -110,6 +113,10 @@ class Shoppingcart extends BaseController
         echo view('order_view', $data2);
         echo view('templates/footer');
     }
+    public function emptycode()
+    {
+        $_SESSION['codes'] = null;
 
-
+        return redirect('checkout');
+    }
 }

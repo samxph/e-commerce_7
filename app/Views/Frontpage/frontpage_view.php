@@ -33,10 +33,11 @@
     </div>
   </div>
 </div>
+
 <div class="col-lg-3 col-md-6 mb-4">
   <h2 class="text-light"><?= $productsTitle ?></h2>
 </div>
-</div>
+
 <div class="row">
 
   <?php foreach ($products as $product) : ?>
@@ -60,9 +61,6 @@
 
   <?php endforeach; ?>
 
-</div>
-<!-- /.row -->
+</div> <!-- /col-lg-3 -->
 
-</div>
-<!-- /.col-lg-9 -->
-  </div>
+</div> <!-- /row -->

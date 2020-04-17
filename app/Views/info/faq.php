@@ -81,7 +81,6 @@ On pricing and shipping related issues you can contact customer support at quara
 </p>
 <h5 class="font-weight-bold">15.    Q: Security</h5>
 <p>A: Our web store is secured with SSL certificate. This means the information you input is encrypted and it will not be available for third parties.
-Delivery
 </p>
 
 <h5 class="font-weight-bold">16.    Q: Can I track my order?</h5>

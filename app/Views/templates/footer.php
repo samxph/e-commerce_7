@@ -19,9 +19,9 @@
     <div class="rightfooter pr-5">
         <br>
         
-        <p><a class="text-white" href="Contact">Contact us</a></p>
-        <p><a class="text-white" href="#">About us</a></p>
-        <p><a class="text-white" href="Faq">FAQ</a></p>
+        <li class="ml-3"><?= anchor('Contact', 'Contact us</i>') ?></li>
+        <li class="ml-3"><?= anchor('About', 'About us</i>') ?></li>
+        <li class="ml-3"><?= anchor('Faq', 'FAQ</i>') ?></li>
         
     </div>
 </footer>

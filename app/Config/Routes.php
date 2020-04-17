@@ -32,8 +32,8 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 
 $routes->get('/', 'Frontpage::index');
-$routes->get('Frontpage/(:segment)', 'Frontpage::index/$1');
-$routes->get('Frontpage/(:segment)/(:segment)', 'Frontpage::index/$1/$2');
+$routes->get('frontpage/searchplatform/(:segment)', 'Frontpage::searchplatform/$1');
+$routes->get('frontpage/searchgenre/(:segment)/(:segment)', 'Frontpage::searchgenre/$1/$2');
 $routes->get('frontpage', 'Frontpage::index');
 $routes->get('tuoteryhma', 'Tuoteryhma::index');
 $routes->get('shoppingcart', 'Shoppingcart::index');
@@ -43,6 +43,7 @@ $routes->get('empty', 'Ostokori::empty');
 $routes->get('Contact', 'Contact::index');
 $routes->get('Contactsent', 'Contact::send');
 $routes->get('Faq', 'FAQ::index');
+$routes->get('About', 'about::index');
 $routes->get('login', 'Login::index');
 
 

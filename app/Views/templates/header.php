@@ -15,31 +15,30 @@
 <body>
     <div class="row topheader">
         <ul>
-            <li><?= anchor('shoppingcart/', 'Shopping cart <i class="fas fa-shopping-cart"></i>') ?></li>
-            <li><?= anchor('login/', 'Sign in <i class="fas fa-user"></i>') ?></li>
+            <li><?= anchor('shoppingcart/', 'Shopping cart <i class="fas fa-shopping-cart"></i>') ?> <?php echo('<span class="text-light"> (' . count($_SESSION['cart'])) . ') </span>'; ?> </li>
+            <li class="ml-3"><?= anchor('login/', 'Sign in <i class="fas fa-user"></i>') ?></li>
         </ul>
     </div>
 
     <div class="row">
-        <img src=<?php echo base_url("images\dangerpattern.jpg") ?> class="cover" alt="danger">
+        <img src=<?php echo base_url("images/dangerpattern.jpg") ?> class="cover" alt="danger">
     </div>
 
 
     <div class="container-fluid">
         <div class="row">
-
             <div class="logo mt-2 ml-3">
-                <a href="/"> <img src=<?php echo base_url("images\QG_Logo.png") ?> alt="logo"> </a>
+                <a href="/"> <img src=<?php echo base_url("images/QG_Logo.png") ?> alt="logo"> </a>
             </div>
             <div class="ml-4 mt-4">
-                <input type="text" name="searchbar" class="search" placeholder="Search website..." size="40">
+                <input type="text" id="searchinput" onkeyup="searchProducts()" name="searchbar" class="search" placeholder="Search website..." size="40">
                 <button class="btn btn-warning mb-1 ml-1"><i class="fas fa-search"></i></button>
             </div>
         </div>
 
         <div class="row col">
             <nav class="navbar navbar-expand-md navbar-dark">
-                <a class="navbar-brand" href="/">Home</a>
+                <a class="navbar-brand" href="\">Home</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -54,13 +53,13 @@
                         </a>                        
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">                              
                             <?php if ($platform['id'] < 5) { ?> 
-                                <a class="dropdown-item" href="<?= site_url('Frontpage/' . $platform['name']);  ?>">All Games</a>
-                                <?php foreach (array_slice($allGenres, 0, 8) as $genre): ?>                                                                                
-                                    <a class="dropdown-item" href="<?= site_url('Frontpage/' . $platform['name'] . '/' . $genre['name']); ?>"><?= $genre['name'] ?></a>
+                                <a class="dropdown-item" href="<?= site_url('frontpage/searchplatform/' . $platform['name']);  ?>">All Games</a>
+                                <?php foreach (array_slice($allGenres, 0, 14) as $genre): ?>                                                                                
+                                    <a class="dropdown-item" href="<?= site_url('frontpage/searchgenre/' . $platform['name'] . '/' . $genre['name']); ?>"><?= $genre['name'] ?></a>
                                 <?php endforeach;  
                                 } else  { 
-                                    foreach (array_slice($allGenres, 8, 14) as $genre): ?>                                                
-                                        <a class="dropdown-item" href="<?= site_url('Frontpage/' . $platform['name'] . '/' . $genre['name']); ?>"><?= $genre['name'] ?></a>
+                                    foreach (array_slice($allGenres, 14, 20) as $genre): ?>                                                
+                                        <a class="dropdown-item" href="<?= site_url('frontpage/searchgenre/' . $platform['name'] . '/' . $genre['name']); ?>"><?= $genre['name'] ?></a>
                                     <?php endforeach;  
                                     } ?>
                         </div>

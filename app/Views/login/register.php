@@ -1,4 +1,4 @@
-<h3 class="title"><?= $title ?></h3>
+<h3 class="title ml-3"><?= $title ?></h3>
 <form action="/login/registration">
     <div class="col-12">
         <?= \Config\Services::validation()->listErrors(); ?>
@@ -25,7 +25,7 @@
         <label class="text-light">Password again</label>
         <input class="form-control" type="password" name="confirmpassword" placeholder="Confirm your password" maxlength="30">
     <hr>
-    <button class="btn btn-primary">Register</button>
+    <button class="btn btn-warning">Register</button>
     </div>
     
     <div class="container signin">
