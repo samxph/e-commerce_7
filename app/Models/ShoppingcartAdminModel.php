@@ -42,16 +42,5 @@ class ShoppingcartAdminModel extends Model
         $product['qty'] = 1;
         array_push($array, $product);
     }
-    public function insert_customer($data){
-        $this->db->insert_id();
-        return (isset($id)) ? $id : FALSE;
-    }
-    public function insert_order($data){
-        $this->db->insert('tilaus',$data);
-        $id = $this->db->insert_id();
-        return (isset($id)) ? $id : FALSE;
-    }
-    public function insert_order_detail($data){
-        $this->db->insert('order_detail', $data);
-    }
+    
 }

@@ -6,6 +6,7 @@ use App\Models\ShoppingcartAdminModel;
 // 2 riviä alhaalla kopioidaan uusiin controllereihin jotta header toimii
 use App\Models\HeaderPlatformModel;
 use App\Models\HeaderGenreModel;
+use App\Models\OrderModel;
 
 class Shoppingcart extends BaseController
 {
@@ -118,5 +119,32 @@ class Shoppingcart extends BaseController
         $_SESSION['codes'] = null;
 
         return redirect('checkout');
+    }
+    public function order(){
+        $model = new OrderModel();
+        $model = new ShoppingcartAdminModel();
+        $customer = [
+                'username' => $this->request->getVar('user'),
+                'password' => password_hash($this->request->getVar('password'),PASSWORD_DEFAULT),
+                'firstname' => $this->request->getVar('fname'),
+                'lastname' => $this->request->getVar('lname'),
+                'email' => $this->request->getVar('usermail'),
+                'address' => $this->request->getVar('useraddress'),
+                'postcode' => $this->request->getVar('userpostcode'),
+                'postOffice' => $this->request->getVar('userpostoffice'),
+                'phone' => $this->request->getVar('userphone')
+        ];
+        
+
+        $order = $model->save($customer, $_SESSION['cart']);
+
+        if ($order == true){
+            unset($_SESSION['cart']);
+
+            return redirect("/");
+        }
+        else
+            return redirect ("/");
+        
     }
 }

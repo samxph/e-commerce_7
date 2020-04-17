@@ -2,7 +2,7 @@
 
 use CodeIgniter\Model;
 use App\Models\CustomerModel;
-use App\Models\SaveOrderrowModel;
+use App\Models\SaveOrderRowModel;
 
 class OrderModel extends Model{
     protected $table = "tilaus";
@@ -33,7 +33,7 @@ class OrderModel extends Model{
         
     }
     private function saveCustomer($customer){
-        $customerModel = new customerModel();
+        $customerModel = new CustomerModel();
         $customerModel->save($customer);
 
         return $this->insertID();
@@ -45,13 +45,13 @@ class OrderModel extends Model{
         return $this->insertID();
     }
     private function SaveOrderRow($order_id, $cart){
-        $SaveOrderRowModel = new SaveOrderRowModel;
+        $SaveOrderRowModel = new SaveorderRowModel;
 
         foreach($cart as $product_id){
             $SaveOrderRowModel->save([
-                'tilaus_id' => $order_id,
-                'tuote_id' => $tuote_id,
-                'maara' => 1
+                'id' => $order_id,
+                'orderTime' => $tuote_id,
+                'amount' => 1
             ]);
         }
     }

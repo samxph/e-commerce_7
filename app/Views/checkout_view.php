@@ -27,7 +27,6 @@ if(count($_POST)>0) {
         			<input class="form-control" name="userpostcode" placeholder="Enter Postcode" maxlength="30">
         			<label class="text-light">City</label>
         			<input class="form-control" name="userpostoffice" placeholder="Enter City" maxlength="30">
-        			
 			</div>
 			<div class="paymentCont">
 						<div class="headingWrap">
@@ -150,10 +149,10 @@ if(count($_POST)>0) {
                        				</div>
                                     <div class="footerNavWrap clearfix">
 							<div class="btn btn-success float-left btn-fyi"><span  class="glyphicon glyphicon-chevron-left"><a class="text-light" href='/'> CONTINUE SHOPPING</a></span></div>
-							<div class="btn btn-success float-right btn-fyi"><a class="text-light" href='ordersuccess' value='PlaceOrder'> PLACE ORDER</a><span class="glyphicon glyphicon-chevron-right"></span></div>  
+							<div class="btn btn-success float-right btn-fyi"><a class="text-light" href='order'> PLACE ORDER</a><span class="glyphicon glyphicon-chevron-right"></span></div>  
 							<button>Place Order</button>
 							 </div>
-							 <form>
+							 </form>
                         
 					</div>
 					

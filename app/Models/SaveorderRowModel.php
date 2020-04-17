@@ -6,6 +6,6 @@ class SaveorderRowModel extends Model{
     protected $table = 'tilaus';
 
     protected $allowedFields = [
-        'tilaus_id', 'tuote_id', 'maara'
+        'id', 'user_id', 'amount'
     ];
 }
