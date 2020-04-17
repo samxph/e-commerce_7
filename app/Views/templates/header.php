@@ -15,11 +15,7 @@
 <body>
     <div class="row topheader">
         <ul>
-<<<<<<< HEAD
-            <li><?= anchor('shoppingcart/', 'Shopping cart <i class="fas fa-shopping-cart"></i>') ?> <?php // echo('<span class="text-light"> (' . count($_SESSION['cart'])) . ') </span>'; ?> </li>
-=======
-            <li><?= anchor('shoppingcart/', 'Shopping cart <i class="fas fa-shopping-cart"></i>') ?> <?php //echo('<span class="text-light"> (' . count($_SESSION['cart'])) . ') </span>'; ?> </li>
->>>>>>> 37e24409bd3d3917f628ad8cec28ee397e26934f
+            <li><?= anchor('shoppingcart/', 'Shopping cart <i class="fas fa-shopping-cart"></i>') ?> <?php echo('<span class="text-light"> (' . count($_SESSION['cart'])) . ') </span>'; ?> </li>
             <li class="ml-3"><?= anchor('login/', 'Sign in <i class="fas fa-user"></i>') ?></li>
         </ul>
     </div>
@@ -33,11 +29,7 @@
         <div class="row">
 
             <div class="logo mt-2 ml-3">
-<<<<<<< HEAD
                 <a href="/"> <img src=<?php echo base_url("images/QG_Logo.png") ?> alt="logo"> </a>
-=======
-                <a href="\"> <img src=<?php echo base_url("images\QG_Logo.png") ?> alt="logo"> </a>
->>>>>>> 37e24409bd3d3917f628ad8cec28ee397e26934f
             </div>
             <div class="ml-4 mt-4">
                 <input type="text" name="searchbar" class="search" placeholder="Search website..." size="40">
