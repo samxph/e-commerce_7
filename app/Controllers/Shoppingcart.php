@@ -58,9 +58,16 @@ class Shoppingcart extends BaseController
         return redirect("Frontpage/$platform_id/$genre_id");
     }
 
-    public function remove()
+    public function remove($product_id)
     {
-        
+        $index = -1;
+        for ($i = 0; $i < count($_SESSION['cart']); $i++) {
+            if ($_SESSION['cart'][$i] === $product_id) {
+                $index = $i;
+            }
+        }
+
+        array_splice($_SESSION['cart'], $index, 1);
 
         return redirect('shoppingcart');
     }
