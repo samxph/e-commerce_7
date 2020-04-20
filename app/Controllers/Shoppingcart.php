@@ -55,7 +55,17 @@ class Shoppingcart extends BaseController
         $platform_id = $_SESSION['platform'];
         $genre_id = $_SESSION['genre'];
 
-        return redirect("Frontpage/$platform_id/$genre_id");
+        // print "$genre_id - $platform_id";
+        if ($genre_id === null && $platform_id !== null) {
+            print "frontpage/searchplatform/$platform_id";
+            return redirect('frontpage/searchplatform/' . $platform_id);
+        } else if ($genre_id !== null){
+            print "frontpage/searchgenre/$platform_id/$genre_id";
+            return redirect('frontpage/searchgenre/' . $platform_id . '/' .$genre_id);
+        } else {
+            return redirect('/');
+        }
+        
     }
 
     public function remove($product_id)

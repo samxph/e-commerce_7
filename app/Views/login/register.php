@@ -5,7 +5,7 @@
     </div>
     <div class="form-group col-6">
         <label class="text-light">Username</label>
-        <input class="form-control" name="user" placeholder="Enter username" maxlength="30">
+        <input class="form-control" name="user" placeholder="Enter Username" maxlength="30">
         <label class="text-light">First name</label>
         <input class="form-control" name="fname" placeholder="Enter First name" maxlength="30">
         <label class="text-light">Last name</label>
@@ -30,6 +30,9 @@
     
     <div class="container signin">
         <br>
-    <p class="text-light">Already have an account? <?= anchor ('login/', 'Sign in') ?>.</p>
+        
+    <p class="text-light">Already have an account? 
+    <button type="button" class="btn btn-secondary" onclick="window.location='<?php echo site_url('login/'); ?>'">Sign in</button>
+</p>
   </div>
 </form>
