@@ -63,6 +63,7 @@ class Shoppingcart extends BaseController
             print "frontpage/searchgenre/$platform_id/$genre_id";
             return redirect()->to(site_url('frontpage/searchgenre/' . $platform_id . '/' .$genre_id));
         } else {
+            
             return redirect('/');
         }
         
