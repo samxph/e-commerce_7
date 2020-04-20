@@ -25,53 +25,35 @@ class Shoppingcart extends BaseController
         $this->HeaderPlatformModel = new HeaderPlatformModel();
         $this->HeaderGenreModel = new HeaderGenreModel();
     }
-
     public function index()
     {
-
+        $model = new OrderModel();
         $model = new ShoppingcartAdminModel();
-
-        if (count($_SESSION['cart']) > 0) {
-            $products = $this->ShoppingcartAdminModel->getProducts($_SESSION['cart']);
-        } else {
-            $products = array();
-        }
-
-        $data2['products'] = $products;
-        $data1 = ['title' => 'Shopping cart'];
-        // 2 riviä alhaalla kopioidaan uusiin controllereihin jotta header toimii
-        $data1['allGenres'] = $this->HeaderGenreModel->getAllGenres();
-        $data1['allPlatforms'] = $this->HeaderPlatformModel->getPlatforms();
-
-        echo view('templates/header', $data1);
-        echo view('shoppingcart_view', $data2);
-        echo view('templates/footer');
-    }
-
-    public function add($product_id)
-    {
-        array_push($_SESSION['cart'], $product_id);
-
-        $platform_id = $_SESSION['platform'];
-        $genre_id = $_SESSION['genre'];
-
-        return redirect("Frontpage/$platform_id/$genre_id");
-    }
-
-    public function remove()
-    {
+        $customer = [
+                'username' => $this->request->getVar('user'),
+                'password' => password_hash($this->request->getVar('password'),PASSWORD_DEFAULT),
+                'firstname' => $this->request->getVar('fname'),
+                'lastname' => $this->request->getVar('lname'),
+                'email' => $this->request->getVar('usermail'),
+                'address' => $this->request->getVar('useraddress'),
+                'postcode' => $this->request->getVar('userpostcode'),
+                'postOffice' => $this->request->getVar('userpostoffice'),
+                'phone' => $this->request->getVar('userphone')
+        ];
         
 
-        return redirect('shoppingcart');
-    }
+        $order = $model->save($customer, $_SESSION['cart']);
 
-    public function empty()
-    {
-        $_SESSION['cart'] = null;
+        if ($order == true){
+            unset($_SESSION['cart']);
 
-        return redirect('shoppingcart');
+            return redirect("/");
+        }
+        else
+            return redirect ("/");
+        
     }
-    public function checkout()
+    public function ordersuccess()
 
     {
         $model = new ShoppingcartAdminModel();
@@ -89,8 +71,10 @@ class Shoppingcart extends BaseController
         $data1['allPlatforms'] = $this->HeaderPlatformModel->getPlatforms();
 
         echo view('templates/header', $data1);
-        echo view('checkout_view', $data2);
+        echo view('order_view', $data2);
         echo view('templates/footer');
-        
+
+        return redirect('checkout');
     }
-}
+    }
+

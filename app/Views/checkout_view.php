@@ -149,7 +149,7 @@ if(count($_POST)>0) {
                        				</div>
                                     <div class="footerNavWrap clearfix">
 							<div class="btn btn-success float-left btn-fyi"><span  class="glyphicon glyphicon-chevron-left"><a class="text-light" href='/'> CONTINUE SHOPPING</a></span></div>
-							<div class="btn btn-success float-right btn-fyi"><a class="text-light" href='order'> PLACE ORDER</a><span class="glyphicon glyphicon-chevron-right"></span></div>  
+							<button class="btn btn-success float-right btn-fyi"><a class="text-light"> PLACE ORDER</a><span class="glyphicon glyphicon-chevron-right"></span></button>  
 							
 							 </div>
 							 </form>
