@@ -20,6 +20,6 @@
         <label class="text-light">Message:</label> <br>
         <textarea type="text" name="message" placeholder="Enter Message" rows="10" cols="85" maxlength="500"></textarea>
 
-        <button class="btn btn-primary mt-1">Send</button>
+        <button class="btn btn-warning mt-1">Send</button>
     </div>
 </form>

@@ -8,9 +8,9 @@
 
     <div class="form-group col-4">
         <label class="text-light">Username</label>
-        <input class="form-control" name="user" placeholder="Enter username" maxlength="30">
+        <input class="form-control" name="user" placeholder="Enter Username" maxlength="30">
         <label class="text-light">Password</label>
-        <input class="form-control" type="password" name="password" placeholder="Enter password" maxlength="30">
+        <input class="form-control" type="password" name="password" placeholder="Enter Password" maxlength="30">
 
         <hr>
 
