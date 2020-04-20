@@ -58,10 +58,10 @@ class Shoppingcart extends BaseController
         // print "$genre_id - $platform_id";
         if ($genre_id === null && $platform_id !== null) {
             print "frontpage/searchplatform/$platform_id";
-            return redirect('frontpage/searchplatform/' . $platform_id);
+            return redirect()->to(site_url('frontpage/searchplatform/' . $platform_id));
         } else if ($genre_id !== null){
             print "frontpage/searchgenre/$platform_id/$genre_id";
-            return redirect('frontpage/searchgenre/' . $platform_id . '/' .$genre_id);
+            return redirect()->to(site_url('frontpage/searchgenre/' . $platform_id . '/' .$genre_id));
         } else {
             return redirect('/');
         }
