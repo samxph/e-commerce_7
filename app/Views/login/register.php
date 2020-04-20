@@ -30,6 +30,9 @@
     
     <div class="container signin">
         <br>
-    <p class="text-light">Already have an account? <?= anchor ('login/', 'Sign in') ?>.</p>
+        
+    <p class="text-light">Already have an account? 
+    <button type="button" class="btn btn-secondary" onclick="window.location='<?php echo site_url('login/'); ?>'">Sign in</button>
+</p>
   </div>
 </form>
