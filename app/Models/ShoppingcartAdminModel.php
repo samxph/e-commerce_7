@@ -7,10 +7,9 @@ use CodeIgniter\Model;
 class ShoppingcartAdminModel extends Model
 {
     protected $table = 'tuote';
-    protected $table1 = 'tilaus';
-
+    
     protected $allowedFields = ['id', 'title', 'price'];
-    protected $allowedFields1 = ['id', 'orderTime', 'user_id','amount'];
+    
 
     public function getProducts($ids)
     {
@@ -43,4 +42,5 @@ class ShoppingcartAdminModel extends Model
         $product['qty'] = 1;
         array_push($array, $product);
     }
+    
 }
