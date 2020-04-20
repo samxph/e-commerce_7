@@ -46,6 +46,7 @@ $routes->get('Contactsent', 'Contact::send');
 $routes->get('Faq', 'FAQ::index');
 $routes->get('About', 'about::index');
 $routes->get('login', 'Login::index');
+$routes->get('order', 'order::index');
 
 
 /**
