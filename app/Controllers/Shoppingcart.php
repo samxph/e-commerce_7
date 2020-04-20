@@ -113,12 +113,10 @@ class Shoppingcart extends BaseController
         echo view('templates/header', $data1);
         echo view('order_view', $data2);
         echo view('templates/footer');
-    }
 
-<<<<<<< HEAD
-=======
         return redirect('checkout');
     }
+    
     public function order(){
         $model = new OrderModel();
         $model = new ShoppingcartAdminModel();
@@ -146,5 +144,4 @@ class Shoppingcart extends BaseController
             return redirect ("/");
         
     }
->>>>>>> b108e7fa7192c84ef1f7349cd9818866b8408934
 }
