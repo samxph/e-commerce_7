@@ -1,4 +1,7 @@
 <?php
+
+
+
 $discount = 0;
 if (count($_POST) > 0) {
     if ($_POST['code'] == "covid") {
@@ -6,7 +9,6 @@ if (count($_POST) > 0) {
     }
 }
 ?>
-
 <h1 class='text-light'>Shipping and payment</h1>
 <div class="container-fluid">
     <form action="order" method="post">
@@ -155,5 +157,10 @@ if (count($_POST) > 0) {
                                 <button type="button" class="btn btn-success" onclick="window.location='<?php echo site_url('frontpage'); ?>'">CONTINUE SHOPPING</button>
                                 <button type="submit" class="btn btn-success">PLACE ORDER</button>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </form>
 </div>

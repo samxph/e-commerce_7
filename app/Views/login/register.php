@@ -23,7 +23,7 @@
         <label class="text-light">Password</label>
         <input class="form-control" type="password" name="password" placeholder="Enter Password" maxlength="30">
         <label class="text-light">Password again</label>
-        <input class="form-control" type="password" name="confirmpassword" placeholder="Confirm your password" maxlength="30">
+        <input class="form-control" type="password" name="confirmpassword" placeholder="Confirm Password" maxlength="30">
     <hr>
     <button class="btn btn-warning">Register</button>
     </div>
