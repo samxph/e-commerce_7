@@ -18,6 +18,11 @@ class Frontpage extends BaseController
     public function __construct() {
         $session = \Config\Services::session();
         $session->start();
+
+        if (!isset($_SESSION['cart'])) {
+            $_SESSION['cart'] = array();
+        }
+
         $this->FrontpageAdminModel = new FrontpageAdminModel();
         // 2 riviä alhaalla kopioidaan uusiin controllereihin jotta header toimii
         $this->HeaderPlatformModel = new HeaderPlatformModel();

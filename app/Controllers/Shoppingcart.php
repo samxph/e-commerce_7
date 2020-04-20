@@ -6,6 +6,7 @@ use App\Models\ShoppingcartAdminModel;
 // 2 riviä alhaalla kopioidaan uusiin controllereihin jotta header toimii
 use App\Models\HeaderPlatformModel;
 use App\Models\HeaderGenreModel;
+use App\Models\OrderModel;
 
 class Shoppingcart extends BaseController
 {
@@ -27,6 +28,9 @@ class Shoppingcart extends BaseController
 
     public function index()
     {
+
+        $model = new ShoppingcartAdminModel();
+
         if (count($_SESSION['cart']) > 0) {
             $products = $this->ShoppingcartAdminModel->getProducts($_SESSION['cart']);
         } else {
@@ -63,16 +67,9 @@ class Shoppingcart extends BaseController
         
     }
 
-    public function remove($product_id)
+    public function remove()
     {
-        $index = -1;
-        for ($i = 0; $i < count($_SESSION['cart']); $i++) {
-            if ($_SESSION['cart'][$i] === $product_id) {
-                $index = $i;
-            }
-        }
-
-        array_splice($_SESSION['cart'], $index, 1);
+        
 
         return redirect('shoppingcart');
     }
@@ -103,6 +100,7 @@ class Shoppingcart extends BaseController
         echo view('templates/header', $data1);
         echo view('checkout_view', $data2);
         echo view('templates/footer');
+        
     }
     public function ordersuccess()
 
@@ -120,17 +118,39 @@ class Shoppingcart extends BaseController
         $data1['allPlatforms'] = $this->HeaderPlatformModel->getPlatforms();
         $data1['allGenres'] = $this->HeaderGenreModel->getAllGenres();
         $data1['allPlatforms'] = $this->HeaderPlatformModel->getPlatforms();
-        
-        
+
         echo view('templates/header', $data1);
         echo view('order_view', $data2);
         echo view('templates/footer');
-    
-    }
-    public function emptycode()
-    {
-        $_SESSION['codes'] = null;
 
         return redirect('checkout');
+    }
+    
+    public function order(){
+        $model = new OrderModel();
+        $model = new ShoppingcartAdminModel();
+        $customer = [
+                'username' => $this->request->getVar('user'),
+                'password' => password_hash($this->request->getVar('password'),PASSWORD_DEFAULT),
+                'firstname' => $this->request->getVar('fname'),
+                'lastname' => $this->request->getVar('lname'),
+                'email' => $this->request->getVar('usermail'),
+                'address' => $this->request->getVar('useraddress'),
+                'postcode' => $this->request->getVar('userpostcode'),
+                'postOffice' => $this->request->getVar('userpostoffice'),
+                'phone' => $this->request->getVar('userphone')
+        ];
+        
+
+        $order = $model->save($customer, $_SESSION['cart']);
+
+        if ($order == true){
+            unset($_SESSION['cart']);
+
+            return redirect("/");
+        }
+        else
+            return redirect ("/");
+        
     }
 }
