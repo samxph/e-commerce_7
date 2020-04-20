@@ -19,7 +19,6 @@ if (count($_POST) > 0) {
 
         <div class="row">
             <div class="form-group col-md-4 col-12">
-                <form action="<?php site_url('Shoppingcart/order') ?>" method="post">
                     <h3 class="text-light">Shipping details</h3>
                     <label class="text-light">First name</label>
                     <input class="form-control" name="fname" placeholder="Enter First name" maxlength="30">
@@ -32,7 +31,7 @@ if (count($_POST) > 0) {
                     <label class="text-light">Postcode</label>
                     <input class="form-control" name="userpostcode" placeholder="Enter Postcode" maxlength="30">
                     <label class="text-light">City</label>
-                    <input class="form-control" name="userpostoffice" placeholder="Enter City" maxlength="30">
+                    <input class="form-controlsho" name="userpostoffice" placeholder="Enter City" maxlength="30">
             </div>
             <div class="paymentCont">
                 <div class="headingWrap">

@@ -60,8 +60,6 @@
                      </td>
                     
         </table>
-          <form method="post" action="<?= site_url('shoppingcart/checkout'); ?>">
-          <button class="bg-dark text-light float-right">Checkout</button>
-          </form>
+<button type="button" class="btn btn-waring" onclick="window.location'=<?php echo site_url('order');?>'">Checkout</button>
     </div>
 </div>
