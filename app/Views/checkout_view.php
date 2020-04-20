@@ -11,7 +11,7 @@ if (count($_POST) > 0) {
 ?>
 <h1 class='text-light'>Shipping and payment</h1>
 <div class="container-fluid">
-    <form action="order" method="post">
+    <form action="order/order" method="post">
 
         <div>
             <?= \Config\Services::validation()->listErrors(); ?>
