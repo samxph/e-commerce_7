@@ -39,15 +39,16 @@ public function index() {
         'title' => 'Quarantine games',
     ];
 
+    $_SESSION['genre'] = null;
+    $_SESSION['platform'] = null;
+
     // 2 riviä alhaalla kopioidaan uusiin controllereihin jotta header toimii
     $data['allGenres'] = $this->HeaderGenreModel->getAllGenres();
     $data['allPlatforms'] = $this->HeaderPlatformModel->getPlatforms();
-
-    /*$_SESSION['platform'] = $platform_id;
-    $_SESSION['genre'] = $genre_id;*/
     
     $data['products'] = $this->FrontpageAdminModel->getProducts();
     $data['productsTitle'] = 'New Released Games';
+
     echo view('templates/header', $data);
     echo view('Frontpage/frontpage_view',$data);
     echo view('templates/footer');
@@ -67,6 +68,9 @@ public function searchplatform($platform_id) {
 
     $data['products'] = $this->SelectPlatformModel->selectPlatform($platform_name);     
     $data['productsTitle'] = "$platform_name Games";
+
+    $_SESSION['genre'] = null;
+    $_SESSION['platform'] = $platform_id;
 
     echo view('templates/header', $data);
     echo view('games_view',$data);
@@ -93,6 +97,9 @@ public function searchgenre($platform_id, $genre_id) {
         $data['products'] = $this->GenreModel->getGenres($platform_name, $genre_name);
         $data['productsTitle'] = "$platform_name $genre_name Games"; 
     }
+
+    $_SESSION['platform'] = $platform_id;
+    $_SESSION['genre'] = $genre_id;
 
     echo view('templates/header', $data);
     echo view('games_view',$data);
