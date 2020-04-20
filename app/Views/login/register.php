@@ -5,7 +5,7 @@
     </div>
     <div class="form-group col-6">
         <label class="text-light">Username</label>
-        <input class="form-control" name="user" placeholder="Enter username" maxlength="30">
+        <input class="form-control" name="user" placeholder="Enter Username" maxlength="30">
         <label class="text-light">First name</label>
         <input class="form-control" name="fname" placeholder="Enter First name" maxlength="30">
         <label class="text-light">Last name</label>
