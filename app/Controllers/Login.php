@@ -83,7 +83,7 @@ class Login extends BaseController {
                 echo view('templates/header', ['title' => LOGIN_TITLE]);
                 echo view('login/login');
                 echo view('templates/footer');
-            } 
+            }
             else {
                 $user = $model->check( // user model to check if user exists
                     $this->request->getVar('user'),

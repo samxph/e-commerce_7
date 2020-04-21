@@ -2,12 +2,11 @@
 
 use CodeIgniter\Model;
 use App\Models\CustomerModel;
-use App\Models\SaveOrderRowModel;
 
 class OrderModel extends Model{
     protected $table = "tilaus";
 
-    protected $allowedFields = ['user_id'];
+    protected $allowedFields = ['id', 'user_id', 'amount'];
 
     public function save($customer, $cart){
         $this->db->transStart();

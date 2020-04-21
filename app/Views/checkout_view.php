@@ -1,7 +1,4 @@
 <?php
-
-
-
 $discount = 0;
 if (count($_POST) > 0) {
     if ($_POST['code'] == "covid") {
@@ -9,17 +6,17 @@ if (count($_POST) > 0) {
     }
 }
 ?>
+
 <h1 class='text-light'>Shipping and payment</h1>
 <div class="container-fluid">
-    <form action="order/order" method="post">
+    <form action="ordercheck" method="post">
 
         <div>
             <?= \Config\Services::validation()->listErrors(); ?>
         </div>
 
-        <div class="row">
+        <div class="row mb-5">
             <div class="form-group col-md-4 col-12">
-                <form action="<?php site_url('Shoppingcart/order') ?>" method="post">
                     <h3 class="text-light">Shipping details</h3>
                     <label class="text-light">First name</label>
                     <input class="form-control" name="fname" placeholder="Enter First name" maxlength="30">
@@ -34,7 +31,7 @@ if (count($_POST) > 0) {
                     <label class="text-light">City</label>
                     <input class="form-control" name="userpostoffice" placeholder="Enter City" maxlength="30">
             </div>
-            <div class="paymentCont">
+            <div class="paymentCont mt-2">
                 <div class="headingWrap">
                     <h3 class="headingTop text-center text-light">Select Your Payment Method</h3>
                 </div>
@@ -154,8 +151,8 @@ if (count($_POST) > 0) {
                                 </div>
                             </div>
                             <div class="footerNavWrap clearfix">
-                                <button type="button" class="btn btn-success" onclick="window.location='<?php echo site_url('frontpage'); ?>'">CONTINUE SHOPPING</button>
-                                <button type="submit" class="btn btn-success">PLACE ORDER</button>
+                                <button type="button" class="btn btn-warning" onclick="window.location='<?php echo site_url('frontpage'); ?>'">CONTINUE SHOPPING</button>
+                                <button type="submit" class="btn btn-warning">PLACE ORDER</button>
                             </div>
                         </div>
                     </div>

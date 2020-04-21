@@ -59,14 +59,13 @@ class Shoppingcart extends BaseController
         if ($genre_id === null && $platform_id !== null) {
             print "frontpage/searchplatform/$platform_id";
             return redirect()->to(site_url('frontpage/searchplatform/' . $platform_id));
-        } else if ($genre_id !== null){
+        } else if ($genre_id !== null) {
             print "frontpage/searchgenre/$platform_id/$genre_id";
-            return redirect()->to(site_url('frontpage/searchgenre/' . $platform_id . '/' .$genre_id));
+            return redirect()->to(site_url('frontpage/searchgenre/' . $platform_id . '/' . $genre_id));
         } else {
-            
+
             return redirect('/');
         }
-        
     }
 
     public function remove($product_id)
@@ -89,8 +88,8 @@ class Shoppingcart extends BaseController
 
         return redirect('shoppingcart');
     }
-    public function checkout()
 
+    public function checkout()
     {
         $model = new ShoppingcartAdminModel();
 
@@ -109,6 +108,53 @@ class Shoppingcart extends BaseController
         echo view('templates/header', $data1);
         echo view('checkout_view', $data2);
         echo view('templates/footer');
-        
+    }
+
+    public function ordercheck()
+
+    {
+        $model = new ShoppingcartAdminModel();
+
+        if (count($_SESSION['cart']) > 0) {
+            $products = $this->ShoppingcartAdminModel->getProducts($_SESSION['cart']);
+        } else {
+            $products = array();
+        }
+
+        $data2['products'] = $products;
+        $data1 = ['title' => 'Shopping cart'];
+        $data1['allPlatforms'] = $this->HeaderPlatformModel->getPlatforms();
+        $data1['allGenres'] = $this->HeaderGenreModel->getAllGenres();
+        $data1['allPlatforms'] = $this->HeaderPlatformModel->getPlatforms();
+
+        echo view('templates/header', $data1);
+        echo view('order_view', $data2);
+        echo view('templates/footer');
+    }
+
+    public function order()
+    {
+        $model = new OrderModel();
+        $model = new ShoppingcartAdminModel();
+        $customer = [
+            'username' => $this->request->getVar('user'),
+            'password' => password_hash($this->request->getVar('password'), PASSWORD_DEFAULT),
+            'firstname' => $this->request->getVar('fname'),
+            'lastname' => $this->request->getVar('lname'),
+            'email' => $this->request->getVar('usermail'),
+            'address' => $this->request->getVar('useraddress'),
+            'postcode' => $this->request->getVar('userpostcode'),
+            'postOffice' => $this->request->getVar('userpostoffice'),
+            'phone' => $this->request->getVar('userphone')
+        ];
+
+        $order = $model->save($customer, $_SESSION['cart']);
+
+        if ($order == true) {
+            unset($_SESSION['cart']);
+
+            return redirect("/");
+        } else
+            return redirect("/");
     }
 }
