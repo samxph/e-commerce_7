@@ -60,6 +60,5 @@
                      </td>
                     
         </table>
-<button type="button" class="btn btn-waring" onclick="window.location'=<?php echo site_url('order');?>'">Checkout</button>
-    </div>
+        <button type="button" class="btn btn-waring" nnclick="window.location='<?php echo site_url('order');?>'">Checkout</button>
 </div>
