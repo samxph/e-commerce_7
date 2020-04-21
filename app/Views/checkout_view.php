@@ -1,10 +1,7 @@
 <h3 class='text-light pb-2'>Shipping and payment</h1>
 
     <form action="order/makeorder" method="post">
-        <div>
-            <?= \Config\Services::validation()->listErrors(); ?>
-        </div>
-
+    
         <div class="row ml-2">
             <div class="col-6 bg-warning ml-3 mb-3 cart">
                 <h4 class="mt-2">Customer information</h4>
