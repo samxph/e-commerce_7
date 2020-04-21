@@ -1,12 +1,9 @@
-<h3 class="text-light">Shopping cart</h3>
-
-<div class="row">
+<div class="row ml-2">
     <div class="col-6 bg-warning ml-3 mb-3 cart">
-
+        <h4 class="mt-2">Shopping cart</h3>
         <?= anchor('shoppingcart/empty', 'Empty cart'); ?>
 
         <table class="table">
-
             <tr>
                 <th>
                     Title
@@ -20,7 +17,6 @@
             </tr>
 
             <?php foreach ($products as $product) : ?>
-
                 <tr>
                     <td>
                         <?= $product['title'] ?>
@@ -58,14 +54,8 @@
             </td>
             <td>
             </td>
-
         </table>
-<<<<<<< HEAD
-        <form method="post" action="<?= site_url('shoppingcart/checkout'); ?>">
-            <button class="bg-dark text-light float-right">Checkout</button>
-        </form>
+        <button class="bg-dark btn btn-secondary text-light float-right mb-2" onclick="window.location='<?php echo site_url('checkout'); ?>'">Proceed to checkout</button>
     </div>
-=======
-        <button type="button" class="btn btn-waring" nnclick="window.location='<?php echo site_url('order');?>'">Checkout</button>
->>>>>>> 7035e35e685c3c5c2841a089ecdb79ab924657e6
 </div>
+
