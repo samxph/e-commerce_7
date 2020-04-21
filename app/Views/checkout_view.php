@@ -1,167 +1,42 @@
-<?php
-$discount = 0;
-if (count($_POST) > 0) {
-    if ($_POST['code'] == "covid") {
-        $discount = 1;
-    }
-}
-?>
+<h3 class='text-light pb-2'>Shipping and payment</h1>
 
-<h1 class='text-light'>Shipping and payment</h1>
-<div class="container-fluid">
-<<<<<<< HEAD
-    <form action="ordercheck" method="post">
-=======
-    <form action="order" method="post">
->>>>>>> 7035e35e685c3c5c2841a089ecdb79ab924657e6
+    <form action="order/makeorder" method="post">
+    
+        <div class="row ml-2">
+            <div class="col-6 bg-warning ml-3 mb-3 cart">
+                <h4 class="mt-2">Customer information</h4>
 
-        <div>
-            <?= \Config\Services::validation()->listErrors(); ?>
-        </div>
-
-        <div class="row mb-5">
-            <div class="form-group col-md-4 col-12">
-                    <h3 class="text-light">Shipping details</h3>
-                    <label class="text-light">First name</label>
-                    <input class="form-control" name="fname" placeholder="Enter First name" maxlength="30">
-                    <label class="text-light">Last name</label>
-                    <input class="form-control" name="lname" placeholder="Enter Last name" maxlength="30">
-                    <label class="text-light">Email</label>
-                    <input class="form-control" name="usermail" placeholder="Example@email.com" maxlength="30">
-                    <label class="text-light">Address</label>
-                    <input class="form-control" name="useraddress" placeholder="Enter Address" maxlength="30">
-                    <label class="text-light">Postcode</label>
-                    <input class="form-control" name="userpostcode" placeholder="Enter Postcode" maxlength="30">
-                    <label class="text-light">City</label>
-                    <input class="form-controlsho" name="userpostoffice" placeholder="Enter City" maxlength="30">
-            </div>
-            <div class="paymentCont mt-2">
-                <div class="headingWrap">
-                    <h3 class="headingTop text-center text-light">Select Your Payment Method</h3>
-                </div>
-                <div class="paymentWrap bg-light col-12">
-                    <div class="btn-group paymentBtnGroup btn-group-justified" data-toggle="buttons">
-                        <label class="btn paymentMethod active">
-                            <div class="method visa"></div>
-                            <input type="radio" name="options" checked>
-                        </label>
-                        <label class="btn paymentMethod">
-                            <div class="method master-card"></div>
-                            <input type="radio" name="options">
-                        </label>
-                        <label class="btn paymentMethod">
-                            <div class="method paypal"></div>
-                            <input type="radio" name="options">
-                        </label>
-                        <label class="btn paymentMethod">
-                            <div class="method bitcoin"></div>
-                            <input type="radio" name="options">
-                        </label>
-
+                <form action="<?= site_url('order/makeorder') ?>" method="post">
+                    <div class="form-group">
+                        <label>*First name:</label>
+                        <input name="firstname" maxlength="50" class="form-control" required>
                     </div>
-                    <h2>Summary</h2>
-                    <div class="row">
-                        <div class="col-12 ml-3 mb-3 cart">
-                            <form action="" method="post" enctype="multipart/form-data">
-                                <input id="code" type="text" name="code" id="code">
-                                <input type="submit" name="submit" value="Submit">
-                                <?= anchor('shoppingcart/emptycode', 'remove code'); ?>
-
-                            </form>
-
-                            <table class="table">
-
-                                <tr>
-                                    <th>
-                                        Title
-                                    </th>
-                                    <th>
-                                        Price
-                                    </th>
-                                    <th>
-                                        Qty.
-                                    </th>
-                                </tr>
-
-                                <?php foreach ($products as $product) : ?>
-
-                                    <tr>
-                                        <td>
-                                            <?= $product['title'] ?>
-                                        </td>
-
-                                        <td>
-                                            <?= $product['price'] ?> €
-                                        </td>
-
-                                        <td>
-                                            <?= $product['qty'] ?>
-                                        </td>
-
-                                    </tr>
-
-                                <?php endforeach; ?>
-                                <tr>
-                                    <td>
-                                        Discount Code
-                                    </td>
-
-                                    <td>
-                                        -<?= $discount ?> %
-                                    </td>
-                                    <td>
-                                    </td>
-
-                                </tr>
-                                <tr>
-                                    <td>
-                                        Spring sale
-                                    </td>
-
-                                    <td>
-                                        -5 %
-                                    </td>
-
-                                    <td>
-                                    </td>
-
-                                </tr>
-                            </table>
-                            <h2>Total <?php
-                                        $total = 0;
-                                        $sum = 0;
-                                        foreach ($products as $product) {
-                                            $sum += $product['price'] * $product['qty'];
-                                        }
-                                        $total = $sum - ($sum * ($discount / 100) +  $sum * 0.05);
-                                        echo $total;
-
-                                        ?> €</h2>
-
-                            <p>Tax is included in the price</p>
-
-                            <h2>Select delivery method</h2>
-
-                            <div class="paymentWrap bg-light col-12">
-                                <div class="btn-group paymentBtnGroup btn-group-justified" data-toggle="buttons">
-                                    <label class="btn paymentMethod">
-                                        <div class="method matkahuolto"></div>
-                                        <input type="radio" name="options">
-                                    </label>
-                                    <label class="btn paymentMethod">
-                                        <div class="method posti"></div>
-                                        <input type="radio" name="options">
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="footerNavWrap clearfix">
-                                <button type="button" class="btn btn-warning" onclick="window.location='<?php echo site_url('frontpage'); ?>'">CONTINUE SHOPPING</button>
-                                <button type="submit" class="btn btn-warning">PLACE ORDER</button>
-                            </div>
-                        </div>
+                    <div class="form-group">
+                        <label>*Last name:</label>
+                        <input name="lastname" maxlength="100" class="form-control" required>
                     </div>
-                </div>
+                    <div class="form-group">
+                        <label>*Address:</label>
+                        <input name="address" maxlength="100" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label>*Postal code:</label>
+                        <input name="postcode" maxlength="5" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label>*Post office:</label>
+                        <input name="postoffice" maxlength="100" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label>*Email:</label>
+                        <input name="email" type="email" maxlength="255" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Phone:</label>
+                        <input name="phone" maxlength="20" class="form-control">
+                    </div>
+                    <button class="bg-dark text-light btn btn-secondary float-right mb-2">Place order</button>
+                    <p>Required fields are marked with *</p>
             </div>
         </div>
     </form>
-</div>
