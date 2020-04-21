@@ -9,7 +9,11 @@ if (count($_POST) > 0) {
 
 <h1 class='text-light'>Shipping and payment</h1>
 <div class="container-fluid">
+<<<<<<< HEAD
     <form action="ordercheck" method="post">
+=======
+    <form action="order" method="post">
+>>>>>>> 7035e35e685c3c5c2841a089ecdb79ab924657e6
 
         <div>
             <?= \Config\Services::validation()->listErrors(); ?>
@@ -29,7 +33,7 @@ if (count($_POST) > 0) {
                     <label class="text-light">Postcode</label>
                     <input class="form-control" name="userpostcode" placeholder="Enter Postcode" maxlength="30">
                     <label class="text-light">City</label>
-                    <input class="form-control" name="userpostoffice" placeholder="Enter City" maxlength="30">
+                    <input class="form-controlsho" name="userpostoffice" placeholder="Enter City" maxlength="30">
             </div>
             <div class="paymentCont mt-2">
                 <div class="headingWrap">

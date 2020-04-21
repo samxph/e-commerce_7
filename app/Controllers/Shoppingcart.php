@@ -88,6 +88,7 @@ class Shoppingcart extends BaseController
 
         return redirect('shoppingcart');
     }
+<<<<<<< HEAD
 
     public function checkout()
     {
@@ -157,4 +158,6 @@ class Shoppingcart extends BaseController
         } else
             return redirect("/");
     }
+=======
+>>>>>>> 7035e35e685c3c5c2841a089ecdb79ab924657e6
 }
