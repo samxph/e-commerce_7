@@ -1157,6 +1157,14 @@ create table contact (
   saved timestamp default current_timestamp
 );
 
+create table review (
+  id int primary key auto_increment,
+  name varchar(100) not null,
+  subject varchar(50) not null,
+  message text,
+  saved timestamp default current_timestamp
+);
+
 /******************************************************/
 
 /* 
