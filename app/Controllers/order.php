@@ -31,13 +31,14 @@ class Order extends BaseController
             $products = array();
         }
 
+        $data2['products'] = $products;
         $data = ['title' => 'Checkout'];
         // 2 riviä alhaalla kopioidaan uusiin controllereihin jotta header toimii
         $data['allGenres'] = $this->HeaderGenreModel->getAllGenres();
         $data['allPlatforms'] = $this->HeaderPlatformModel->getPlatforms();
 
         echo view('templates/header', $data);
-        echo view('checkout_view');
+        echo view('checkout_view', $data2);
         echo view('templates/footer');
     }
 
