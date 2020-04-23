@@ -55,6 +55,14 @@
                 <td>
                 </td>
             </table>
+            <?php if( sizeof($products) == 0){?>
+            <h2 class="text-right">Your shopping cart is empty</h2><?php };?>
+
+            <?php
+            if( sizeof($products) !== 0){
+            
+            ?>
             <button class="bg-dark btn btn-secondary text-light float-right mb-2" onclick="window.location='<?php echo site_url('checkout'); ?>'">Proceed to checkout</button>
+            <?php };?>
     </div>
 </div>
