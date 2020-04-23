@@ -125,38 +125,8 @@
                                         </tr>
 
                                     <?php endforeach; ?>
-                                    <tr>
-                                        <td>
-                                            Discount Code
-                                        </td>
+                               </table>
 
-                                        <td>
-                                            -<?= $discount ?> %
-                                        </td>
-                                        <td>
-                                        </td>
-
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            Spring sale
-                                        </td>
-
-                                        <td>
-                                            -5 %
-                                        </td>
-
-                                        <td>
-                                        </td>
-
-                                    </tr>
-                                </table>
-
-                                <form action="" method="post" enctype="multipart/form-data">
-                                    <input class="mb-3" id="code" type="text" name="code" id="code">
-                                    <input type="submit" name="submit" value="Submit">
-                                    <?= anchor('shoppingcart/emptycode', 'remove code'); ?>
-                                </form>
 
                                 <h2>Total <?php
                                             $total = 0;
@@ -164,7 +134,7 @@
                                             foreach ($products as $product) {
                                                 $sum += $product['price'] * $product['qty'];
                                             }
-                                            $total = $sum - ($sum * ($discount / 100) +  $sum * 0.05);
+                                            $total = $sum;
                                             echo $total;
 
                                             ?> €</h2>
