@@ -56,15 +56,21 @@ class Order extends BaseController
             'phone' => $this->request->getPost('phone')
         ];
 
-        $OrderModel->saveInfo($customer, $_SESSION['cart']);
-        //unset($_SESSION['cart']);
-        $_SESSION['cart'] = array();
+        $payment = ['firstname' => $this->request->getPost('payment')];
 
-        $data = ['title' => 'Thank you'];
+        $delivery = ['firstname' => $this->request->getPost('delivery')];
+
+        
+        $OrderModel->saveInfo($customer, $payment, $delivery, $_SESSION['cart']);
+
+        $_SESSION['cart'] = array(); // kori tyhjennetään, kun tilaus on tehty
+
+        $data = ['title' => 'Thank you']; 
         $data['allGenres'] = $this->HeaderGenreModel->getAllGenres();
         $data['allPlatforms'] = $this->HeaderPlatformModel->getPlatforms();
 
-        echo view('templates/header', $data);
+        // ohjataan 'kiitos tilauksesta' -sivulle
+        echo view('templates/header', $data); 
         echo view('ordercompleted_view');
         echo view('templates/footer');
     }

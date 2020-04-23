@@ -1141,6 +1141,8 @@ create table tilausrivi (
   on delete restrict,
   tuote_id int not null,
   index (tuote_id),
+  maksu varchar(50),
+  toimitus varchar(50),
   foreign key (tuote_id) references tuote(id)
   on delete restrict,
   maara smallint
