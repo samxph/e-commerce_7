@@ -380,8 +380,8 @@ create table tuoteryhma_tuote (
 
 /* Published by CDPR */
 insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (1, 2);
-insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (1, 3);
-insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (1, 4);
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (1, 3);  
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (1, 4); 
 
 insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (2, 1);
 insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (2, 2);
@@ -448,11 +448,13 @@ insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (17, 4);
 insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (18, 2);
 insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (18, 4);
 
-/* Published by Ubisoft */
 insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (19, 2);
 insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (19, 3);
 insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (19, 4);
 
+
+
+/* Published by Ubisoft */
 insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (20, 2);
 insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (20, 3);
 insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (20, 4);
@@ -465,19 +467,19 @@ insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (22, 2);
 insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (22, 3);
 insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (22, 4);
 
-insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (23, 1);
 insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (23, 2);
 insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (23, 3);
 insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (23, 4);
 
-
-/* Published by EA */
 insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (24, 1);
 insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (24, 2);
 insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (24, 3);
 insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (24, 4);
 
-insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (25, 2); 
+
+/* Published by EA */
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (25, 1);
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (25, 2);
 insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (25, 3);
 insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (25, 4);
 
@@ -485,74 +487,77 @@ insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (26, 2);
 insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (26, 3);
 insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (26, 4);
 
-
-/* Published by Bethesda Softworks */
-insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (27, 1);
 insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (27, 2);
 insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (27, 3);
 insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (27, 4);
 
-insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (28, 2); 
+
+/* Published by Bethesda Softworks */
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (28, 1);
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (28, 2);
 insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (28, 3);
 insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (28, 4);
 
-
-/* Published by Sega */
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (29, 2);
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (29, 3);
 insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (29, 4);
 
 
-/* Published by Codemasters */
-insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (30, 2);
-insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (30, 3); 
+/* Published by Sega */
 insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (30, 4);
 
 
-/* Published by Psyonix */
-insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (31, 1);
+/* Published by Codemasters */
 insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (31, 2);
-insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (31, 3);
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (31, 3); 
 insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (31, 4);
 
 
-/* Xbox One (ja pc) */
+/* Published by Psyonix */
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (32, 1);
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (32, 2);
 insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (32, 3);
 insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (32, 4);
 
+
+/* Xbox One (ja pc) */
 insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (33, 3);
 insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (33, 4);
 
-insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (34, 3); 
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (34, 3);
 insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (34, 4);
+
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (35, 3);
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (35, 4);
 
 
 /* Ps4 */
-insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (35, 2);
-
 insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (36, 2);
 
 insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (37, 2);
 
-insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (38, 2); 
-insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (38, 3);
-insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (38, 4);
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (38, 2);
+
 
 insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (39, 2);
 insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (39, 3);
-insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (39, 4); 
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (39, 4);
 
 insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (40, 2);
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (40, 3);
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (40, 4); 
 
 insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (41, 2);
 
 insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (42, 2);
-insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (42, 4);
 
 insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (43, 2);
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (43, 4);
+
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (44, 2);
 
 
 /* Nintendo Switch */
-insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (44, 1);
-
 insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (45, 1);
 
 insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (46, 1);
@@ -566,7 +571,9 @@ insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (49, 1);
 insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (50, 1);
 
 insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (51, 1);
-insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (51, 4);
+
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (52, 1);
+insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (52, 4);
 
 /*insert into tuoteryhma_tuote (tuote_id, tuoteryhma_id) values (, );*/
 
@@ -786,6 +793,7 @@ create table genre_tuote (
   on delete restrict
 );
 
+/* Published by CDPR */
 insert into genre_tuote (tuote_id, genre_id) values (1 ,1);
 insert into genre_tuote (tuote_id, genre_id) values (1 ,4);
 insert into genre_tuote (tuote_id, genre_id) values (1 ,7);
@@ -803,6 +811,7 @@ insert into genre_tuote (tuote_id, genre_id) values (3 ,9);
 
 
 
+/* Published by CAPCOM */
 insert into genre_tuote (tuote_id, genre_id) values (4 ,1);
 insert into genre_tuote (tuote_id, genre_id) values (4 ,3);
 insert into genre_tuote (tuote_id, genre_id) values (4 ,9);
@@ -817,7 +826,7 @@ insert into genre_tuote (tuote_id, genre_id) values (6 ,5);
 insert into genre_tuote (tuote_id, genre_id) values (6 ,9);
 
 
-
+/* Published by 2K */
 insert into genre_tuote (tuote_id, genre_id) values (7 ,1);
 insert into genre_tuote (tuote_id, genre_id) values (7 ,2);
 insert into genre_tuote (tuote_id, genre_id) values (7 ,4);
@@ -839,6 +848,7 @@ insert into genre_tuote (tuote_id, genre_id) values (9 ,13);
 
 
 
+/* Published by Valve */
 insert into genre_tuote (tuote_id, genre_id) values (10 ,1);
 insert into genre_tuote (tuote_id, genre_id) values (10 ,2);
 insert into genre_tuote (tuote_id, genre_id) values (10 ,4);
@@ -859,6 +869,7 @@ insert into genre_tuote (tuote_id, genre_id) values (12 ,12);
 
 
 
+/* Published by Square Enix */
 insert into genre_tuote (tuote_id, genre_id) values (13 ,1);
 insert into genre_tuote (tuote_id, genre_id) values (13 ,2);
 insert into genre_tuote (tuote_id, genre_id) values (13 ,7);
@@ -879,6 +890,7 @@ insert into genre_tuote (tuote_id, genre_id) values (15 ,9);
 
 
 
+/* Published by Activision */
 insert into genre_tuote (tuote_id, genre_id) values (16 ,1);
 insert into genre_tuote (tuote_id, genre_id) values (16 ,4);
 insert into genre_tuote (tuote_id, genre_id) values (16 ,5);
@@ -898,51 +910,53 @@ insert into genre_tuote (tuote_id, genre_id) values (18 ,6);
 insert into genre_tuote (tuote_id, genre_id) values (18 ,9);
 insert into genre_tuote (tuote_id, genre_id) values (18 ,12);
 
-
-
 insert into genre_tuote (tuote_id, genre_id) values (19 ,1);
 insert into genre_tuote (tuote_id, genre_id) values (19 ,4);
-insert into genre_tuote (tuote_id, genre_id) values (19 ,6);
 insert into genre_tuote (tuote_id, genre_id) values (19 ,9);
-insert into genre_tuote (tuote_id, genre_id) values (19 ,11);
+insert into genre_tuote (tuote_id, genre_id) values (19 ,10);
+insert into genre_tuote (tuote_id, genre_id) values (19 ,12);
 
+
+
+/* Published by Ubisoft */
 insert into genre_tuote (tuote_id, genre_id) values (20 ,1);
-insert into genre_tuote (tuote_id, genre_id) values (20 ,2);
+insert into genre_tuote (tuote_id, genre_id) values (20 ,4);
 insert into genre_tuote (tuote_id, genre_id) values (20 ,6);
-insert into genre_tuote (tuote_id, genre_id) values (20 ,7);
-insert into genre_tuote (tuote_id, genre_id) values (20 ,8);
 insert into genre_tuote (tuote_id, genre_id) values (20 ,9);
+insert into genre_tuote (tuote_id, genre_id) values (20 ,11);
 
 insert into genre_tuote (tuote_id, genre_id) values (21 ,1);
 insert into genre_tuote (tuote_id, genre_id) values (21 ,2);
+insert into genre_tuote (tuote_id, genre_id) values (21 ,6);
 insert into genre_tuote (tuote_id, genre_id) values (21 ,7);
 insert into genre_tuote (tuote_id, genre_id) values (21 ,8);
 insert into genre_tuote (tuote_id, genre_id) values (21 ,9);
 
 insert into genre_tuote (tuote_id, genre_id) values (22 ,1);
 insert into genre_tuote (tuote_id, genre_id) values (22 ,2);
-insert into genre_tuote (tuote_id, genre_id) values (22 ,4);
-insert into genre_tuote (tuote_id, genre_id) values (22 ,6);
 insert into genre_tuote (tuote_id, genre_id) values (22 ,7);
+insert into genre_tuote (tuote_id, genre_id) values (22 ,8);
 insert into genre_tuote (tuote_id, genre_id) values (22 ,9);
-insert into genre_tuote (tuote_id, genre_id) values (22 ,12);
 
+insert into genre_tuote (tuote_id, genre_id) values (23 ,1);
+insert into genre_tuote (tuote_id, genre_id) values (23 ,2);
+insert into genre_tuote (tuote_id, genre_id) values (23 ,4);
 insert into genre_tuote (tuote_id, genre_id) values (23 ,6);
+insert into genre_tuote (tuote_id, genre_id) values (23 ,7);
 insert into genre_tuote (tuote_id, genre_id) values (23 ,9);
-insert into genre_tuote (tuote_id, genre_id) values (23 ,11);
-insert into genre_tuote (tuote_id, genre_id) values (23 ,13);
-
-
+insert into genre_tuote (tuote_id, genre_id) values (23 ,12);
 
 insert into genre_tuote (tuote_id, genre_id) values (24 ,6);
 insert into genre_tuote (tuote_id, genre_id) values (24 ,9);
-insert into genre_tuote (tuote_id, genre_id) values (24 ,10);
+insert into genre_tuote (tuote_id, genre_id) values (24 ,11);
+insert into genre_tuote (tuote_id, genre_id) values (24 ,13);
 
-insert into genre_tuote (tuote_id, genre_id) values (25 ,1);
-insert into genre_tuote (tuote_id, genre_id) values (25 ,4);
+
+
+/* Published by EA */
 insert into genre_tuote (tuote_id, genre_id) values (25 ,6);
-insert into genre_tuote (tuote_id, genre_id) values (25 ,7);
 insert into genre_tuote (tuote_id, genre_id) values (25 ,9);
+insert into genre_tuote (tuote_id, genre_id) values (25 ,10);
 
 insert into genre_tuote (tuote_id, genre_id) values (26 ,1);
 insert into genre_tuote (tuote_id, genre_id) values (26 ,4);
@@ -950,166 +964,176 @@ insert into genre_tuote (tuote_id, genre_id) values (26 ,6);
 insert into genre_tuote (tuote_id, genre_id) values (26 ,7);
 insert into genre_tuote (tuote_id, genre_id) values (26 ,9);
 
-
-
 insert into genre_tuote (tuote_id, genre_id) values (27 ,1);
-insert into genre_tuote (tuote_id, genre_id) values (27 ,2);
 insert into genre_tuote (tuote_id, genre_id) values (27 ,4);
-insert into genre_tuote (tuote_id, genre_id) values (27 ,5);
 insert into genre_tuote (tuote_id, genre_id) values (27 ,6);
+insert into genre_tuote (tuote_id, genre_id) values (27 ,7);
 insert into genre_tuote (tuote_id, genre_id) values (27 ,9);
 
+
+
+/* Published by Bethesda Softworks */
 insert into genre_tuote (tuote_id, genre_id) values (28 ,1);
 insert into genre_tuote (tuote_id, genre_id) values (28 ,2);
 insert into genre_tuote (tuote_id, genre_id) values (28 ,4);
+insert into genre_tuote (tuote_id, genre_id) values (28 ,5);
 insert into genre_tuote (tuote_id, genre_id) values (28 ,6);
-insert into genre_tuote (tuote_id, genre_id) values (28 ,7);
-insert into genre_tuote (tuote_id, genre_id) values (28 ,8);
 insert into genre_tuote (tuote_id, genre_id) values (28 ,9);
-insert into genre_tuote (tuote_id, genre_id) values (28 ,12);
-
-
 
 insert into genre_tuote (tuote_id, genre_id) values (29 ,1);
+insert into genre_tuote (tuote_id, genre_id) values (29 ,2);
+insert into genre_tuote (tuote_id, genre_id) values (29 ,4);
 insert into genre_tuote (tuote_id, genre_id) values (29 ,6);
+insert into genre_tuote (tuote_id, genre_id) values (29 ,7);
 insert into genre_tuote (tuote_id, genre_id) values (29 ,8);
 insert into genre_tuote (tuote_id, genre_id) values (29 ,9);
-insert into genre_tuote (tuote_id, genre_id) values (29 ,11);
-insert into genre_tuote (tuote_id, genre_id) values (29 ,13);
+insert into genre_tuote (tuote_id, genre_id) values (29 ,12);
 
 
 
-
+/* Published by Sega */
 insert into genre_tuote (tuote_id, genre_id) values (30 ,1);
 insert into genre_tuote (tuote_id, genre_id) values (30 ,6);
+insert into genre_tuote (tuote_id, genre_id) values (30 ,8);
 insert into genre_tuote (tuote_id, genre_id) values (30 ,9);
-insert into genre_tuote (tuote_id, genre_id) values (30 ,10);
+insert into genre_tuote (tuote_id, genre_id) values (30 ,11);
+insert into genre_tuote (tuote_id, genre_id) values (30 ,13);
 
 
-/* Published by Psyonix */
+
+
+/* Published by Codemasters */
 insert into genre_tuote (tuote_id, genre_id) values (31 ,1);
 insert into genre_tuote (tuote_id, genre_id) values (31 ,6);
 insert into genre_tuote (tuote_id, genre_id) values (31 ,9);
-insert into genre_tuote (tuote_id, genre_id) values (31 ,12);
-insert into genre_tuote (tuote_id, genre_id) values (31 ,14);
+insert into genre_tuote (tuote_id, genre_id) values (31 ,10);
+
+
+/* Published by Psyonix */
+insert into genre_tuote (tuote_id, genre_id) values (32 ,1);
+insert into genre_tuote (tuote_id, genre_id) values (32 ,6);
+insert into genre_tuote (tuote_id, genre_id) values (32 ,9);
+insert into genre_tuote (tuote_id, genre_id) values (32 ,12);
+insert into genre_tuote (tuote_id, genre_id) values (32 ,14);
 
 
 
 /* Xbox One (ja pc) */
-insert into genre_tuote (tuote_id, genre_id) values (32 ,1);
-insert into genre_tuote (tuote_id, genre_id) values (32 ,2);
-insert into genre_tuote (tuote_id, genre_id) values (32 ,6);
-insert into genre_tuote (tuote_id, genre_id) values (32 ,7);
-
 insert into genre_tuote (tuote_id, genre_id) values (33 ,1);
+insert into genre_tuote (tuote_id, genre_id) values (33 ,2);
 insert into genre_tuote (tuote_id, genre_id) values (33 ,6);
-insert into genre_tuote (tuote_id, genre_id) values (33 ,9);
-insert into genre_tuote (tuote_id, genre_id) values (33 ,10);
+insert into genre_tuote (tuote_id, genre_id) values (33 ,7);
 
 insert into genre_tuote (tuote_id, genre_id) values (34 ,1);
-insert into genre_tuote (tuote_id, genre_id) values (34 ,4);
 insert into genre_tuote (tuote_id, genre_id) values (34 ,6);
 insert into genre_tuote (tuote_id, genre_id) values (34 ,9);
-
-
+insert into genre_tuote (tuote_id, genre_id) values (34 ,10);
 
 insert into genre_tuote (tuote_id, genre_id) values (35 ,1);
-insert into genre_tuote (tuote_id, genre_id) values (35 ,2);
-insert into genre_tuote (tuote_id, genre_id) values (35 ,8);
+insert into genre_tuote (tuote_id, genre_id) values (35 ,4);
+insert into genre_tuote (tuote_id, genre_id) values (35 ,6);
 insert into genre_tuote (tuote_id, genre_id) values (35 ,9);
 
+
+
+/* Ps4 */
 insert into genre_tuote (tuote_id, genre_id) values (36 ,1);
 insert into genre_tuote (tuote_id, genre_id) values (36 ,2);
+insert into genre_tuote (tuote_id, genre_id) values (36 ,8);
 insert into genre_tuote (tuote_id, genre_id) values (36 ,9);
 
 insert into genre_tuote (tuote_id, genre_id) values (37 ,1);
 insert into genre_tuote (tuote_id, genre_id) values (37 ,2);
-insert into genre_tuote (tuote_id, genre_id) values (37 ,7);
-insert into genre_tuote (tuote_id, genre_id) values (37 ,8);
 insert into genre_tuote (tuote_id, genre_id) values (37 ,9);
-
-
 
 insert into genre_tuote (tuote_id, genre_id) values (38 ,1);
 insert into genre_tuote (tuote_id, genre_id) values (38 ,2);
-insert into genre_tuote (tuote_id, genre_id) values (38 ,6);
+insert into genre_tuote (tuote_id, genre_id) values (38 ,7);
 insert into genre_tuote (tuote_id, genre_id) values (38 ,8);
 insert into genre_tuote (tuote_id, genre_id) values (38 ,9);
 
+
 insert into genre_tuote (tuote_id, genre_id) values (39 ,1);
 insert into genre_tuote (tuote_id, genre_id) values (39 ,2);
+insert into genre_tuote (tuote_id, genre_id) values (39 ,6);
 insert into genre_tuote (tuote_id, genre_id) values (39 ,8);
 insert into genre_tuote (tuote_id, genre_id) values (39 ,9);
 
 insert into genre_tuote (tuote_id, genre_id) values (40 ,1);
 insert into genre_tuote (tuote_id, genre_id) values (40 ,2);
-insert into genre_tuote (tuote_id, genre_id) values (40 ,5);
-insert into genre_tuote (tuote_id, genre_id) values (40 ,6);
 insert into genre_tuote (tuote_id, genre_id) values (40 ,8);
 insert into genre_tuote (tuote_id, genre_id) values (40 ,9);
 
 insert into genre_tuote (tuote_id, genre_id) values (41 ,1);
+insert into genre_tuote (tuote_id, genre_id) values (41 ,2);
+insert into genre_tuote (tuote_id, genre_id) values (41 ,5);
+insert into genre_tuote (tuote_id, genre_id) values (41 ,6);
 insert into genre_tuote (tuote_id, genre_id) values (41 ,8);
 insert into genre_tuote (tuote_id, genre_id) values (41 ,9);
-insert into genre_tuote (tuote_id, genre_id) values (41 ,11);
-insert into genre_tuote (tuote_id, genre_id) values (41 ,13);
 
 insert into genre_tuote (tuote_id, genre_id) values (42 ,1);
-insert into genre_tuote (tuote_id, genre_id) values (42 ,2);
-insert into genre_tuote (tuote_id, genre_id) values (42 ,7);
 insert into genre_tuote (tuote_id, genre_id) values (42 ,8);
 insert into genre_tuote (tuote_id, genre_id) values (42 ,9);
+insert into genre_tuote (tuote_id, genre_id) values (42 ,11);
+insert into genre_tuote (tuote_id, genre_id) values (42 ,13);
 
 insert into genre_tuote (tuote_id, genre_id) values (43 ,1);
 insert into genre_tuote (tuote_id, genre_id) values (43 ,2);
 insert into genre_tuote (tuote_id, genre_id) values (43 ,7);
+insert into genre_tuote (tuote_id, genre_id) values (43 ,8);
 insert into genre_tuote (tuote_id, genre_id) values (43 ,9);
 
-
-
-insert into genre_tuote (tuote_id, genre_id) values (44 ,6);
+insert into genre_tuote (tuote_id, genre_id) values (44 ,1);
+insert into genre_tuote (tuote_id, genre_id) values (44 ,2);
+insert into genre_tuote (tuote_id, genre_id) values (44 ,7);
 insert into genre_tuote (tuote_id, genre_id) values (44 ,9);
 
-insert into genre_tuote (tuote_id, genre_id) values (45 ,1);
-insert into genre_tuote (tuote_id, genre_id) values (45 ,2);
-insert into genre_tuote (tuote_id, genre_id) values (45 ,7);
-insert into genre_tuote (tuote_id, genre_id) values (45 ,8);
+
+
+/* Nintendo Switch */
+insert into genre_tuote (tuote_id, genre_id) values (45 ,6);
 insert into genre_tuote (tuote_id, genre_id) values (45 ,9);
 
 insert into genre_tuote (tuote_id, genre_id) values (46 ,1);
 insert into genre_tuote (tuote_id, genre_id) values (46 ,2);
-insert into genre_tuote (tuote_id, genre_id) values (46 ,6);
 insert into genre_tuote (tuote_id, genre_id) values (46 ,7);
 insert into genre_tuote (tuote_id, genre_id) values (46 ,8);
 insert into genre_tuote (tuote_id, genre_id) values (46 ,9);
-insert into genre_tuote (tuote_id, genre_id) values (46 ,11);
-insert into genre_tuote (tuote_id, genre_id) values (46 ,13);
 
 insert into genre_tuote (tuote_id, genre_id) values (47 ,1);
-insert into genre_tuote (tuote_id, genre_id) values (47 ,3);
+insert into genre_tuote (tuote_id, genre_id) values (47 ,2);
 insert into genre_tuote (tuote_id, genre_id) values (47 ,6);
+insert into genre_tuote (tuote_id, genre_id) values (47 ,7);
+insert into genre_tuote (tuote_id, genre_id) values (47 ,8);
 insert into genre_tuote (tuote_id, genre_id) values (47 ,9);
+insert into genre_tuote (tuote_id, genre_id) values (47 ,11);
+insert into genre_tuote (tuote_id, genre_id) values (47 ,13);
 
 insert into genre_tuote (tuote_id, genre_id) values (48 ,1);
-insert into genre_tuote (tuote_id, genre_id) values (48 ,2);
+insert into genre_tuote (tuote_id, genre_id) values (48 ,3);
+insert into genre_tuote (tuote_id, genre_id) values (48 ,6);
 insert into genre_tuote (tuote_id, genre_id) values (48 ,9);
 
 insert into genre_tuote (tuote_id, genre_id) values (49 ,1);
-insert into genre_tuote (tuote_id, genre_id) values (49 ,6);
+insert into genre_tuote (tuote_id, genre_id) values (49 ,2);
 insert into genre_tuote (tuote_id, genre_id) values (49 ,9);
 
 insert into genre_tuote (tuote_id, genre_id) values (50 ,1);
-insert into genre_tuote (tuote_id, genre_id) values (50 ,8);
+insert into genre_tuote (tuote_id, genre_id) values (50 ,6);
 insert into genre_tuote (tuote_id, genre_id) values (50 ,9);
-insert into genre_tuote (tuote_id, genre_id) values (50 ,11);
-insert into genre_tuote (tuote_id, genre_id) values (50 ,13);
 
 insert into genre_tuote (tuote_id, genre_id) values (51 ,1);
-insert into genre_tuote (tuote_id, genre_id) values (51 ,2);
 insert into genre_tuote (tuote_id, genre_id) values (51 ,8);
 insert into genre_tuote (tuote_id, genre_id) values (51 ,9);
 insert into genre_tuote (tuote_id, genre_id) values (51 ,11);
 insert into genre_tuote (tuote_id, genre_id) values (51 ,13);
+
+insert into genre_tuote (tuote_id, genre_id) values (52 ,1);
+insert into genre_tuote (tuote_id, genre_id) values (52 ,2);
+insert into genre_tuote (tuote_id, genre_id) values (52 ,8);
+insert into genre_tuote (tuote_id, genre_id) values (52 ,9);
+insert into genre_tuote (tuote_id, genre_id) values (52 ,11);
+insert into genre_tuote (tuote_id, genre_id) values (52 ,13);
 
 /******************************************************/
 
