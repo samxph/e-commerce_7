@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-v8BU367qNbs/aIZIxuivaU55N5GPF89WBerHoGA4QTcbUjYiLQtKdrfXnqAcXyTv" crossorigin="anonymous">
     <link rel="stylesheet" href=<?php echo base_url("css\styles.css") ?>>
 
-    <title><?= $title ?></title>
+    <title><?= $title ?></title>    
+
 </head>
 
 <body>
@@ -30,10 +31,12 @@
             <div class="logo mt-2 ml-3">
                 <a href="/"> <img src=<?php echo base_url("images/QG_Logo.png") ?> alt="logo"> </a>
             </div>
-            <div class="ml-4 mt-4">
-                <input type="text" id="searchinput" onkeyup="searchProducts()" name="searchbar" class="search" placeholder="Search website..." size="40">
-                <button class="btn btn-warning mb-1 ml-1"><i class="fas fa-search"></i></button>
-            </div>
+            <form action="<?= site_url('search/title'); ?>" method="get">  
+                <div class="ml-4 mt-4">
+                    <input type="text" name="searchtitle" value="" class="search" placeholder="Search a game's title" size="40">
+                    <button class="btn btn-warning mb-1 ml-1 "><i class="fas fa-search"></i></button>                                   
+                </div>
+            </form>
         </div>
 
         <div class="row col">

@@ -51,8 +51,12 @@ class Login extends BaseController {
             'password' => 'required|min_length[8]|max_length[30]',
             'confirmpassword' => 'required|min_length[8]|max_length[30]|matches[password]',
         ])){
-            echo view('templates/header', ['title' => REGISTER_TITLE]); // PASS title here
-            echo view('login/register');
+            // 2 riviä alhaalla kopioidaan uusiin controllereihin jotta header toimii
+            $data = ['title' => REGISTER_TITLE];
+            $data['allGenres'] = $this->HeaderGenreModel->getAllGenres();
+            $data['allPlatforms'] = $this->HeaderPlatformModel->getPlatforms();
+            echo view('templates/header', $data); // PASS title here
+            echo view('login/register', $data);
             echo view('templates/footer');
         }
         else {
