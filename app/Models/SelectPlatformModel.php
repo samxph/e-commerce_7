@@ -25,15 +25,4 @@ class SelectPlatformModel extends Model {
 
         return $query->getResultArray();
     }
-
-    public function searchPlatform($search) {
-        $this->table('tuote, tuoteryhma, tuoteryhma_tuote');
-        $this->select('tuote.id, title, price, description, picture');
-        $this->where("tuote.id = tuoteryhma_tuote.tuote_id
-        AND tuoteryhma_tuote.tuoteryhma_id = tuoteryhma.id
-        AND tuoteryhma.name LIKE '%$search%'");
-        $query = $this->get();
-
-        return $query->getResultArray();
-    }
 }

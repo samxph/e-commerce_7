@@ -16,9 +16,19 @@ class FrontpageAdminModel extends Model
 
         return $query->getResultArray();
     }
+
     public function getAll() {
         $this->table('tuote');
         $this->select('id, title, price, description, picture');
+        $query = $this->get();
+
+        return $query->getResultArray();
+    }
+
+    public function searchGames($search) {
+        $this->table('tuote');
+        $this->select('id, title, price, description, picture');
+        $this->where("title LIKE '%$search%'");
         $query = $this->get();
 
         return $query->getResultArray();
