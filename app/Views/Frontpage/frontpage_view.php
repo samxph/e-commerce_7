@@ -1,8 +1,8 @@
 
 <?php
-$username = $_SESSION['user'];
-$username= json_decode( json_encode($username), true);
- if(isset($_SESSION['user'])){?>
+ if(isset($_SESSION['user'])){
+ $username = $_SESSION['user'];
+$username= json_decode( json_encode($username), true);?>
  <h2 class="text-light">Welcome back <?php
   echo $username['username'];
    }
