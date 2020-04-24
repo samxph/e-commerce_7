@@ -1,7 +1,7 @@
 <div class="row ml-2">
     <div class="col-6 bg-warning ml-3 mb-3 cart">
         <h4 class="mt-2">Shopping cart</h3>
-            <?= anchor('shoppingcart/empty', 'Empty cart'); ?>
+
 
             <table class="table">
                 <tr>
@@ -37,32 +37,31 @@
                     </tr>
 
                 <?php endforeach; ?>
-                <td>
-                    Total
-                </td>
-                <td>
-                    <p><?php
+                <th>
+                   Total
+                </th>
+                <th>
+                    <?php
                         $total = 0;
                         foreach ($products as $product) {
                             $total += $product['price'] * $product['qty'];
                         }
                         echo $total;
 
-                        ?> €</p>
-                </td>
+                    ?> €
+                </th>
                 <td>
                 </td>
                 <td>
                 </td>
             </table>
-            <?php if( sizeof($products) == 0){?>
-            <h2 class="text-right">Your shopping cart is empty</h2><?php };?>
-
+            <?php if (sizeof($products) == 0) {
+                echo "<h4 class='text-right'>Your shopping cart is empty</h4>";
+            } else { ?>
+                <button class="bg-dark btn btn-secondary text-light float-left mb-2" onclick="window.location='<?php echo site_url('shoppingcart/empty'); ?>'">Empty cart </button>
+                <button class="bg-dark btn btn-secondary text-light float-right mb-2" onclick="window.location='<?php echo site_url('checkout'); ?>'">Proceed to checkout </button>
             <?php
-            if( sizeof($products) !== 0){
-            
+            }
             ?>
-            <button class="bg-dark btn btn-secondary text-light float-right mb-2" onclick="window.location='<?php echo site_url('checkout'); ?>'">Proceed to checkout</button>
-            <?php };?>
     </div>
 </div>
