@@ -34,7 +34,7 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'Frontpage::index');
 $routes->get('frontpage/searchplatform/(:segment)', 'Frontpage::searchplatform/$1');
 $routes->get('frontpage/searchgenre/(:segment)/(:segment)', 'Frontpage::searchgenre/$1/$2');
-$routes->get('index/frontpage/searchgenre/(:segment)/(:segment)', 'Frontpage::searchgenre/$1/$2');
+$routes->get('search/title', 'Frontpage::searchtitle');
 $routes->get('frontpage', 'Frontpage::index');
 $routes->get('tuoteryhma', 'Tuoteryhma::index');
 $routes->get('shoppingcart', 'Shoppingcart::index');
