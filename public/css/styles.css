@@ -86,6 +86,7 @@ color: whitesmoke;
   /* this title for page headings (example. login,register)*/
 .title {
     color: goldenrod;
+    margin-left: 10px;
 }
 
 .info {
@@ -162,4 +163,10 @@ color: whitesmoke;
 }
 .order {
     margin-right: 15px;
+}
+
+.message {
+    border: 1px solid #c0c0c0;
+    margin-bottom: 20px;
+    padding: 10px;
 }
