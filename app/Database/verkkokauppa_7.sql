@@ -1137,6 +1137,19 @@ insert into genre_tuote (tuote_id, genre_id) values (52 ,13);
 
 /******************************************************/
 
+create table user (
+    id int primary key auto_increment,
+    username varchar(30) not null unique,
+    password varchar(255) not null,
+    firstname varchar(100),
+    lastname varchar(100),
+    address varchar(100),
+    postcode char(5),
+    postOffice varchar(100),
+    email varchar(255),
+    phone varchar(20)
+);
+
 create table asiakas (
     id int primary key auto_increment,
     firstname varchar(100),

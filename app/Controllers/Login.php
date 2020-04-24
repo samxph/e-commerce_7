@@ -105,5 +105,10 @@ class Login extends BaseController
             }
         }
     }
-    //
+
+    public function logout() {
+        unset($_SESSION['user']);
+
+        return redirect('frontpage');
+    }
 }
