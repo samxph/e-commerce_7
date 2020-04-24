@@ -3,11 +3,9 @@
 use CodeIgniter\Model;
 
 class CustomerModel extends Model{
-    protected $table = 'user';
+    protected $table = 'asiakas';
 
-    protected $allowedFields = ['firstname', 'lastname',  'email',
-    'address', 'postcode', 'postOffice'
-    ];
+    protected $allowedFields = ['firstname', 'lastname',  'email', 'address', 'postcode', 'postoffice', 'phone'];
 
 }
 

@@ -2,19 +2,6 @@ drop database if exists verkkokauppa_7;
 create database verkkokauppa_7;
 use verkkokauppa_7;
 
-create table user (
-    id int primary key auto_increment,
-    username varchar(30) not null unique,
-    password varchar(255) not null,
-    firstname varchar(100),
-    lastname varchar(100),
-    address varchar(100),
-    postcode char(5),
-    postOffice varchar(100),
-    email varchar(255),
-    phone varchar(20)
-);
-
 /******************************************************/
 
 create table developer (
@@ -1126,14 +1113,39 @@ insert into genre_tuote (tuote_id, genre_id) values (51 ,13);
 
 /******************************************************/
 
-create table tilaus (
+create table asiakas (
     id int primary key auto_increment,
-    orderTime timestamp default current_timestamp,
-    user_id int not null,
-    index (user_id),
-    foreign key (user_id) references user(id)
-    on delete restrict,
-    amount smallint
+    firstname varchar(100),
+    lastname varchar(100),
+    address varchar(100),
+    postcode char(5),
+    postoffice varchar(100),
+    email varchar(255),
+    phone varchar(20)
+);
+
+create table tilaus (
+  id int primary key auto_increment,
+  tila enum ('tilattu', 'toimitettu', 'maksettu'),
+  tilattu timestamp default current_timestamp,
+  asiakas_id int not null,
+  index (asiakas_id),
+  foreign key (asiakas_id) references asiakas(id)
+  on delete restrict
+);
+
+create table tilausrivi (
+  tilaus_id int not null,
+  index (tilaus_id),
+  foreign key (tilaus_id) references tilaus(id)
+  on delete restrict,
+  tuote_id int not null,
+  index (tuote_id),
+  maksu varchar(50),
+  toimitus varchar(50),
+  foreign key (tuote_id) references tuote(id)
+  on delete restrict,
+  maara smallint
 );
 
 /******************************************************/
@@ -1142,6 +1154,14 @@ create table contact (
   id int primary key auto_increment,
   name varchar(100) not null,
   email varchar(100) not null,
+  subject varchar(50) not null,
+  message text,
+  saved timestamp default current_timestamp
+);
+
+create table review (
+  id int primary key auto_increment,
+  name varchar(100) not null,
   subject varchar(50) not null,
   message text,
   saved timestamp default current_timestamp

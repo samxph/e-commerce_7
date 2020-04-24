@@ -46,6 +46,9 @@ $routes->get('Contactsent', 'Contact::send');
 $routes->get('Faq', 'FAQ::index');
 $routes->get('About', 'about::index');
 $routes->get('login', 'Login::index');
+$routes->get('checkout', 'order::index');
+$routes->get('review', 'review::index');
+$routes->get('sendreview', 'review::sendreview');
 
 
 /**

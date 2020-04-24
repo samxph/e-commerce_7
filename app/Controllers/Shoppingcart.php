@@ -6,7 +6,6 @@ use App\Models\ShoppingcartAdminModel;
 // 2 riviä alhaalla kopioidaan uusiin controllereihin jotta header toimii
 use App\Models\HeaderPlatformModel;
 use App\Models\HeaderGenreModel;
-use App\Models\OrderModel;
 
 class Shoppingcart extends BaseController
 {
@@ -28,9 +27,6 @@ class Shoppingcart extends BaseController
 
     public function index()
     {
-
-        $model = new ShoppingcartAdminModel();
-
         if (count($_SESSION['cart']) > 0) {
             $products = $this->ShoppingcartAdminModel->getProducts($_SESSION['cart']);
         } else {
@@ -39,6 +35,7 @@ class Shoppingcart extends BaseController
 
         $data2['products'] = $products;
         $data1 = ['title' => 'Shopping cart'];
+
         // 2 riviä alhaalla kopioidaan uusiin controllereihin jotta header toimii
         $data1['allGenres'] = $this->HeaderGenreModel->getAllGenres();
         $data1['allPlatforms'] = $this->HeaderPlatformModel->getPlatforms();
@@ -58,13 +55,12 @@ class Shoppingcart extends BaseController
         if ($genre_id === null && $platform_id !== null) {
             print "frontpage/searchplatform/$platform_id";
             return redirect()->to(site_url('frontpage/searchplatform/' . $platform_id));
-        } else if ($genre_id !== null){
+        } else if ($genre_id !== null) {
             print "frontpage/searchgenre/$platform_id/$genre_id";
             return redirect()->to(site_url('frontpage/searchgenre/' . $platform_id . '/' .$genre_id));
         } else {            
             return redirect('/');
         }
-        
     }
 
     public function remove($product_id)
@@ -86,27 +82,5 @@ class Shoppingcart extends BaseController
         $_SESSION['cart'] = null;
 
         return redirect('shoppingcart');
-    }
-    public function checkout()
-
-    {
-        $model = new ShoppingcartAdminModel();
-
-        if (count($_SESSION['cart']) > 0) {
-            $products = $this->ShoppingcartAdminModel->getProducts($_SESSION['cart']);
-        } else {
-            $products = array();
-        }
-
-        $data2['products'] = $products;
-        $data1 = ['title' => 'Shopping cart'];
-        $data1['allPlatforms'] = $this->HeaderPlatformModel->getPlatforms();
-        $data1['allGenres'] = $this->HeaderGenreModel->getAllGenres();
-        $data1['allPlatforms'] = $this->HeaderPlatformModel->getPlatforms();
-
-        echo view('templates/header', $data1);
-        echo view('checkout_view', $data2);
-        echo view('templates/footer');
-        
     }
 }
