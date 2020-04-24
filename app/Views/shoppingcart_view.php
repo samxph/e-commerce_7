@@ -2,7 +2,6 @@
     <div class="col-6 bg-warning ml-3 mb-3 cart">
         <h4 class="mt-2">Shopping cart</h3>
 
-
             <table class="table">
                 <tr>
                     <th>
@@ -56,7 +55,7 @@
                 </td>
             </table>
             <?php if (sizeof($products) == 0) {
-                echo "<h4 class='text-right'>Your shopping cart is empty</h4>";
+                echo "<h5 class='text-left'>Your shopping cart is empty.</h5>";
             } else { ?>
                 <button class="bg-dark btn btn-secondary text-light float-left mb-2" onclick="window.location='<?php echo site_url('shoppingcart/empty'); ?>'">Empty cart </button>
                 <button class="bg-dark btn btn-secondary text-light float-right mb-2" onclick="window.location='<?php echo site_url('checkout'); ?>'">Proceed to checkout </button>
