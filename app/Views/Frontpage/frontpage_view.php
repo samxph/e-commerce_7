@@ -1,3 +1,14 @@
+
+<?php
+$username = $_SESSION['user'];
+$username= json_decode( json_encode($username), true);
+ if(isset($_SESSION['user'])){?>
+ <h2 class="text-light">Welcome back <?php
+  echo $username['username'];
+   }
+   ?>!</h2>
+ 
+
 <div class="col-lg-12">
 
   <div class="row">
