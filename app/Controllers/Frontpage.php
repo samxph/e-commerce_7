@@ -119,7 +119,7 @@ class Frontpage extends BaseController
         $data['allGenres'] = $this->HeaderGenreModel->getAllGenres();
         $data['allPlatforms'] = $this->HeaderPlatformModel->getPlatforms();
 
-        $data['productsTitle'] = "Search results for $search";
+        $data['productsTitle'] = "Search results for '$search'";
         $data['products'] = $this->FrontpageAdminModel->searchGames($search);
 
         echo view('templates/header', $data);
