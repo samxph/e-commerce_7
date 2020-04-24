@@ -44,11 +44,11 @@ $routes->get('empty', 'Ostokori::empty');
 $routes->get('Contact', 'Contact::index');
 $routes->get('Contactsent', 'Contact::send');
 $routes->get('Faq', 'FAQ::index');
-$routes->get('About', 'about::index');
+$routes->get('About', 'About::index');
 $routes->get('login', 'Login::index');
-$routes->get('checkout', 'order::index');
-$routes->get('review', 'review::index');
-$routes->get('sendreview', 'review::sendreview');
+$routes->get('checkout', 'Order::index');
+$routes->get('review', 'Review::index');
+$routes->get('sendreview', 'Review::sendreview');
 
 
 /**
