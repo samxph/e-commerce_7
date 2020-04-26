@@ -5,7 +5,7 @@ use CodeIgniter\Model;
 class ReviewModel extends Model {
     protected $table = 'review';
 
-    protected $allowedFields = ['name','subject', 'message'];
+    protected $allowedFields = ['name','subject', 'message', 'saved'];
 /*
     public function getReviews() {
         $this->table('review');
