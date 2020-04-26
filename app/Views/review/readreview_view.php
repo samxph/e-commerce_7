@@ -4,9 +4,10 @@
                     <h3 class="title"><?= $title ?></h3>
                     <?php foreach ($reviews as $review) : ?>
 
-                    <h5><?= $review['subject'] ?></h5>
+                        <h5> <p><?= $review['name'] ?></p></h5>
+                    <?= $review['subject'] ?>
                     <p><?= $review['message'] ?></p>
-                    <p><?= $review['name'] ?></p>
+
                     <?php endforeach; ?>
                 </div>
             </div>
