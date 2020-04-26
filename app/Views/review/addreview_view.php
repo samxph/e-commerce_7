@@ -11,8 +11,8 @@
                             <input name="name" placeholder="Enter Name" class="form-control" maxlength="100">
                         </div>
                         <div class="form-group col-5">
-                            <label class="text-light">Product:</label>
-                            <input name="subject" placeholder="Enter Product" class="form-control" maxlength="100">
+                            <label class="text-light">Subject:</label>
+                            <input name="subject" placeholder="Enter Subject" class="form-control" maxlength="100">
                         </div>
                         <div class="form-group col-5">
                             <label class="text-light">Message:</label>
