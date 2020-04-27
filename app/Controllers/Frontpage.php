@@ -12,6 +12,9 @@ use App\Models\SelectPlatformModel;
 use App\Models\GenreModel;
 use App\Models\DeviceModel;
 
+use App\Models\PublisherModel;
+use App\Models\DeveloperModel;
+
 class Frontpage extends BaseController
 {
 
@@ -31,6 +34,8 @@ class Frontpage extends BaseController
         $this->GenreModel = new GenreModel();
         $this->DeviceModel = new DeviceModel();
 
+        $this->PublisherModel = new PublisherModel();
+        $this->DeveloperModel = new DeveloperModel();
     }
 
     public function index() {
@@ -111,16 +116,29 @@ class Frontpage extends BaseController
             'title' => 'Quarantine games',
         ];
 
-        $request = \Config\Services::request();
-
-        //$search = $this->filter_input(INPUT_GET, "searchtitle", FILTER_SANITIZE_STRING);
-        $search = $request->getGet('searchtitle'); # if method is get
         // 2 riviä alhaalla kopioidaan uusiin controllereihin jotta header toimii
         $data['allGenres'] = $this->HeaderGenreModel->getAllGenres();
         $data['allPlatforms'] = $this->HeaderPlatformModel->getPlatforms();
 
-        $data['productsTitle'] = "Search results for '$search'";
-        $data['products'] = $this->FrontpageAdminModel->searchGames($search);
+        $request = \Config\Services::request();
+
+        $search = $request->getGet('searchtitle');
+        $searchby = $request->getGet('searchby');
+                
+        if ($searchby === 1) {
+            $data['products'] = $this->FrontpageAdminModel->searchGameTitle($search);
+
+        } else if ($searchby === 2) {
+            $data['products'] = $this->PublisherModel->searchGamePublisher($search);
+        } else if ($searchby === 3) {
+            $data['products'] = $this->DeveloperModel->searchGameDeveloper($search);
+        } else if ($searchby === 4) {
+
+        }
+
+        $data['products'] = $this->SearchDeveloperModel->searchGameDeveloper($search);
+
+            $data['productsTitle'] = "Searching by $searchby, results for '$search' ";
 
         echo view('templates/header', $data);
         echo view('games_view',$data);
