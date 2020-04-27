@@ -66,8 +66,14 @@ $username= json_decode( json_encode($username), true);?>
         </div class="bg-dark">
         <form method="post" action="<?= site_url('shoppingcart/add/' . $product['id']); ?>">
           <button class="bg-dark text-light addtocart">Add to cart</button>
+        </form>  
+      <?php if(isset($_SESSION['user'])) { ?>
+        <form method="post" action="<?= site_url('addproduct/remove/' . $product['id']); ?>">
+          <button class="bg-dark text-light addtocart">Delete product</button>
         </form>
-      </div>
+        </div>
+      <?php } else 
+      echo '</div>'; ?>
     </div>
 
   <?php endforeach; ?>

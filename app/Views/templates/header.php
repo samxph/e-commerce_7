@@ -20,8 +20,9 @@
             
             <?php if(isset($_SESSION['user'])) { ?>
             <li class="ml-3"><?= anchor('login/logout', 'Sign out <i class="fas fa-user"></i>') ?></li>
+            <li class="ml-3"><?= anchor('addproduct', 'Add product <i class="fas fa-folder-plus"></i>') ?></li>
             <?php } else { ?>
-            <li class="ml-3"><?= anchor('login/', 'Sign in <i class="fas fa-user"></i>') ?></li>
+            <!-- <li class="ml-3"><?= anchor('login/', 'Sign in <i class="fas fa-user"></i>') ?></li> -->
             <?php } ?>
             <li class="ml-3"><?= anchor('review/', 'Reviews <i class="fas fa-book"></i>') ?></li>
         </ul>

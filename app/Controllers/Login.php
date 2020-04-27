@@ -97,7 +97,7 @@ class Login extends BaseController
                 $this->request->getVar('user'),
                 $this->request->getVar('password')
             );
-            if ($user) { // if there is user, store into session and redirect
+            if ($user) { // if there is a user, store into session and redirect
                 $_SESSION['user'] = $user;
                 return redirect('frontpage');
             } else { // user is null, redirect to login page
