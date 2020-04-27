@@ -1,6 +1,5 @@
 <form method="post" action="/review/addreview">
 
-<div class="container">
             <div class="row">
                 <div class="col-lg-12"> 
 
@@ -11,7 +10,7 @@
                             <input name="name" placeholder="Enter Name" class="form-control" maxlength="100">
                         </div>
                         <div class="form-group col-5">
-                            <label class="text-light">Subject:</label>
+                            <label class="text-light">Subject/Game title:</label>
                             <input name="subject" placeholder="Enter Subject" class="form-control" maxlength="100">
                         </div>
                         <div class="form-group col-5">
@@ -20,7 +19,6 @@
                             <button type="submit" class="btn btn-warning">Send</button>
                         </div>
    
-                </div>
-            </div>
+        </div>
 </div>
 </form>
