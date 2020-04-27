@@ -2,7 +2,7 @@
 
     <form action="<?= site_url('addproduct/add') ?>" method="post">
 
-    <h4>Add a new product</h4>
+        <h4>Add a new product</h4>
 
         <div class="form-group">
             <label>Title:</label>
@@ -32,14 +32,18 @@
         <div class="form-group">
             <label>Developer:</label>
             <select name="developer">
-
+                <?php foreach ($developers as $developer) : ?>
+                    <option value="<?= $developer['id'] ?>"> <?= $developer['name'] ?> </option>
+                <?php endforeach; ?>
             </select>
         </div>
 
         <div class="form-group">
             <label>Publisher:</label>
             <select name="publisher">
-
+                <?php foreach ($publishers as $publisher) : ?>
+                    <option value="<?= $publisher['id'] ?>"> <?= $publisher['name'] ?> </option>
+                <?php endforeach; ?>
             </select>
         </div>
 

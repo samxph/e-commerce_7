@@ -4,8 +4,9 @@ namespace App\Controllers;
 
 use App\Models\HeaderPlatformModel;
 use App\Models\HeaderGenreModel;
-
-
+use App\Models\AddproductModel;
+use App\Models\DeveloperModel;
+use App\Models\PublisherModel;
 
 class Addproduct extends BaseController
 {
@@ -16,6 +17,9 @@ class Addproduct extends BaseController
 
         $this->HeaderPlatformModel = new HeaderPlatformModel();
         $this->HeaderGenreModel = new HeaderGenreModel();
+
+        $this->PublisherModel = new PublisherModel();
+        $this->DeveloperModel = new DeveloperModel();
     }
 
     public function index()
@@ -24,8 +28,11 @@ class Addproduct extends BaseController
         $data['allGenres'] = $this->HeaderGenreModel->getAllGenres();
         $data['allPlatforms'] = $this->HeaderPlatformModel->getPlatforms();
 
+        $data2['developers'] = $this->DeveloperModel->getDevelopers();
+        $data2['publishers'] = $this->PublisherModel->getPublishers();
+
         echo view('templates/header', $data);
-        echo view('addproduct_view');
+        echo view('addproduct_view', $data2);
         echo view('templates/footer');
     }
 
