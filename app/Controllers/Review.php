@@ -25,12 +25,14 @@ class Review extends BaseController{
     public function index()
     {
         $data['title'] = REVIEW_TITLE;
+        $reviewModel = new ReviewModel();
+        $data['reviews'] = $reviewModel->findAll();
         $data['allGenres'] = $this->HeaderGenreModel->getAllGenres();
         $data['allPlatforms'] = $this->HeaderPlatformModel->getPlatforms();
 
 
         echo view('templates/header', $data);
-        echo view('review/readreview_view');
+        echo view('review/readreview_view', $data);
         echo view('templates/footer');
     }
 
@@ -46,6 +48,18 @@ class Review extends BaseController{
         echo view('templates/footer', $data);
 
 
+    }
+
+    public function addreview() {
+
+        $data = [
+            'subject' => $this->request->getVar('subject'),
+            'name' => $this->request->getVar('name'),
+            'message' => $this->request->getVar('message')
+        ];
+        $reviewModel = new ReviewModel();
+        $reviewModel->insert($data);
+        return redirect('review');
     }
 
 }

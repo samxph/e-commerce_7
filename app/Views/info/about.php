@@ -1,7 +1,8 @@
+
 <h3 class="title"><?= $title ?></h3>
 
 <hr>
-
+<div class="row info">
 <div class="col-6 info cart mb-4">
     <div class="text-info text-center">
 
@@ -21,4 +22,5 @@
 
             <img class="mb-4 cart" src=<?php echo base_url("images\office_building.jpg") ?> alt="">
     </div>
+</div>
 </div>
