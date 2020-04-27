@@ -25,7 +25,7 @@ class FrontpageAdminModel extends Model
         return $query->getResultArray();
     }
 
-    public function searchGames($search) {
+    public function searchGameTitle($search) {
         $this->table('tuote');
         $this->select('id, title, price, description, picture');
         $this->where("title LIKE '%$search%'");
@@ -33,5 +33,16 @@ class FrontpageAdminModel extends Model
 
         return $query->getResultArray();
     }
+
+    public function searchGamePublisher($search) {
+        $this->table('tuote');
+        $this->select('id, title, price, description, picture');
+        $this->where("publisher.name LIKE '%$search%'");
+        $query = $this->get();
+
+        return $query->getResultArray();
+    }
+
+    
 }
 

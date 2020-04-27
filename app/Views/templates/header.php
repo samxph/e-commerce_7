@@ -37,9 +37,16 @@
             <div class="logo mt-2 ml-3">
                 <a href="/"> <img src=<?php echo base_url("images/QG_Logo.png") ?> alt="logo"> </a>
             </div>
-            <form action="<?= site_url('search/title'); ?>" method="get">  
-                <div class="ml-4 mt-4">
-                    <input type="text" name="searchtitle" value="" class="search" placeholder="Search a game's title" size="40">
+            <form action="<?= site_url('search/title/'); ?>" method="get"> 
+                <div class="ml-4 mt-4 input-group">
+                    <select class="custom-select" name="searchby">
+                        <option value="0">Search by ...</option>
+                        <option value="1">Game title</option>
+                        <option value="2">Game publisher</option>
+                        <option value="3">Game developer</option>
+                        <option value="4">Device Name</option>
+                    </select>                 
+                    <input type="text" name="searchtitle" value="" class="search" placeholder="Search for ..." size="40">
                     <button class="btn btn-warning mb-1 ml-1 "><i class="fas fa-search"></i></button>                                   
                 </div>
             </form>
