@@ -170,3 +170,8 @@ color: whitesmoke;
     margin-bottom: 20px;
     padding: 10px;
 }
+
+.review {
+    color: whitesmoke;
+    display: inline;
+    }
