@@ -5,8 +5,9 @@
 $username= json_decode( json_encode($username), true);?>
  <h2 class="text-light">Welcome back <?php
   echo $username['username'];
+  echo '!';
    }
-   ?>!</h2>
+   ?></h2>
  
 
 <div class="col-lg-12">

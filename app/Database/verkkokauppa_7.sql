@@ -1206,7 +1206,7 @@ create table review (
 
  insert into review (name, subject, message, saved)
 values ("Customer Y", "Razer - RGB LED Knife",
- "I love this knife. Everytime I play games I'll use this knife to make toast with my RGB toaster. Recommend this knife for all gamers so you can make toast like a professional gamer.", "2020-04-20 16:20:00");
+ "I love this knife. Everytime I play games I'll use this knife to make toast with my RGB toaster. Recommend this knife for all gamers so you can make toast like a professional gamer.", "2020-04-20 16:21:52");
 
 insert into review (name, subject, message, saved)
 values ("Customer X", "This is demo subject",

@@ -6,10 +6,14 @@
                     <div class="message info text-info">
                     <?php foreach ($reviews as $review) : ?>
 
-                    <h4> <p><?= $review['name'] ?></p></h4>
-                    <h4><?= $review['subject'] ?></h4>
+                <dl>
+                    
+                    <dt><?= $review['name'] ?></dt>
+                    <h4 class="lead"><?= $review['subject'] ?></h4>
                     <p class="font-italic"><?= $review['saved'] ?></p>
-                    <p><?= $review['message'] ?></p>
+                    <p class="font-weight-light"><?= $review['message'] ?></p>
+                    <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+                </dl>
 
                     <?php endforeach; ?>
                     </div>
