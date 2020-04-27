@@ -125,24 +125,26 @@ class Frontpage extends BaseController
         $search = $request->getGet('searchtitle');
         $searchby = $request->getGet('searchby');
                 
-        if ($searchby === 1) {
+        if ($searchby === '1') {
             $data['products'] = $this->FrontpageAdminModel->searchGameTitle($search);
-
-        } else if ($searchby === 2) {
+            $searchtype = 'Game Title';
+        } else if ($searchby === '2') {
             $data['products'] = $this->PublisherModel->searchGamePublisher($search);
-        } else if ($searchby === 3) {
+            $searchtype = 'Game Publisher';
+        } else if ($searchby === '3') {
             $data['products'] = $this->DeveloperModel->searchGameDeveloper($search);
-        } else if ($searchby === 4) {
-
+            $searchtype = 'Game Developer';
+        } else if ($searchby === '4') {
+            $data['products'] = $this->DeviceModel->searchDevice($search);
+            $searchtype = 'Device Name';
         }
 
-        $data['products'] = $this->SearchDeveloperModel->searchGameDeveloper($search);
-
-            $data['productsTitle'] = "Searching by $searchby, results for '$search' ";
-
+        $data['productsTitle'] = "Searching by $searchtype, results for '$search' ";
         echo view('templates/header', $data);
         echo view('games_view',$data);
         echo view('templates/footer');
+
+        
     }
 
 }

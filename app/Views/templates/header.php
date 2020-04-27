@@ -39,8 +39,7 @@
             </div>
             <form action="<?= site_url('search/title/'); ?>" method="get"> 
                 <div class="ml-4 mt-4 input-group">
-                    <select class="custom-select" name="searchby">
-                        <option value="0">Search by ...</option>
+                    <select class="custom-select" name="searchby">                        
                         <option value="1">Game title</option>
                         <option value="2">Game publisher</option>
                         <option value="3">Game developer</option>

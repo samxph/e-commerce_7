@@ -17,5 +17,16 @@ class DeviceModel extends Model {
 
         return $query->getResultArray();
     }
+
+    public function searchDevice($search) {
+        $this->table('devices');
+        $this->select('devices.id, title, price, description, picture');
+        $this->where("devices.genre_id = genre.id               
+        AND devices.title LIKE '%$search%'");
+                
+        $query = $this->get();
+
+        return $query->getResultArray();
+    }
 }
 
