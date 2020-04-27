@@ -1,6 +1,5 @@
 <form method="post" action="/review/addreview">
 
-<div class="container">
             <div class="row">
                 <div class="col-lg-12"> 
 
@@ -20,7 +19,6 @@
                             <button type="submit" class="btn btn-warning">Send</button>
                         </div>
    
-                </div>
-            </div>
+        </div>
 </div>
 </form>

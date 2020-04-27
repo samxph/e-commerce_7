@@ -168,6 +168,8 @@ color: whitesmoke;
 .message {
     border: 1px solid #c0c0c0;
     margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 100px;
     padding: 10px;
 }
 
