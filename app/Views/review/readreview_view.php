@@ -8,7 +8,7 @@
 
                     <h4> <p><?= $review['name'] ?></p></h4>
                     <h4><?= $review['subject'] ?></h4>
-                    <p><?= $review['saved'] ?></p>
+                    <p class="font-italic"><?= $review['saved'] ?></p>
                     <p><?= $review['message'] ?></p>
 
                     <?php endforeach; ?>
