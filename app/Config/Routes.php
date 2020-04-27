@@ -49,6 +49,7 @@ $routes->get('login', 'Login::index');
 $routes->get('checkout', 'Order::index');
 $routes->get('review', 'Review::index');
 $routes->get('sendreview', 'Review::sendreview');
+$routes->get('addproduct', 'Addproduct::index');
 
 
 /**

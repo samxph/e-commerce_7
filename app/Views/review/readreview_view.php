@@ -1,4 +1,4 @@
-<div class="container">   
+ 
                     <h3 class="title"><?= $title ?></h3>
                     &nbsp;&nbsp;<button type="button" class="btn btn-secondary" onclick="window.location='<?php echo site_url('sendreview/'); ?>'">Write new review</button>
                     <hr>
@@ -14,5 +14,3 @@
                     <?php endforeach; ?>
                     </div>
                 </div>
-            
-        </div>
