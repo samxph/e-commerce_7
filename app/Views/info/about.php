@@ -14,7 +14,7 @@
 
         <h5 class="font-weight-bold">We are online store for gaming products.</h6>
 
-            <p>You can get the most games from us as digital or physical form with reasonable prices.</p>
+            <p>You can get the most games from us in digital form with reasonable prices. We also sell consoles and other accessories for gaming!</p>
 
             <h5 class="font-weight-bold">Who we are?</h5>
 
