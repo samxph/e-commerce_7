@@ -45,11 +45,13 @@ $routes->get('Contact', 'Contact::index');
 $routes->get('Contactsent', 'Contact::send');
 $routes->get('Faq', 'FAQ::index');
 $routes->get('About', 'About::index');
-$routes->get('login', 'Login::index');
 $routes->get('checkout', 'Order::index');
 $routes->get('review', 'Review::index');
 $routes->get('sendreview', 'Review::sendreview');
 $routes->get('addproduct', 'Addproduct::index');
+
+/* This login route is for ADMIN view accessed via /login */
+$routes->get('login', 'Login::index');
 
 
 /**
