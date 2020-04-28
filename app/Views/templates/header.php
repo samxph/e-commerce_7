@@ -87,6 +87,7 @@
         </div>
     </div>
 
+<<<<<<< HEAD
     <div class="container-fluid">
         <!--
                         <li class="nav-item dropdown">
@@ -102,3 +103,8 @@
                                 <a class="dropdown-item" href="#">Other accessories</a>
                             </div>
                         </li>-->
+=======
+<div class="container-fluid">
+
+                 
+>>>>>>> 9db03085d715364067c2490b785a0dbc091d1d5a

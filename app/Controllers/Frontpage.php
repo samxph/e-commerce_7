@@ -143,8 +143,6 @@ class Frontpage extends BaseController
         echo view('templates/header', $data);
         echo view('games_view',$data);
         echo view('templates/footer');
-
-        
     }
 
 }
