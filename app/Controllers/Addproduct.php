@@ -12,6 +12,11 @@ class Addproduct extends BaseController
 {
     public function __construct()
     {
+        $config['max_size'] = '5000';
+        $config['allowed_types'] = 'jpg|jpeg|png|gif';
+
+
+
         $session = \Config\Services::session();
         $session->start();
 
@@ -54,23 +59,30 @@ class Addproduct extends BaseController
             'title' => 'required|max_length[50]',
             'releasedate' => 'required|max_length[50]',
             'price' => 'required|max_length[5]',
-            'picture' => 'required',
+            'picture' => 'uploaded[picture]|max_size[picture,300]',
             'description' => 'required|max_length[500]',
             'developer' => 'required|max_length[50]',
             'publisher' => 'required|max_length[50]',
         ])) {
-            return redirect('addproduct');
         } else {
-            //$user = $_SESSION['user'];
+            $picture = $this->request->getFile('picture');
+            $picturename = $picture->getName();
+
+            
+            $path = 'public/images';
+            //print_r(base_url('public/images'));
+            $picture->move($path);
+
             $model->save([
                 'title' => $this->request->getPost('title'),
                 'releasedate' => $this->request->getPost('releasedate'),
                 'price' => $this->request->getPost('price'),
-                'picture' => $this->request->getPost('picture'),
+                'picture' => $picturename,
                 'description' => $this->request->getPost('description'),
                 'developer_id' => $this->request->getPost('developer'),
                 'publisher_id' => $this->request->getPost('publisher')
             ]);
+
             echo view('templates/header', $data);
             echo view('productadded_view');
             echo view('templates/footer');

@@ -1,6 +1,6 @@
 <div class="col-6 bg-warning cart mt-2 mb-2">
 
-    <form action="<?= site_url('addproduct/add') ?>" method="post">
+    <form action="<?= site_url('addproduct/add') ?>" method="post" enctype="multipart/form-data">
 
         <h4>Add a new product</h4>
 
