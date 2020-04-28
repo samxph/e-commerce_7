@@ -36,8 +36,9 @@ color: whitesmoke;
 }
 
 .search {
-    border-radius: 5px;
-    height: 36px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 38px;
 }
 
 .ad1 {
