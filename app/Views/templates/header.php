@@ -87,24 +87,6 @@
         </div>
     </div>
 
-<<<<<<< HEAD
-    <div class="container-fluid">
-        <!--
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Devices and accessories
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Consoles</a>
-                                <a class="dropdown-item" href="#">Gaming controllers</a>
-                                <a class="dropdown-item" href="#">Gaming displays</a>
-                                <a class="dropdown-item" href="#">Gaming chairs</a>
-                                <a class="dropdown-item" href="#">Virtual Reality</a>
-                                <a class="dropdown-item" href="#">Other accessories</a>
-                            </div>
-                        </li>-->
-=======
 <div class="container-fluid">
 
                  
->>>>>>> 9db03085d715364067c2490b785a0dbc091d1d5a
