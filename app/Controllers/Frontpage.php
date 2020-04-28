@@ -44,6 +44,8 @@ class Frontpage extends BaseController
 
         $_SESSION['genre'] = null;
         $_SESSION['platform'] = null;
+        $_SESSION['search'] = null;
+        $_SESSION['searchfor'] = null;
 
         // 2 riviä alhaalla kopioidaan uusiin controllereihin jotta header toimii
         $data['allGenres'] = $this->HeaderGenreModel->getAllGenres();
@@ -72,6 +74,8 @@ class Frontpage extends BaseController
         $data['products'] = $this->SelectPlatformModel->selectPlatform($platform_name);     
         $data['productsTitle'] = "$platform_name Games";
 
+        $_SESSION['search'] = null;
+        $_SESSION['searchfor'] = null;
         $_SESSION['genre'] = null;
         $_SESSION['platform'] = $platform_id;
 
@@ -101,6 +105,8 @@ class Frontpage extends BaseController
             $data['productsTitle'] = "$platform_name $genre_name Games"; 
         }
 
+        $_SESSION['search'] = null;
+        $_SESSION['searchfor'] = null;
         $_SESSION['platform'] = $platform_id;
         $_SESSION['genre'] = $genre_id;
 
@@ -123,7 +129,10 @@ class Frontpage extends BaseController
         $search = $request->getGet('searchtitle');
         $searchby = $request->getGet('searchby');
                 
-        if ($searchby === '1' || $searchby === '4') {
+        $_SESSION['search'] = $search;
+        $_SESSION['searchby'] = $searchby;
+
+        if ($searchby === '1') {
             $data['products'] = $this->FrontpageAdminModel->searchGameTitle($search);
             $searchtype = 'Game Title';
         } else if ($searchby === '2') {
@@ -132,7 +141,10 @@ class Frontpage extends BaseController
         } else if ($searchby === '3') {
             $data['products'] = $this->DeveloperModel->searchGameDeveloper($search);
             $searchtype = 'Game Developer';
-        } 
+        } else if ($searchby === '4') {
+            $data['products'] = $this->FrontpageAdminModel->searchDeviceTitle($search);
+            $searchtype = 'Device Name';
+        }
 
         $data['productsTitle'] = "Searching by $searchtype, results for '$search' ";
         echo view('templates/header', $data);

@@ -367,20 +367,20 @@ values ("Octopath Traveler", "2018-07-13", 30, "octopath.jpg" , "Eight travelers
 
 insert into tuote (title,  price, picture, description, developer_id, publisher_id)
   values ("Nintendo Switch with Neon Blue and Neon Red Joy‑Con" , 349, "nintendoswitch_console.jpg" ,"Get the gaming 
-  system that lets you play the games you want, wherever you are, however you like.", 15 , 5);
+  system that lets you play the games you want, wherever you are, however you like.", 35 , 19);
 
 insert into tuote (title,  price, picture, description, developer_id, publisher_id)
   values ("PlayStation 4 Pro 1TB Console" , 379, "ps4_consolepro.jpg", "Battle friends and foes with the Sony 
   PlayStation 4 Pro console. Its 1TB capacity lets you store plenty of games without an external hard drive, 
   and the dual-shock controller improves your hands-on gaming experience. See enemies in clear, vibrant detail 
-  with the included HDMI cable of the Sony PlayStation 4 Pro console.", 15 , 5);
+  with the included HDMI cable of the Sony PlayStation 4 Pro console.", 35 , 19);
 
 insert into tuote (title,  price, picture, description, developer_id, publisher_id)
   values ("Xbox One X 1TB Console" , 299, "xone_xconsole.jpg", "Games play better on Xbox One X. Experience 40 
   percent more power than any other console. 6 teraflops of graphical processing power and a 4K Blu ray player 
   provides more immersive gaming and entertainment. Play with the greatest community of gamers on the most advanced 
   multiplayer network. Works with all your Xbox One games and accessories. Great for 1080p screens games run smoothly,
-   look great, and load quickly.", 15 , 5); 
+   look great, and load quickly.", 35 , 19); 
 
 
 /* Gaming controllers */
