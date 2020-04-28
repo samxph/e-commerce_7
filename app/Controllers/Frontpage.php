@@ -10,7 +10,6 @@ use App\Models\HeaderPlatformModel;
 use App\Models\HeaderGenreModel;
 use App\Models\SelectPlatformModel;
 use App\Models\GenreModel;
-use App\Models\DeviceModel;
 
 use App\Models\PublisherModel;
 use App\Models\DeveloperModel;
@@ -32,7 +31,6 @@ class Frontpage extends BaseController
         $this->HeaderGenreModel = new HeaderGenreModel();
         $this->SelectPlatformModel = new SelectPlatformModel();
         $this->GenreModel = new GenreModel();
-        $this->DeviceModel = new DeviceModel();
 
         $this->PublisherModel = new PublisherModel();
         $this->DeveloperModel = new DeveloperModel();
@@ -125,7 +123,7 @@ class Frontpage extends BaseController
         $search = $request->getGet('searchtitle');
         $searchby = $request->getGet('searchby');
                 
-        if ($searchby === '1') {
+        if ($searchby === '1' || $searchby === '4') {
             $data['products'] = $this->FrontpageAdminModel->searchGameTitle($search);
             $searchtype = 'Game Title';
         } else if ($searchby === '2') {
@@ -134,10 +132,7 @@ class Frontpage extends BaseController
         } else if ($searchby === '3') {
             $data['products'] = $this->DeveloperModel->searchGameDeveloper($search);
             $searchtype = 'Game Developer';
-        } else if ($searchby === '4') {
-            $data['products'] = $this->DeviceModel->searchDevice($search);
-            $searchtype = 'Device Name';
-        }
+        } 
 
         $data['productsTitle'] = "Searching by $searchtype, results for '$search' ";
         echo view('templates/header', $data);
