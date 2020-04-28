@@ -28,7 +28,18 @@ class FrontpageAdminModel extends Model
     public function searchGameTitle($search) {
         $this->table('tuote');
         $this->select('id, title, price, description, picture');
-        $this->where("title LIKE '%$search%'");
+        $this->where("developer_id != 35
+        AND title LIKE '%$search%'");
+        $query = $this->get();
+
+        return $query->getResultArray();
+    }
+
+    public function searchDeviceTitle($search) {
+        $this->table('tuote');
+        $this->select('id, title, price, description, picture');
+        $this->where("developer_id = 35
+        AND title LIKE '%$search%'");
         $query = $this->get();
 
         return $query->getResultArray();
