@@ -363,7 +363,7 @@ values ("Octopath Traveler", "2018-07-13", 30, "octopath.jpg" , "Eight travelers
 
 /*
 insert into tuote (title, releaseDate, price, picture, description, developer_id, publisher_id)
-values ("", "", , "" , "add description here", , , "");*/
+values ("", "", , "" , "add description here", , );*/
 
 /******************************************************/
 
