@@ -45,7 +45,7 @@ class Frontpage extends BaseController
         $_SESSION['genre'] = null;
         $_SESSION['platform'] = null;
         $_SESSION['search'] = null;
-        $_SESSION['searchfor'] = null;
+        $_SESSION['searchby'] = null;
 
         // 2 riviä alhaalla kopioidaan uusiin controllereihin jotta header toimii
         $data['allGenres'] = $this->HeaderGenreModel->getAllGenres();
